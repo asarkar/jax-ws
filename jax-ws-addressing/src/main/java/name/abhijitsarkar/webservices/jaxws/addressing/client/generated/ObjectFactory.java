@@ -1,3 +1,4 @@
+
 package name.abhijitsarkar.webservices.jaxws.addressing.client.generated;
 
 import javax.xml.bind.JAXBElement;
@@ -5,31 +6,29 @@ import javax.xml.bind.annotation.XmlElementDecl;
 import javax.xml.bind.annotation.XmlRegistry;
 import javax.xml.namespace.QName;
 
+
 /**
- * This object contains factory methods for each Java content interface and Java
- * element interface generated in the
- * name.abhijitsarkar.webservices.jaxws.addressing.client.generated package.
- * <p>
- * An ObjectFactory allows you to programatically construct new instances of the
- * Java representation for XML content. The Java representation of XML content
- * can consist of schema derived interfaces and classes representing the binding
- * of schema type definitions, element declarations and model groups. Factory
- * methods for each of these are provided in this class.
+ * This object contains factory methods for each 
+ * Java content interface and Java element interface 
+ * generated in the name.abhijitsarkar.webservices.jaxws.addressing.client.generated package. 
+ * <p>An ObjectFactory allows you to programatically 
+ * construct new instances of the Java representation 
+ * for XML content. The Java representation of XML 
+ * content can consist of schema derived interfaces 
+ * and classes representing the binding of schema 
+ * type definitions, element declarations and model 
+ * groups.  Factory methods for each of these are 
+ * provided in this class.
  * 
  */
 @XmlRegistry
 public class ObjectFactory {
 
-    private final static QName _Add_QNAME = new QName(
-	    "http://addressing.jaxws.webservices.abhijitsarkar.name/", "add");
-    private final static QName _AddResponse_QNAME = new QName(
-	    "http://addressing.jaxws.webservices.abhijitsarkar.name/",
-	    "addResponse");
+    private final static QName _Add_QNAME = new QName("http://addressing.jaxws.webservices.abhijitsarkar.name/", "add");
+    private final static QName _AddResponse_QNAME = new QName("http://addressing.jaxws.webservices.abhijitsarkar.name/", "addResponse");
 
     /**
-     * Create a new ObjectFactory that can be used to create new instances of
-     * schema derived classes for package:
-     * name.abhijitsarkar.webservices.jaxws.addressing.client.generated
+     * Create a new ObjectFactory that can be used to create new instances of schema derived classes for package: name.abhijitsarkar.webservices.jaxws.addressing.client.generated
      * 
      */
     public ObjectFactory() {
@@ -40,7 +39,7 @@ public class ObjectFactory {
      * 
      */
     public Add createAdd() {
-	return new Add();
+        return new Add();
     }
 
     /**
@@ -48,27 +47,25 @@ public class ObjectFactory {
      * 
      */
     public AddResponse createAddResponse() {
-	return new AddResponse();
+        return new AddResponse();
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link Add }{@code >}
+     * Create an instance of {@link JAXBElement }{@code <}{@link Add }{@code >}}
      * 
      */
     @XmlElementDecl(namespace = "http://addressing.jaxws.webservices.abhijitsarkar.name/", name = "add")
     public JAXBElement<Add> createAdd(Add value) {
-	return new JAXBElement<Add>(_Add_QNAME, Add.class, null, value);
+        return new JAXBElement<Add>(_Add_QNAME, Add.class, null, value);
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link AddResponse }
-     * {@code >}
+     * Create an instance of {@link JAXBElement }{@code <}{@link AddResponse }{@code >}}
      * 
      */
     @XmlElementDecl(namespace = "http://addressing.jaxws.webservices.abhijitsarkar.name/", name = "addResponse")
     public JAXBElement<AddResponse> createAddResponse(AddResponse value) {
-	return new JAXBElement<AddResponse>(_AddResponse_QNAME,
-		AddResponse.class, null, value);
+        return new JAXBElement<AddResponse>(_AddResponse_QNAME, AddResponse.class, null, value);
     }
 
 }

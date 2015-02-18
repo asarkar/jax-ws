@@ -1,3 +1,4 @@
+
 package name.abhijitsarkar.webservices.jaxws.addressing.client.generated;
 
 import javax.xml.bind.annotation.XmlAccessType;
@@ -5,13 +6,11 @@ import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
 
+
 /**
- * <p>
- * Java class for addResponse complex type.
+ * <p>Java class for addResponse complex type.
  * 
- * <p>
- * The following schema fragment specifies the expected content contained within
- * this class.
+ * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
  * &lt;complexType name="addResponse">
@@ -28,7 +27,9 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "addResponse", propOrder = { "_return" })
+@XmlType(name = "addResponse", propOrder = {
+    "_return"
+})
 public class AddResponse {
 
     @XmlElement(name = "return")
@@ -39,7 +40,7 @@ public class AddResponse {
      * 
      */
     public int getReturn() {
-	return _return;
+        return _return;
     }
 
     /**
@@ -47,7 +48,7 @@ public class AddResponse {
      * 
      */
     public void setReturn(int value) {
-	this._return = value;
+        this._return = value;
     }
 
 }

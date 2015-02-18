@@ -6,6 +6,7 @@
     <artifactId>jax-ws</artifactId>
     <version>0.0.1-SNAPSHOT</version>
   </parent>
+  
   <artifactId>jax-ws-addressing</artifactId>
   <name>jax-ws-addressing</name>
 
