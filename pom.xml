@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <groupId>name.abhijitsarkar</groupId>
+    <artifactId>maven-parent</artifactId>
+    <version>2.0</version>
+  </parent>
+
+  <groupId>name.abhijitsarkar.webservices.jaxws</groupId>
+  <artifactId>jax-ws</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <packaging>pom</packaging>
+  <name>jax-ws</name>
+  <description>This project is intended to manage the dependencies and plugins for JAX-WS Web Services practice code</description>
+
+  <properties>
+    <project.build.sourceLevel>1.7</project.build.sourceLevel>
+    <project.build.targetLevel>1.7</project.build.targetLevel>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <javaee.version>6.0</javaee.version>
+    <jaxws.version>2.2.5</jaxws.version>
+    <!-- Maven sets java.home property to JRE but we want JDK -->
+    <wsimport.exec>${java.home}/../bin/wsimport</wsimport.exec>
+    <jetty.version>9.0.6.v20130930</jetty.version>
+    <junit.version>4.12</junit.version>
+    <slf4j.version>1.7.10</slf4j.version>
+    <logback.version>1.1.2</logback.version>
+    <jetty.jvmArgs>-ea -Xdebug -Xrunjdwp:transport=dt_socket,server=y,suspend=n,address=4000</jetty.jvmArgs>
+  </properties>
+
+  <dependencies>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.sun.xml.ws</groupId>
+      <artifactId>jaxws-rt</artifactId>
+      <version>${jaxws.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>javax</groupId>
+      <artifactId>javaee-web-api</artifactId>
+      <version>${javaee.version}</version>
+      <scope>provided</scope>
+    </dependency>
+  </dependencies>
+
+  <dependencyManagement>
+    <dependencies>
+      <dependency>
+        <groupId>com.sun.xml.fastinfoset</groupId>
+        <artifactId>FastInfoset</artifactId>
+        <version>1.2.10</version>
+        <scope>runtime</scope>
+      </dependency>
+      <dependency>
+        <groupId>org.glassfish.metro</groupId>
+        <artifactId>webservices-rt</artifactId>
+        <version>2.1</version>
+        <scope>provided</scope>
+      </dependency>
+    </dependencies>
+  </dependencyManagement>
+
+  <build>
+    <plugins>
+      <plugin>
+        <artifactId>maven-war-plugin</artifactId>
+        <version>2.4</version>
+        <configuration>
+          <packagingExcludes>WEB-INF/**/wsdl/**,
+            WEB-INF/**/xsd/**,
+            WEB-INF/*/jaxws-bindings/**</packagingExcludes>
+          <failOnMissingWebXml>false</failOnMissingWebXml>
+        </configuration>
+      </plugin>
+      <plugin>
+        <groupId>org.jvnet.jax-ws-commons</groupId>
+        <artifactId>jaxws-maven-plugin</artifactId>
+        <version>2.3</version>
+        <configuration>
+          <executable>${wsimport.exec}</executable>
+          <sourceDestDir>${project.build.sourceDirectory}</sourceDestDir>
+          <verbose>true</verbose>
+          <target>2.2</target>
+        </configuration>
+      </plugin>
+      <plugin>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <configuration>
+          <compilerVersion>${project.build.sourceLevel}</compilerVersion>
+          <source>${project.build.sourceLevel}</source>
+          <target>${project.build.targetLevel}</target>
+          <encoding>${project.build.sourceEncoding}</encoding>
+          <showDeprecation>true</showDeprecation>
+          <showWarnings>true</showWarnings>
+        </configuration>
+      </plugin>
+    </plugins>
+    <pluginManagement>
+      <plugins>
+        <plugin>
+          <artifactId>maven-ear-plugin</artifactId>
+          <version>2.8</version>
+          <configuration>
+            <version>6</version>
+            <defaultLibBundleDir>lib/</defaultLibBundleDir>
+            <encoding>${project.build.sourceEncoding}</encoding>
+          </configuration>
+        </plugin>
+        <plugin>
+          <artifactId>maven-ejb-plugin</artifactId>
+          <version>2.3</version>
+          <configuration>
+            <ejbVersion>3.1</ejbVersion>
+          </configuration>
+        </plugin>
+        <plugin>
+          <groupId>org.eclipse.jetty</groupId>
+          <artifactId>jetty-maven-plugin</artifactId>
+          <version>${jetty.version}</version>
+          <configuration>
+            <webAppConfig>
+              <contextPath>/${project.artifactId}</contextPath>
+            </webAppConfig>
+            <!-- Following are only used in debug mode. Jetty must be started by 
+              run-forked goal in order for the JVM debug arguments to take effect -->
+            <jvmArgs>${jetty.jvmArgs}</jvmArgs>
+            <stopPort>4001</stopPort>
+            <stopKey>stop</stopKey>
+            <!-- Very important - run-forked ignores the webAppConfig and hence the 
+              context path; this is supposedly the default but does not work -->
+            <contextPath>/${project.artifactId}</contextPath>
+          </configuration>
+        </plugin>
+      </plugins>
+    </pluginManagement>
+  </build>
+
+  <modules>
+    <module>jax-ws-handlers</module>
+    <module>jax-ws-addressing</module>
+    <module>jax-ws-amazon</module>
+    <module>jax-ws-binding</module>
+    <module>jax-ws-deploy-desc</module>
+    <module>jax-ws-exception</module>
+    <module>jax-ws-provider</module>
+  </modules>
+</project>
