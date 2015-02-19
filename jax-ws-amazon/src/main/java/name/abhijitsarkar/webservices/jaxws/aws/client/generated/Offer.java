@@ -1,21 +1,19 @@
+
 package name.abhijitsarkar.webservices.jaxws.aws.client.generated;
 
 import java.util.ArrayList;
 import java.util.List;
-
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlType;
 
+
 /**
- * <p>
- * Java class for anonymous complex type.
+ * <p>Java class for anonymous complex type.
  * 
- * <p>
- * The following schema fragment specifies the expected content contained within
- * this class.
+ * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
  * &lt;complexType>
@@ -36,8 +34,13 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "", propOrder = { "merchant", "offerAttributes",
-	"offerListing", "loyaltyPoints", "promotions" })
+@XmlType(name = "", propOrder = {
+    "merchant",
+    "offerAttributes",
+    "offerListing",
+    "loyaltyPoints",
+    "promotions"
+})
 @XmlRootElement(name = "Offer")
 public class Offer {
 
@@ -55,59 +58,64 @@ public class Offer {
     /**
      * Gets the value of the merchant property.
      * 
-     * @return possible object is {@link Merchant }
-     * 
+     * @return
+     *     possible object is
+     *     {@link Merchant }
+     *     
      */
     public Merchant getMerchant() {
-	return merchant;
+        return merchant;
     }
 
     /**
      * Sets the value of the merchant property.
      * 
      * @param value
-     *            allowed object is {@link Merchant }
-     * 
+     *     allowed object is
+     *     {@link Merchant }
+     *     
      */
     public void setMerchant(Merchant value) {
-	this.merchant = value;
+        this.merchant = value;
     }
 
     /**
      * Gets the value of the offerAttributes property.
      * 
-     * @return possible object is {@link OfferAttributes }
-     * 
+     * @return
+     *     possible object is
+     *     {@link OfferAttributes }
+     *     
      */
     public OfferAttributes getOfferAttributes() {
-	return offerAttributes;
+        return offerAttributes;
     }
 
     /**
      * Sets the value of the offerAttributes property.
      * 
      * @param value
-     *            allowed object is {@link OfferAttributes }
-     * 
+     *     allowed object is
+     *     {@link OfferAttributes }
+     *     
      */
     public void setOfferAttributes(OfferAttributes value) {
-	this.offerAttributes = value;
+        this.offerAttributes = value;
     }
 
     /**
      * Gets the value of the offerListing property.
      * 
      * <p>
-     * This accessor method returns a reference to the live list, not a
-     * snapshot. Therefore any modification you make to the returned list will
-     * be present inside the JAXB object. This is why there is not a
-     * <CODE>set</CODE> method for the offerListing property.
+     * This accessor method returns a reference to the live list,
+     * not a snapshot. Therefore any modification you make to the
+     * returned list will be present inside the JAXB object.
+     * This is why there is not a <CODE>set</CODE> method for the offerListing property.
      * 
      * <p>
      * For example, to add a new item, do as follows:
-     * 
      * <pre>
-     * getOfferListing().add(newItem);
+     *    getOfferListing().add(newItem);
      * </pre>
      * 
      * 
@@ -118,52 +126,58 @@ public class Offer {
      * 
      */
     public List<OfferListing> getOfferListing() {
-	if (offerListing == null) {
-	    offerListing = new ArrayList<OfferListing>();
-	}
-	return this.offerListing;
+        if (offerListing == null) {
+            offerListing = new ArrayList<OfferListing>();
+        }
+        return this.offerListing;
     }
 
     /**
      * Gets the value of the loyaltyPoints property.
      * 
-     * @return possible object is {@link LoyaltyPoints }
-     * 
+     * @return
+     *     possible object is
+     *     {@link LoyaltyPoints }
+     *     
      */
     public LoyaltyPoints getLoyaltyPoints() {
-	return loyaltyPoints;
+        return loyaltyPoints;
     }
 
     /**
      * Sets the value of the loyaltyPoints property.
      * 
      * @param value
-     *            allowed object is {@link LoyaltyPoints }
-     * 
+     *     allowed object is
+     *     {@link LoyaltyPoints }
+     *     
      */
     public void setLoyaltyPoints(LoyaltyPoints value) {
-	this.loyaltyPoints = value;
+        this.loyaltyPoints = value;
     }
 
     /**
      * Gets the value of the promotions property.
      * 
-     * @return possible object is {@link Promotions }
-     * 
+     * @return
+     *     possible object is
+     *     {@link Promotions }
+     *     
      */
     public Promotions getPromotions() {
-	return promotions;
+        return promotions;
     }
 
     /**
      * Sets the value of the promotions property.
      * 
      * @param value
-     *            allowed object is {@link Promotions }
-     * 
+     *     allowed object is
+     *     {@link Promotions }
+     *     
      */
     public void setPromotions(Promotions value) {
-	this.promotions = value;
+        this.promotions = value;
     }
 
 }

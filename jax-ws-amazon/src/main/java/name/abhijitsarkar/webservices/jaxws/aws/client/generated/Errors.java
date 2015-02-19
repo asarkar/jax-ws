@@ -1,21 +1,19 @@
+
 package name.abhijitsarkar.webservices.jaxws.aws.client.generated;
 
 import java.util.ArrayList;
 import java.util.List;
-
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlType;
 
+
 /**
- * <p>
- * Java class for anonymous complex type.
+ * <p>Java class for anonymous complex type.
  * 
- * <p>
- * The following schema fragment specifies the expected content contained within
- * this class.
+ * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
  * &lt;complexType>
@@ -43,7 +41,9 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "", propOrder = { "error" })
+@XmlType(name = "", propOrder = {
+    "error"
+})
 @XmlRootElement(name = "Errors")
 public class Errors {
 
@@ -54,16 +54,15 @@ public class Errors {
      * Gets the value of the error property.
      * 
      * <p>
-     * This accessor method returns a reference to the live list, not a
-     * snapshot. Therefore any modification you make to the returned list will
-     * be present inside the JAXB object. This is why there is not a
-     * <CODE>set</CODE> method for the error property.
+     * This accessor method returns a reference to the live list,
+     * not a snapshot. Therefore any modification you make to the
+     * returned list will be present inside the JAXB object.
+     * This is why there is not a <CODE>set</CODE> method for the error property.
      * 
      * <p>
      * For example, to add a new item, do as follows:
-     * 
      * <pre>
-     * getError().add(newItem);
+     *    getError().add(newItem);
      * </pre>
      * 
      * 
@@ -74,19 +73,17 @@ public class Errors {
      * 
      */
     public List<Errors.Error> getError() {
-	if (error == null) {
-	    error = new ArrayList<Errors.Error>();
-	}
-	return this.error;
+        if (error == null) {
+            error = new ArrayList<Errors.Error>();
+        }
+        return this.error;
     }
 
+
     /**
-     * <p>
-     * Java class for anonymous complex type.
+     * <p>Java class for anonymous complex type.
      * 
-     * <p>
-     * The following schema fragment specifies the expected content contained
-     * within this class.
+     * <p>The following schema fragment specifies the expected content contained within this class.
      * 
      * <pre>
      * &lt;complexType>
@@ -104,55 +101,64 @@ public class Errors {
      * 
      */
     @XmlAccessorType(XmlAccessType.FIELD)
-    @XmlType(name = "", propOrder = { "code", "message" })
+    @XmlType(name = "", propOrder = {
+        "code",
+        "message"
+    })
     public static class Error {
 
-	@XmlElement(name = "Code", required = true)
-	protected String code;
-	@XmlElement(name = "Message", required = true)
-	protected String message;
+        @XmlElement(name = "Code", required = true)
+        protected String code;
+        @XmlElement(name = "Message", required = true)
+        protected String message;
 
-	/**
-	 * Gets the value of the code property.
-	 * 
-	 * @return possible object is {@link String }
-	 * 
-	 */
-	public String getCode() {
-	    return code;
-	}
+        /**
+         * Gets the value of the code property.
+         * 
+         * @return
+         *     possible object is
+         *     {@link String }
+         *     
+         */
+        public String getCode() {
+            return code;
+        }
 
-	/**
-	 * Sets the value of the code property.
-	 * 
-	 * @param value
-	 *            allowed object is {@link String }
-	 * 
-	 */
-	public void setCode(String value) {
-	    this.code = value;
-	}
+        /**
+         * Sets the value of the code property.
+         * 
+         * @param value
+         *     allowed object is
+         *     {@link String }
+         *     
+         */
+        public void setCode(String value) {
+            this.code = value;
+        }
 
-	/**
-	 * Gets the value of the message property.
-	 * 
-	 * @return possible object is {@link String }
-	 * 
-	 */
-	public String getMessage() {
-	    return message;
-	}
+        /**
+         * Gets the value of the message property.
+         * 
+         * @return
+         *     possible object is
+         *     {@link String }
+         *     
+         */
+        public String getMessage() {
+            return message;
+        }
 
-	/**
-	 * Sets the value of the message property.
-	 * 
-	 * @param value
-	 *            allowed object is {@link String }
-	 * 
-	 */
-	public void setMessage(String value) {
-	    this.message = value;
-	}
+        /**
+         * Sets the value of the message property.
+         * 
+         * @param value
+         *     allowed object is
+         *     {@link String }
+         *     
+         */
+        public void setMessage(String value) {
+            this.message = value;
+        }
 
     }
 

@@ -1,3 +1,4 @@
+
 package name.abhijitsarkar.webservices.jaxws.aws.client.generated;
 
 import javax.xml.bind.annotation.XmlAccessType;
@@ -6,13 +7,11 @@ import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlType;
 
+
 /**
- * <p>
- * Java class for anonymous complex type.
+ * <p>Java class for anonymous complex type.
  * 
- * <p>
- * The following schema fragment specifies the expected content contained within
- * this class.
+ * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
  * &lt;complexType>
@@ -30,7 +29,10 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "", propOrder = { "description", "url" })
+@XmlType(name = "", propOrder = {
+    "description",
+    "url"
+})
 @XmlRootElement(name = "ItemLink")
 public class ItemLink {
 
@@ -42,43 +44,49 @@ public class ItemLink {
     /**
      * Gets the value of the description property.
      * 
-     * @return possible object is {@link String }
-     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getDescription() {
-	return description;
+        return description;
     }
 
     /**
      * Sets the value of the description property.
      * 
      * @param value
-     *            allowed object is {@link String }
-     * 
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setDescription(String value) {
-	this.description = value;
+        this.description = value;
     }
 
     /**
      * Gets the value of the url property.
      * 
-     * @return possible object is {@link String }
-     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getURL() {
-	return url;
+        return url;
     }
 
     /**
      * Sets the value of the url property.
      * 
      * @param value
-     *            allowed object is {@link String }
-     * 
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setURL(String value) {
-	this.url = value;
+        this.url = value;
     }
 
 }

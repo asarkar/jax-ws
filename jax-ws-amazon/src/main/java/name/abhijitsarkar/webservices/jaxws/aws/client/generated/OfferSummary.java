@@ -1,3 +1,4 @@
+
 package name.abhijitsarkar.webservices.jaxws.aws.client.generated;
 
 import javax.xml.bind.annotation.XmlAccessType;
@@ -6,13 +7,11 @@ import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlType;
 
+
 /**
- * <p>
- * Java class for anonymous complex type.
+ * <p>Java class for anonymous complex type.
  * 
- * <p>
- * The following schema fragment specifies the expected content contained within
- * this class.
+ * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
  * &lt;complexType>
@@ -36,9 +35,16 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "", propOrder = { "lowestNewPrice", "lowestUsedPrice",
-	"lowestCollectiblePrice", "lowestRefurbishedPrice", "totalNew",
-	"totalUsed", "totalCollectible", "totalRefurbished" })
+@XmlType(name = "", propOrder = {
+    "lowestNewPrice",
+    "lowestUsedPrice",
+    "lowestCollectiblePrice",
+    "lowestRefurbishedPrice",
+    "totalNew",
+    "totalUsed",
+    "totalCollectible",
+    "totalRefurbished"
+})
 @XmlRootElement(name = "OfferSummary")
 public class OfferSummary {
 
@@ -62,169 +68,193 @@ public class OfferSummary {
     /**
      * Gets the value of the lowestNewPrice property.
      * 
-     * @return possible object is {@link Price }
-     * 
+     * @return
+     *     possible object is
+     *     {@link Price }
+     *     
      */
     public Price getLowestNewPrice() {
-	return lowestNewPrice;
+        return lowestNewPrice;
     }
 
     /**
      * Sets the value of the lowestNewPrice property.
      * 
      * @param value
-     *            allowed object is {@link Price }
-     * 
+     *     allowed object is
+     *     {@link Price }
+     *     
      */
     public void setLowestNewPrice(Price value) {
-	this.lowestNewPrice = value;
+        this.lowestNewPrice = value;
     }
 
     /**
      * Gets the value of the lowestUsedPrice property.
      * 
-     * @return possible object is {@link Price }
-     * 
+     * @return
+     *     possible object is
+     *     {@link Price }
+     *     
      */
     public Price getLowestUsedPrice() {
-	return lowestUsedPrice;
+        return lowestUsedPrice;
     }
 
     /**
      * Sets the value of the lowestUsedPrice property.
      * 
      * @param value
-     *            allowed object is {@link Price }
-     * 
+     *     allowed object is
+     *     {@link Price }
+     *     
      */
     public void setLowestUsedPrice(Price value) {
-	this.lowestUsedPrice = value;
+        this.lowestUsedPrice = value;
     }
 
     /**
      * Gets the value of the lowestCollectiblePrice property.
      * 
-     * @return possible object is {@link Price }
-     * 
+     * @return
+     *     possible object is
+     *     {@link Price }
+     *     
      */
     public Price getLowestCollectiblePrice() {
-	return lowestCollectiblePrice;
+        return lowestCollectiblePrice;
     }
 
     /**
      * Sets the value of the lowestCollectiblePrice property.
      * 
      * @param value
-     *            allowed object is {@link Price }
-     * 
+     *     allowed object is
+     *     {@link Price }
+     *     
      */
     public void setLowestCollectiblePrice(Price value) {
-	this.lowestCollectiblePrice = value;
+        this.lowestCollectiblePrice = value;
     }
 
     /**
      * Gets the value of the lowestRefurbishedPrice property.
      * 
-     * @return possible object is {@link Price }
-     * 
+     * @return
+     *     possible object is
+     *     {@link Price }
+     *     
      */
     public Price getLowestRefurbishedPrice() {
-	return lowestRefurbishedPrice;
+        return lowestRefurbishedPrice;
     }
 
     /**
      * Sets the value of the lowestRefurbishedPrice property.
      * 
      * @param value
-     *            allowed object is {@link Price }
-     * 
+     *     allowed object is
+     *     {@link Price }
+     *     
      */
     public void setLowestRefurbishedPrice(Price value) {
-	this.lowestRefurbishedPrice = value;
+        this.lowestRefurbishedPrice = value;
     }
 
     /**
      * Gets the value of the totalNew property.
      * 
-     * @return possible object is {@link String }
-     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getTotalNew() {
-	return totalNew;
+        return totalNew;
     }
 
     /**
      * Sets the value of the totalNew property.
      * 
      * @param value
-     *            allowed object is {@link String }
-     * 
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setTotalNew(String value) {
-	this.totalNew = value;
+        this.totalNew = value;
     }
 
     /**
      * Gets the value of the totalUsed property.
      * 
-     * @return possible object is {@link String }
-     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getTotalUsed() {
-	return totalUsed;
+        return totalUsed;
     }
 
     /**
      * Sets the value of the totalUsed property.
      * 
      * @param value
-     *            allowed object is {@link String }
-     * 
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setTotalUsed(String value) {
-	this.totalUsed = value;
+        this.totalUsed = value;
     }
 
     /**
      * Gets the value of the totalCollectible property.
      * 
-     * @return possible object is {@link String }
-     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getTotalCollectible() {
-	return totalCollectible;
+        return totalCollectible;
     }
 
     /**
      * Sets the value of the totalCollectible property.
      * 
      * @param value
-     *            allowed object is {@link String }
-     * 
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setTotalCollectible(String value) {
-	this.totalCollectible = value;
+        this.totalCollectible = value;
     }
 
     /**
      * Gets the value of the totalRefurbished property.
      * 
-     * @return possible object is {@link String }
-     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getTotalRefurbished() {
-	return totalRefurbished;
+        return totalRefurbished;
     }
 
     /**
      * Sets the value of the totalRefurbished property.
      * 
      * @param value
-     *            allowed object is {@link String }
-     * 
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setTotalRefurbished(String value) {
-	this.totalRefurbished = value;
+        this.totalRefurbished = value;
     }
 
 }

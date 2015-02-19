@@ -10,53 +10,49 @@
   <name>jax-ws-amazon</name>
 
   <url>https://affiliate-program.amazon.com/gp/advertising/api/detail/main.html</url>
+  
+  <description>
+    Amazon WS client.
+    
+    <![CDATA[
+      Run 'mvn clean package jetty:run -P jetty' from the basedir then run the main classes in the project.
+      
+      To start Jetty in debug mode, run 'mvn clean package jetty:run-forked -P jetty'.
+    ]]>
+  </description>
 
-  <dependencies>
-    <dependency>
-      <groupId>name.abhijitsarkar.webservices.jaxws</groupId>
-      <artifactId>jax-ws-handlers</artifactId>
-      <version>${project.version}</version>
-    </dependency>
-  </dependencies>
-
-  <profiles>
-    <profile>
-      <id>wsimport</id>
-      <build>
-        <defaultGoal>clean generate-sources</defaultGoal>
-        <plugins>
-          <plugin>
-            <groupId>org.jvnet.jax-ws-commons</groupId>
-            <artifactId>jaxws-maven-plugin</artifactId>
-            <executions>
-              <execution>
-                <id>wsimport-amazon-client</id>
-                <goals>
-                  <goal>wsimport</goal>
-                </goals>
-                <phase>generate-sources</phase>
-                <configuration>
-                  <bindingDirectory>src/main/resources/jaxws-bindings</bindingDirectory>
-                  <bindingFiles>
-                    <bindingFile>aws-handler-chains.xml</bindingFile>
-                  </bindingFiles>
-                  <!-- It turns out that the generated handler file is placed deep 
-                    in the output dir; this puts that in the resources directory -->
-                  <destDir>src/main/resources</destDir>
-                  <packageName>name.abhijitsarkar.webservices.jaxws.aws.client.generated</packageName>
-                  <wsdlDirectory>src/main/resources/wsdl</wsdlDirectory>
-                  <wsdlLocation>http://webservices.amazon.com/AWSECommerceService/AWSECommerceService.wsdl</wsdlLocation>
-                  <!-- Turn off generated source compilation; Maven will do it anyway -->
-                  <xnocompile>true</xnocompile>
-                  <wsdlFiles>
-                    <wsdlFile>AWSECommerceService.wsdl</wsdlFile>
-                  </wsdlFiles>
-                </configuration>
-              </execution>
-            </executions>
-          </plugin>
-        </plugins>
-      </build>
-    </profile>
-  </profiles>
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.jvnet.jax-ws-commons</groupId>
+        <artifactId>jaxws-maven-plugin</artifactId>
+        <executions>
+          <execution>
+            <id>wsimport-amazon-client</id>
+            <goals>
+              <goal>wsimport</goal>
+            </goals>
+            <phase>generate-sources</phase>
+            <configuration>
+              <bindingDirectory>src/main/resources/jaxws-bindings</bindingDirectory>
+              <bindingFiles>
+                <bindingFile>aws-handler-chains.xml</bindingFile>
+              </bindingFiles>
+              <!-- It turns out that the generated handler file is placed deep in 
+                the output dir; this puts that in the resources directory -->
+              <destDir>src/main/resources</destDir>
+              <packageName>name.abhijitsarkar.webservices.jaxws.aws.client.generated</packageName>
+              <wsdlDirectory>src/main/resources/wsdl</wsdlDirectory>
+              <wsdlLocation>http://webservices.amazon.com/AWSECommerceService/AWSECommerceService.wsdl</wsdlLocation>
+              <!-- Turn off generated source compilation; Maven will do it anyway -->
+              <xnocompile>true</xnocompile>
+              <wsdlFiles>
+                <wsdlFile>AWSECommerceService.wsdl</wsdlFile>
+              </wsdlFiles>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
+    </plugins>
+  </build>
 </project>

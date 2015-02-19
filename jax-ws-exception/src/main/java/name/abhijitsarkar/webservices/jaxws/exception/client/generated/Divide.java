@@ -1,16 +1,15 @@
+
 package name.abhijitsarkar.webservices.jaxws.exception.client.generated;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlType;
 
+
 /**
- * <p>
- * Java class for divide complex type.
+ * <p>Java class for divide complex type.
  * 
- * <p>
- * The following schema fragment specifies the expected content contained within
- * this class.
+ * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
  * &lt;complexType name="divide">
@@ -28,7 +27,10 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "divide", propOrder = { "arg0", "arg1" })
+@XmlType(name = "divide", propOrder = {
+    "arg0",
+    "arg1"
+})
 public class Divide {
 
     protected int arg0;
@@ -39,7 +41,7 @@ public class Divide {
      * 
      */
     public int getArg0() {
-	return arg0;
+        return arg0;
     }
 
     /**
@@ -47,7 +49,7 @@ public class Divide {
      * 
      */
     public void setArg0(int value) {
-	this.arg0 = value;
+        this.arg0 = value;
     }
 
     /**
@@ -55,7 +57,7 @@ public class Divide {
      * 
      */
     public int getArg1() {
-	return arg1;
+        return arg1;
     }
 
     /**
@@ -63,7 +65,7 @@ public class Divide {
      * 
      */
     public void setArg1(int value) {
-	this.arg1 = value;
+        this.arg1 = value;
     }
 
 }

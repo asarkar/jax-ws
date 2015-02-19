@@ -1,9 +1,9 @@
+
 package name.abhijitsarkar.webservices.jaxws.aws.client.generated;
 
 import java.math.BigInteger;
 import java.util.ArrayList;
 import java.util.List;
-
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
@@ -11,13 +11,11 @@ import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlSchemaType;
 import javax.xml.bind.annotation.XmlType;
 
+
 /**
- * <p>
- * Java class for anonymous complex type.
+ * <p>Java class for anonymous complex type.
  * 
- * <p>
- * The following schema fragment specifies the expected content contained within
- * this class.
+ * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
  * &lt;complexType>
@@ -37,8 +35,12 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "", propOrder = { "totalOffers", "totalOfferPages",
-	"moreOffersUrl", "offer" })
+@XmlType(name = "", propOrder = {
+    "totalOffers",
+    "totalOfferPages",
+    "moreOffersUrl",
+    "offer"
+})
 @XmlRootElement(name = "Offers")
 public class Offers {
 
@@ -56,93 +58,102 @@ public class Offers {
     /**
      * Gets the value of the totalOffers property.
      * 
-     * @return possible object is {@link BigInteger }
-     * 
+     * @return
+     *     possible object is
+     *     {@link BigInteger }
+     *     
      */
     public BigInteger getTotalOffers() {
-	return totalOffers;
+        return totalOffers;
     }
 
     /**
      * Sets the value of the totalOffers property.
      * 
      * @param value
-     *            allowed object is {@link BigInteger }
-     * 
+     *     allowed object is
+     *     {@link BigInteger }
+     *     
      */
     public void setTotalOffers(BigInteger value) {
-	this.totalOffers = value;
+        this.totalOffers = value;
     }
 
     /**
      * Gets the value of the totalOfferPages property.
      * 
-     * @return possible object is {@link BigInteger }
-     * 
+     * @return
+     *     possible object is
+     *     {@link BigInteger }
+     *     
      */
     public BigInteger getTotalOfferPages() {
-	return totalOfferPages;
+        return totalOfferPages;
     }
 
     /**
      * Sets the value of the totalOfferPages property.
      * 
      * @param value
-     *            allowed object is {@link BigInteger }
-     * 
+     *     allowed object is
+     *     {@link BigInteger }
+     *     
      */
     public void setTotalOfferPages(BigInteger value) {
-	this.totalOfferPages = value;
+        this.totalOfferPages = value;
     }
 
     /**
      * Gets the value of the moreOffersUrl property.
      * 
-     * @return possible object is {@link String }
-     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getMoreOffersUrl() {
-	return moreOffersUrl;
+        return moreOffersUrl;
     }
 
     /**
      * Sets the value of the moreOffersUrl property.
      * 
      * @param value
-     *            allowed object is {@link String }
-     * 
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setMoreOffersUrl(String value) {
-	this.moreOffersUrl = value;
+        this.moreOffersUrl = value;
     }
 
     /**
      * Gets the value of the offer property.
      * 
      * <p>
-     * This accessor method returns a reference to the live list, not a
-     * snapshot. Therefore any modification you make to the returned list will
-     * be present inside the JAXB object. This is why there is not a
-     * <CODE>set</CODE> method for the offer property.
+     * This accessor method returns a reference to the live list,
+     * not a snapshot. Therefore any modification you make to the
+     * returned list will be present inside the JAXB object.
+     * This is why there is not a <CODE>set</CODE> method for the offer property.
      * 
      * <p>
      * For example, to add a new item, do as follows:
-     * 
      * <pre>
-     * getOffer().add(newItem);
+     *    getOffer().add(newItem);
      * </pre>
      * 
      * 
      * <p>
-     * Objects of the following type(s) are allowed in the list {@link Offer }
+     * Objects of the following type(s) are allowed in the list
+     * {@link Offer }
      * 
      * 
      */
     public List<Offer> getOffer() {
-	if (offer == null) {
-	    offer = new ArrayList<Offer>();
-	}
-	return this.offer;
+        if (offer == null) {
+            offer = new ArrayList<Offer>();
+        }
+        return this.offer;
     }
 
 }

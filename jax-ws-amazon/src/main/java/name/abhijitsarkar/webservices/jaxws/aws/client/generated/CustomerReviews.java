@@ -1,3 +1,4 @@
+
 package name.abhijitsarkar.webservices.jaxws.aws.client.generated;
 
 import javax.xml.bind.annotation.XmlAccessType;
@@ -6,13 +7,11 @@ import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlType;
 
+
 /**
- * <p>
- * Java class for anonymous complex type.
+ * <p>Java class for anonymous complex type.
  * 
- * <p>
- * The following schema fragment specifies the expected content contained within
- * this class.
+ * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
  * &lt;complexType>
@@ -30,7 +29,10 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "", propOrder = { "iFrameURL", "hasReviews" })
+@XmlType(name = "", propOrder = {
+    "iFrameURL",
+    "hasReviews"
+})
 @XmlRootElement(name = "CustomerReviews")
 public class CustomerReviews {
 
@@ -42,43 +44,49 @@ public class CustomerReviews {
     /**
      * Gets the value of the iFrameURL property.
      * 
-     * @return possible object is {@link String }
-     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getIFrameURL() {
-	return iFrameURL;
+        return iFrameURL;
     }
 
     /**
      * Sets the value of the iFrameURL property.
      * 
      * @param value
-     *            allowed object is {@link String }
-     * 
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setIFrameURL(String value) {
-	this.iFrameURL = value;
+        this.iFrameURL = value;
     }
 
     /**
      * Gets the value of the hasReviews property.
      * 
-     * @return possible object is {@link Boolean }
-     * 
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isHasReviews() {
-	return hasReviews;
+        return hasReviews;
     }
 
     /**
      * Sets the value of the hasReviews property.
      * 
      * @param value
-     *            allowed object is {@link Boolean }
-     * 
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setHasReviews(Boolean value) {
-	this.hasReviews = value;
+        this.hasReviews = value;
     }
 
 }

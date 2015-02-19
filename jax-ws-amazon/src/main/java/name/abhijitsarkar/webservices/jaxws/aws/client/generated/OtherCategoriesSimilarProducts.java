@@ -1,21 +1,19 @@
+
 package name.abhijitsarkar.webservices.jaxws.aws.client.generated;
 
 import java.util.ArrayList;
 import java.util.List;
-
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlType;
 
+
 /**
- * <p>
- * Java class for anonymous complex type.
+ * <p>Java class for anonymous complex type.
  * 
- * <p>
- * The following schema fragment specifies the expected content contained within
- * this class.
+ * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
  * &lt;complexType>
@@ -43,7 +41,9 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "", propOrder = { "otherCategoriesSimilarProduct" })
+@XmlType(name = "", propOrder = {
+    "otherCategoriesSimilarProduct"
+})
 @XmlRootElement(name = "OtherCategoriesSimilarProducts")
 public class OtherCategoriesSimilarProducts {
 
@@ -54,16 +54,15 @@ public class OtherCategoriesSimilarProducts {
      * Gets the value of the otherCategoriesSimilarProduct property.
      * 
      * <p>
-     * This accessor method returns a reference to the live list, not a
-     * snapshot. Therefore any modification you make to the returned list will
-     * be present inside the JAXB object. This is why there is not a
-     * <CODE>set</CODE> method for the otherCategoriesSimilarProduct property.
+     * This accessor method returns a reference to the live list,
+     * not a snapshot. Therefore any modification you make to the
+     * returned list will be present inside the JAXB object.
+     * This is why there is not a <CODE>set</CODE> method for the otherCategoriesSimilarProduct property.
      * 
      * <p>
      * For example, to add a new item, do as follows:
-     * 
      * <pre>
-     * getOtherCategoriesSimilarProduct().add(newItem);
+     *    getOtherCategoriesSimilarProduct().add(newItem);
      * </pre>
      * 
      * 
@@ -74,19 +73,17 @@ public class OtherCategoriesSimilarProducts {
      * 
      */
     public List<OtherCategoriesSimilarProducts.OtherCategoriesSimilarProduct> getOtherCategoriesSimilarProduct() {
-	if (otherCategoriesSimilarProduct == null) {
-	    otherCategoriesSimilarProduct = new ArrayList<OtherCategoriesSimilarProducts.OtherCategoriesSimilarProduct>();
-	}
-	return this.otherCategoriesSimilarProduct;
+        if (otherCategoriesSimilarProduct == null) {
+            otherCategoriesSimilarProduct = new ArrayList<OtherCategoriesSimilarProducts.OtherCategoriesSimilarProduct>();
+        }
+        return this.otherCategoriesSimilarProduct;
     }
 
+
     /**
-     * <p>
-     * Java class for anonymous complex type.
+     * <p>Java class for anonymous complex type.
      * 
-     * <p>
-     * The following schema fragment specifies the expected content contained
-     * within this class.
+     * <p>The following schema fragment specifies the expected content contained within this class.
      * 
      * <pre>
      * &lt;complexType>
@@ -104,55 +101,64 @@ public class OtherCategoriesSimilarProducts {
      * 
      */
     @XmlAccessorType(XmlAccessType.FIELD)
-    @XmlType(name = "", propOrder = { "asin", "title" })
+    @XmlType(name = "", propOrder = {
+        "asin",
+        "title"
+    })
     public static class OtherCategoriesSimilarProduct {
 
-	@XmlElement(name = "ASIN")
-	protected String asin;
-	@XmlElement(name = "Title")
-	protected String title;
+        @XmlElement(name = "ASIN")
+        protected String asin;
+        @XmlElement(name = "Title")
+        protected String title;
 
-	/**
-	 * Gets the value of the asin property.
-	 * 
-	 * @return possible object is {@link String }
-	 * 
-	 */
-	public String getASIN() {
-	    return asin;
-	}
+        /**
+         * Gets the value of the asin property.
+         * 
+         * @return
+         *     possible object is
+         *     {@link String }
+         *     
+         */
+        public String getASIN() {
+            return asin;
+        }
 
-	/**
-	 * Sets the value of the asin property.
-	 * 
-	 * @param value
-	 *            allowed object is {@link String }
-	 * 
-	 */
-	public void setASIN(String value) {
-	    this.asin = value;
-	}
+        /**
+         * Sets the value of the asin property.
+         * 
+         * @param value
+         *     allowed object is
+         *     {@link String }
+         *     
+         */
+        public void setASIN(String value) {
+            this.asin = value;
+        }
 
-	/**
-	 * Gets the value of the title property.
-	 * 
-	 * @return possible object is {@link String }
-	 * 
-	 */
-	public String getTitle() {
-	    return title;
-	}
+        /**
+         * Gets the value of the title property.
+         * 
+         * @return
+         *     possible object is
+         *     {@link String }
+         *     
+         */
+        public String getTitle() {
+            return title;
+        }
 
-	/**
-	 * Sets the value of the title property.
-	 * 
-	 * @param value
-	 *            allowed object is {@link String }
-	 * 
-	 */
-	public void setTitle(String value) {
-	    this.title = value;
-	}
+        /**
+         * Sets the value of the title property.
+         * 
+         * @param value
+         *     allowed object is
+         *     {@link String }
+         *     
+         */
+        public void setTitle(String value) {
+            this.title = value;
+        }
 
     }
 

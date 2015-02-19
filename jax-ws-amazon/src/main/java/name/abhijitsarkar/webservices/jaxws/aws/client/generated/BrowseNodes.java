@@ -1,21 +1,19 @@
+
 package name.abhijitsarkar.webservices.jaxws.aws.client.generated;
 
 import java.util.ArrayList;
 import java.util.List;
-
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlType;
 
+
 /**
- * <p>
- * Java class for anonymous complex type.
+ * <p>Java class for anonymous complex type.
  * 
- * <p>
- * The following schema fragment specifies the expected content contained within
- * this class.
+ * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
  * &lt;complexType>
@@ -33,7 +31,10 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "", propOrder = { "request", "browseNode" })
+@XmlType(name = "", propOrder = {
+    "request",
+    "browseNode"
+})
 @XmlRootElement(name = "BrowseNodes")
 public class BrowseNodes {
 
@@ -45,38 +46,40 @@ public class BrowseNodes {
     /**
      * Gets the value of the request property.
      * 
-     * @return possible object is {@link Request }
-     * 
+     * @return
+     *     possible object is
+     *     {@link Request }
+     *     
      */
     public Request getRequest() {
-	return request;
+        return request;
     }
 
     /**
      * Sets the value of the request property.
      * 
      * @param value
-     *            allowed object is {@link Request }
-     * 
+     *     allowed object is
+     *     {@link Request }
+     *     
      */
     public void setRequest(Request value) {
-	this.request = value;
+        this.request = value;
     }
 
     /**
      * Gets the value of the browseNode property.
      * 
      * <p>
-     * This accessor method returns a reference to the live list, not a
-     * snapshot. Therefore any modification you make to the returned list will
-     * be present inside the JAXB object. This is why there is not a
-     * <CODE>set</CODE> method for the browseNode property.
+     * This accessor method returns a reference to the live list,
+     * not a snapshot. Therefore any modification you make to the
+     * returned list will be present inside the JAXB object.
+     * This is why there is not a <CODE>set</CODE> method for the browseNode property.
      * 
      * <p>
      * For example, to add a new item, do as follows:
-     * 
      * <pre>
-     * getBrowseNode().add(newItem);
+     *    getBrowseNode().add(newItem);
      * </pre>
      * 
      * 
@@ -87,10 +90,10 @@ public class BrowseNodes {
      * 
      */
     public List<BrowseNode> getBrowseNode() {
-	if (browseNode == null) {
-	    browseNode = new ArrayList<BrowseNode>();
-	}
-	return this.browseNode;
+        if (browseNode == null) {
+            browseNode = new ArrayList<BrowseNode>();
+        }
+        return this.browseNode;
     }
 
 }

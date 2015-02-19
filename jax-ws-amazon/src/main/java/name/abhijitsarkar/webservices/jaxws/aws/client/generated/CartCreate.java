@@ -1,21 +1,19 @@
+
 package name.abhijitsarkar.webservices.jaxws.aws.client.generated;
 
 import java.util.ArrayList;
 import java.util.List;
-
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlType;
 
+
 /**
- * <p>
- * Java class for anonymous complex type.
+ * <p>Java class for anonymous complex type.
  * 
- * <p>
- * The following schema fragment specifies the expected content contained within
- * this class.
+ * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
  * &lt;complexType>
@@ -38,8 +36,15 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "", propOrder = { "marketplaceDomain", "awsAccessKeyId",
-	"associateTag", "validate", "xmlEscaping", "shared", "request" })
+@XmlType(name = "", propOrder = {
+    "marketplaceDomain",
+    "awsAccessKeyId",
+    "associateTag",
+    "validate",
+    "xmlEscaping",
+    "shared",
+    "request"
+})
 @XmlRootElement(name = "CartCreate")
 public class CartCreate {
 
@@ -61,143 +66,160 @@ public class CartCreate {
     /**
      * Gets the value of the marketplaceDomain property.
      * 
-     * @return possible object is {@link String }
-     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getMarketplaceDomain() {
-	return marketplaceDomain;
+        return marketplaceDomain;
     }
 
     /**
      * Sets the value of the marketplaceDomain property.
      * 
      * @param value
-     *            allowed object is {@link String }
-     * 
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setMarketplaceDomain(String value) {
-	this.marketplaceDomain = value;
+        this.marketplaceDomain = value;
     }
 
     /**
      * Gets the value of the awsAccessKeyId property.
      * 
-     * @return possible object is {@link String }
-     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getAWSAccessKeyId() {
-	return awsAccessKeyId;
+        return awsAccessKeyId;
     }
 
     /**
      * Sets the value of the awsAccessKeyId property.
      * 
      * @param value
-     *            allowed object is {@link String }
-     * 
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setAWSAccessKeyId(String value) {
-	this.awsAccessKeyId = value;
+        this.awsAccessKeyId = value;
     }
 
     /**
      * Gets the value of the associateTag property.
      * 
-     * @return possible object is {@link String }
-     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getAssociateTag() {
-	return associateTag;
+        return associateTag;
     }
 
     /**
      * Sets the value of the associateTag property.
      * 
      * @param value
-     *            allowed object is {@link String }
-     * 
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setAssociateTag(String value) {
-	this.associateTag = value;
+        this.associateTag = value;
     }
 
     /**
      * Gets the value of the validate property.
      * 
-     * @return possible object is {@link String }
-     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getValidate() {
-	return validate;
+        return validate;
     }
 
     /**
      * Sets the value of the validate property.
      * 
      * @param value
-     *            allowed object is {@link String }
-     * 
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setValidate(String value) {
-	this.validate = value;
+        this.validate = value;
     }
 
     /**
      * Gets the value of the xmlEscaping property.
      * 
-     * @return possible object is {@link String }
-     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getXMLEscaping() {
-	return xmlEscaping;
+        return xmlEscaping;
     }
 
     /**
      * Sets the value of the xmlEscaping property.
      * 
      * @param value
-     *            allowed object is {@link String }
-     * 
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setXMLEscaping(String value) {
-	this.xmlEscaping = value;
+        this.xmlEscaping = value;
     }
 
     /**
      * Gets the value of the shared property.
      * 
-     * @return possible object is {@link CartCreateRequest }
-     * 
+     * @return
+     *     possible object is
+     *     {@link CartCreateRequest }
+     *     
      */
     public CartCreateRequest getShared() {
-	return shared;
+        return shared;
     }
 
     /**
      * Sets the value of the shared property.
      * 
      * @param value
-     *            allowed object is {@link CartCreateRequest }
-     * 
+     *     allowed object is
+     *     {@link CartCreateRequest }
+     *     
      */
     public void setShared(CartCreateRequest value) {
-	this.shared = value;
+        this.shared = value;
     }
 
     /**
      * Gets the value of the request property.
      * 
      * <p>
-     * This accessor method returns a reference to the live list, not a
-     * snapshot. Therefore any modification you make to the returned list will
-     * be present inside the JAXB object. This is why there is not a
-     * <CODE>set</CODE> method for the request property.
+     * This accessor method returns a reference to the live list,
+     * not a snapshot. Therefore any modification you make to the
+     * returned list will be present inside the JAXB object.
+     * This is why there is not a <CODE>set</CODE> method for the request property.
      * 
      * <p>
      * For example, to add a new item, do as follows:
-     * 
      * <pre>
-     * getRequest().add(newItem);
+     *    getRequest().add(newItem);
      * </pre>
      * 
      * 
@@ -208,10 +230,10 @@ public class CartCreate {
      * 
      */
     public List<CartCreateRequest> getRequest() {
-	if (request == null) {
-	    request = new ArrayList<CartCreateRequest>();
-	}
-	return this.request;
+        if (request == null) {
+            request = new ArrayList<CartCreateRequest>();
+        }
+        return this.request;
     }
 
 }

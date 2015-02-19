@@ -1,22 +1,20 @@
+
 package name.abhijitsarkar.webservices.jaxws.aws.client.generated;
 
 import java.math.BigInteger;
 import java.util.ArrayList;
 import java.util.List;
-
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlSchemaType;
 import javax.xml.bind.annotation.XmlType;
 
+
 /**
- * <p>
- * Java class for ItemLookupRequest complex type.
+ * <p>Java class for ItemLookupRequest complex type.
  * 
- * <p>
- * The following schema fragment specifies the expected content contained within
- * this class.
+ * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
  * &lt;complexType name="ItemLookupRequest">
@@ -53,10 +51,19 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "ItemLookupRequest", propOrder = { "condition", "idType",
-	"merchantId", "itemId", "responseGroup", "searchIndex",
-	"variationPage", "relatedItemPage", "relationshipType",
-	"includeReviewsSummary", "truncateReviewsAt" })
+@XmlType(name = "ItemLookupRequest", propOrder = {
+    "condition",
+    "idType",
+    "merchantId",
+    "itemId",
+    "responseGroup",
+    "searchIndex",
+    "variationPage",
+    "relatedItemPage",
+    "relationshipType",
+    "includeReviewsSummary",
+    "truncateReviewsAt"
+})
 public class ItemLookupRequest {
 
     @XmlElement(name = "Condition")
@@ -88,256 +95,280 @@ public class ItemLookupRequest {
     /**
      * Gets the value of the condition property.
      * 
-     * @return possible object is {@link String }
-     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getCondition() {
-	return condition;
+        return condition;
     }
 
     /**
      * Sets the value of the condition property.
      * 
      * @param value
-     *            allowed object is {@link String }
-     * 
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setCondition(String value) {
-	this.condition = value;
+        this.condition = value;
     }
 
     /**
      * Gets the value of the idType property.
      * 
-     * @return possible object is {@link String }
-     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getIdType() {
-	return idType;
+        return idType;
     }
 
     /**
      * Sets the value of the idType property.
      * 
      * @param value
-     *            allowed object is {@link String }
-     * 
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setIdType(String value) {
-	this.idType = value;
+        this.idType = value;
     }
 
     /**
      * Gets the value of the merchantId property.
      * 
-     * @return possible object is {@link String }
-     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getMerchantId() {
-	return merchantId;
+        return merchantId;
     }
 
     /**
      * Sets the value of the merchantId property.
      * 
      * @param value
-     *            allowed object is {@link String }
-     * 
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setMerchantId(String value) {
-	this.merchantId = value;
+        this.merchantId = value;
     }
 
     /**
      * Gets the value of the itemId property.
      * 
      * <p>
-     * This accessor method returns a reference to the live list, not a
-     * snapshot. Therefore any modification you make to the returned list will
-     * be present inside the JAXB object. This is why there is not a
-     * <CODE>set</CODE> method for the itemId property.
+     * This accessor method returns a reference to the live list,
+     * not a snapshot. Therefore any modification you make to the
+     * returned list will be present inside the JAXB object.
+     * This is why there is not a <CODE>set</CODE> method for the itemId property.
      * 
      * <p>
      * For example, to add a new item, do as follows:
-     * 
      * <pre>
-     * getItemId().add(newItem);
+     *    getItemId().add(newItem);
      * </pre>
      * 
      * 
      * <p>
-     * Objects of the following type(s) are allowed in the list {@link String }
+     * Objects of the following type(s) are allowed in the list
+     * {@link String }
      * 
      * 
      */
     public List<String> getItemId() {
-	if (itemId == null) {
-	    itemId = new ArrayList<String>();
-	}
-	return this.itemId;
+        if (itemId == null) {
+            itemId = new ArrayList<String>();
+        }
+        return this.itemId;
     }
 
     /**
      * Gets the value of the responseGroup property.
      * 
      * <p>
-     * This accessor method returns a reference to the live list, not a
-     * snapshot. Therefore any modification you make to the returned list will
-     * be present inside the JAXB object. This is why there is not a
-     * <CODE>set</CODE> method for the responseGroup property.
+     * This accessor method returns a reference to the live list,
+     * not a snapshot. Therefore any modification you make to the
+     * returned list will be present inside the JAXB object.
+     * This is why there is not a <CODE>set</CODE> method for the responseGroup property.
      * 
      * <p>
      * For example, to add a new item, do as follows:
-     * 
      * <pre>
-     * getResponseGroup().add(newItem);
+     *    getResponseGroup().add(newItem);
      * </pre>
      * 
      * 
      * <p>
-     * Objects of the following type(s) are allowed in the list {@link String }
+     * Objects of the following type(s) are allowed in the list
+     * {@link String }
      * 
      * 
      */
     public List<String> getResponseGroup() {
-	if (responseGroup == null) {
-	    responseGroup = new ArrayList<String>();
-	}
-	return this.responseGroup;
+        if (responseGroup == null) {
+            responseGroup = new ArrayList<String>();
+        }
+        return this.responseGroup;
     }
 
     /**
      * Gets the value of the searchIndex property.
      * 
-     * @return possible object is {@link String }
-     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getSearchIndex() {
-	return searchIndex;
+        return searchIndex;
     }
 
     /**
      * Sets the value of the searchIndex property.
      * 
      * @param value
-     *            allowed object is {@link String }
-     * 
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setSearchIndex(String value) {
-	this.searchIndex = value;
+        this.searchIndex = value;
     }
 
     /**
      * Gets the value of the variationPage property.
      * 
-     * @return possible object is {@link String }
-     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getVariationPage() {
-	return variationPage;
+        return variationPage;
     }
 
     /**
      * Sets the value of the variationPage property.
      * 
      * @param value
-     *            allowed object is {@link String }
-     * 
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setVariationPage(String value) {
-	this.variationPage = value;
+        this.variationPage = value;
     }
 
     /**
      * Gets the value of the relatedItemPage property.
      * 
-     * @return possible object is {@link String }
-     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getRelatedItemPage() {
-	return relatedItemPage;
+        return relatedItemPage;
     }
 
     /**
      * Sets the value of the relatedItemPage property.
      * 
      * @param value
-     *            allowed object is {@link String }
-     * 
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setRelatedItemPage(String value) {
-	this.relatedItemPage = value;
+        this.relatedItemPage = value;
     }
 
     /**
      * Gets the value of the relationshipType property.
      * 
      * <p>
-     * This accessor method returns a reference to the live list, not a
-     * snapshot. Therefore any modification you make to the returned list will
-     * be present inside the JAXB object. This is why there is not a
-     * <CODE>set</CODE> method for the relationshipType property.
+     * This accessor method returns a reference to the live list,
+     * not a snapshot. Therefore any modification you make to the
+     * returned list will be present inside the JAXB object.
+     * This is why there is not a <CODE>set</CODE> method for the relationshipType property.
      * 
      * <p>
      * For example, to add a new item, do as follows:
-     * 
      * <pre>
-     * getRelationshipType().add(newItem);
+     *    getRelationshipType().add(newItem);
      * </pre>
      * 
      * 
      * <p>
-     * Objects of the following type(s) are allowed in the list {@link String }
+     * Objects of the following type(s) are allowed in the list
+     * {@link String }
      * 
      * 
      */
     public List<String> getRelationshipType() {
-	if (relationshipType == null) {
-	    relationshipType = new ArrayList<String>();
-	}
-	return this.relationshipType;
+        if (relationshipType == null) {
+            relationshipType = new ArrayList<String>();
+        }
+        return this.relationshipType;
     }
 
     /**
      * Gets the value of the includeReviewsSummary property.
      * 
-     * @return possible object is {@link String }
-     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getIncludeReviewsSummary() {
-	return includeReviewsSummary;
+        return includeReviewsSummary;
     }
 
     /**
      * Sets the value of the includeReviewsSummary property.
      * 
      * @param value
-     *            allowed object is {@link String }
-     * 
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setIncludeReviewsSummary(String value) {
-	this.includeReviewsSummary = value;
+        this.includeReviewsSummary = value;
     }
 
     /**
      * Gets the value of the truncateReviewsAt property.
      * 
-     * @return possible object is {@link BigInteger }
-     * 
+     * @return
+     *     possible object is
+     *     {@link BigInteger }
+     *     
      */
     public BigInteger getTruncateReviewsAt() {
-	return truncateReviewsAt;
+        return truncateReviewsAt;
     }
 
     /**
      * Sets the value of the truncateReviewsAt property.
      * 
      * @param value
-     *            allowed object is {@link BigInteger }
-     * 
+     *     allowed object is
+     *     {@link BigInteger }
+     *     
      */
     public void setTruncateReviewsAt(BigInteger value) {
-	this.truncateReviewsAt = value;
+        this.truncateReviewsAt = value;
     }
 
 }

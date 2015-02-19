@@ -1,21 +1,19 @@
+
 package name.abhijitsarkar.webservices.jaxws.aws.client.generated;
 
 import java.util.ArrayList;
 import java.util.List;
-
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlType;
 
+
 /**
- * <p>
- * Java class for anonymous complex type.
+ * <p>Java class for anonymous complex type.
  * 
- * <p>
- * The following schema fragment specifies the expected content contained within
- * this class.
+ * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
  * &lt;complexType>
@@ -32,7 +30,9 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "", propOrder = { "editorialReview" })
+@XmlType(name = "", propOrder = {
+    "editorialReview"
+})
 @XmlRootElement(name = "EditorialReviews")
 public class EditorialReviews {
 
@@ -43,16 +43,15 @@ public class EditorialReviews {
      * Gets the value of the editorialReview property.
      * 
      * <p>
-     * This accessor method returns a reference to the live list, not a
-     * snapshot. Therefore any modification you make to the returned list will
-     * be present inside the JAXB object. This is why there is not a
-     * <CODE>set</CODE> method for the editorialReview property.
+     * This accessor method returns a reference to the live list,
+     * not a snapshot. Therefore any modification you make to the
+     * returned list will be present inside the JAXB object.
+     * This is why there is not a <CODE>set</CODE> method for the editorialReview property.
      * 
      * <p>
      * For example, to add a new item, do as follows:
-     * 
      * <pre>
-     * getEditorialReview().add(newItem);
+     *    getEditorialReview().add(newItem);
      * </pre>
      * 
      * 
@@ -63,10 +62,10 @@ public class EditorialReviews {
      * 
      */
     public List<EditorialReview> getEditorialReview() {
-	if (editorialReview == null) {
-	    editorialReview = new ArrayList<EditorialReview>();
-	}
-	return this.editorialReview;
+        if (editorialReview == null) {
+            editorialReview = new ArrayList<EditorialReview>();
+        }
+        return this.editorialReview;
     }
 
 }

@@ -1,3 +1,4 @@
+
 package name.abhijitsarkar.webservices.jaxws.aws.client.generated;
 
 import javax.xml.bind.annotation.XmlAccessType;
@@ -6,13 +7,11 @@ import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlType;
 
+
 /**
- * <p>
- * Java class for anonymous complex type.
+ * <p>Java class for anonymous complex type.
  * 
- * <p>
- * The following schema fragment specifies the expected content contained within
- * this class.
+ * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
  * &lt;complexType>
@@ -29,7 +28,9 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "", propOrder = { "name" })
+@XmlType(name = "", propOrder = {
+    "name"
+})
 @XmlRootElement(name = "Merchant")
 public class Merchant {
 
@@ -39,22 +40,25 @@ public class Merchant {
     /**
      * Gets the value of the name property.
      * 
-     * @return possible object is {@link String }
-     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getName() {
-	return name;
+        return name;
     }
 
     /**
      * Sets the value of the name property.
      * 
      * @param value
-     *            allowed object is {@link String }
-     * 
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setName(String value) {
-	this.name = value;
+        this.name = value;
     }
 
 }

@@ -1,3 +1,4 @@
+
 package name.abhijitsarkar.webservices.jaxws.aws.client.generated;
 
 import javax.xml.bind.annotation.XmlAccessType;
@@ -6,13 +7,11 @@ import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlType;
 
+
 /**
- * <p>
- * Java class for anonymous complex type.
+ * <p>Java class for anonymous complex type.
  * 
- * <p>
- * The following schema fragment specifies the expected content contained within
- * this class.
+ * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
  * &lt;complexType>
@@ -32,8 +31,12 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "", propOrder = { "lowestPrice", "highestPrice",
-	"lowestSalePrice", "highestSalePrice" })
+@XmlType(name = "", propOrder = {
+    "lowestPrice",
+    "highestPrice",
+    "lowestSalePrice",
+    "highestSalePrice"
+})
 @XmlRootElement(name = "VariationSummary")
 public class VariationSummary {
 
@@ -49,85 +52,97 @@ public class VariationSummary {
     /**
      * Gets the value of the lowestPrice property.
      * 
-     * @return possible object is {@link Price }
-     * 
+     * @return
+     *     possible object is
+     *     {@link Price }
+     *     
      */
     public Price getLowestPrice() {
-	return lowestPrice;
+        return lowestPrice;
     }
 
     /**
      * Sets the value of the lowestPrice property.
      * 
      * @param value
-     *            allowed object is {@link Price }
-     * 
+     *     allowed object is
+     *     {@link Price }
+     *     
      */
     public void setLowestPrice(Price value) {
-	this.lowestPrice = value;
+        this.lowestPrice = value;
     }
 
     /**
      * Gets the value of the highestPrice property.
      * 
-     * @return possible object is {@link Price }
-     * 
+     * @return
+     *     possible object is
+     *     {@link Price }
+     *     
      */
     public Price getHighestPrice() {
-	return highestPrice;
+        return highestPrice;
     }
 
     /**
      * Sets the value of the highestPrice property.
      * 
      * @param value
-     *            allowed object is {@link Price }
-     * 
+     *     allowed object is
+     *     {@link Price }
+     *     
      */
     public void setHighestPrice(Price value) {
-	this.highestPrice = value;
+        this.highestPrice = value;
     }
 
     /**
      * Gets the value of the lowestSalePrice property.
      * 
-     * @return possible object is {@link Price }
-     * 
+     * @return
+     *     possible object is
+     *     {@link Price }
+     *     
      */
     public Price getLowestSalePrice() {
-	return lowestSalePrice;
+        return lowestSalePrice;
     }
 
     /**
      * Sets the value of the lowestSalePrice property.
      * 
      * @param value
-     *            allowed object is {@link Price }
-     * 
+     *     allowed object is
+     *     {@link Price }
+     *     
      */
     public void setLowestSalePrice(Price value) {
-	this.lowestSalePrice = value;
+        this.lowestSalePrice = value;
     }
 
     /**
      * Gets the value of the highestSalePrice property.
      * 
-     * @return possible object is {@link Price }
-     * 
+     * @return
+     *     possible object is
+     *     {@link Price }
+     *     
      */
     public Price getHighestSalePrice() {
-	return highestSalePrice;
+        return highestSalePrice;
     }
 
     /**
      * Sets the value of the highestSalePrice property.
      * 
      * @param value
-     *            allowed object is {@link Price }
-     * 
+     *     allowed object is
+     *     {@link Price }
+     *     
      */
     public void setHighestSalePrice(Price value) {
-	this.highestSalePrice = value;
+        this.highestSalePrice = value;
     }
 
 }

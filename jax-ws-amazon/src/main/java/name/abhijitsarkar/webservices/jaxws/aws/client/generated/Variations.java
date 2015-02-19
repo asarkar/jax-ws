@@ -1,9 +1,9 @@
+
 package name.abhijitsarkar.webservices.jaxws.aws.client.generated;
 
 import java.math.BigInteger;
 import java.util.ArrayList;
 import java.util.List;
-
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
@@ -11,13 +11,11 @@ import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlSchemaType;
 import javax.xml.bind.annotation.XmlType;
 
+
 /**
- * <p>
- * Java class for anonymous complex type.
+ * <p>Java class for anonymous complex type.
  * 
- * <p>
- * The following schema fragment specifies the expected content contained within
- * this class.
+ * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
  * &lt;complexType>
@@ -37,8 +35,12 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "", propOrder = { "totalVariations", "totalVariationPages",
-	"variationDimensions", "item" })
+@XmlType(name = "", propOrder = {
+    "totalVariations",
+    "totalVariationPages",
+    "variationDimensions",
+    "item"
+})
 @XmlRootElement(name = "Variations")
 public class Variations {
 
@@ -56,93 +58,102 @@ public class Variations {
     /**
      * Gets the value of the totalVariations property.
      * 
-     * @return possible object is {@link BigInteger }
-     * 
+     * @return
+     *     possible object is
+     *     {@link BigInteger }
+     *     
      */
     public BigInteger getTotalVariations() {
-	return totalVariations;
+        return totalVariations;
     }
 
     /**
      * Sets the value of the totalVariations property.
      * 
      * @param value
-     *            allowed object is {@link BigInteger }
-     * 
+     *     allowed object is
+     *     {@link BigInteger }
+     *     
      */
     public void setTotalVariations(BigInteger value) {
-	this.totalVariations = value;
+        this.totalVariations = value;
     }
 
     /**
      * Gets the value of the totalVariationPages property.
      * 
-     * @return possible object is {@link BigInteger }
-     * 
+     * @return
+     *     possible object is
+     *     {@link BigInteger }
+     *     
      */
     public BigInteger getTotalVariationPages() {
-	return totalVariationPages;
+        return totalVariationPages;
     }
 
     /**
      * Sets the value of the totalVariationPages property.
      * 
      * @param value
-     *            allowed object is {@link BigInteger }
-     * 
+     *     allowed object is
+     *     {@link BigInteger }
+     *     
      */
     public void setTotalVariationPages(BigInteger value) {
-	this.totalVariationPages = value;
+        this.totalVariationPages = value;
     }
 
     /**
      * Gets the value of the variationDimensions property.
      * 
-     * @return possible object is {@link VariationDimensions }
-     * 
+     * @return
+     *     possible object is
+     *     {@link VariationDimensions }
+     *     
      */
     public VariationDimensions getVariationDimensions() {
-	return variationDimensions;
+        return variationDimensions;
     }
 
     /**
      * Sets the value of the variationDimensions property.
      * 
      * @param value
-     *            allowed object is {@link VariationDimensions }
-     * 
+     *     allowed object is
+     *     {@link VariationDimensions }
+     *     
      */
     public void setVariationDimensions(VariationDimensions value) {
-	this.variationDimensions = value;
+        this.variationDimensions = value;
     }
 
     /**
      * Gets the value of the item property.
      * 
      * <p>
-     * This accessor method returns a reference to the live list, not a
-     * snapshot. Therefore any modification you make to the returned list will
-     * be present inside the JAXB object. This is why there is not a
-     * <CODE>set</CODE> method for the item property.
+     * This accessor method returns a reference to the live list,
+     * not a snapshot. Therefore any modification you make to the
+     * returned list will be present inside the JAXB object.
+     * This is why there is not a <CODE>set</CODE> method for the item property.
      * 
      * <p>
      * For example, to add a new item, do as follows:
-     * 
      * <pre>
-     * getItem().add(newItem);
+     *    getItem().add(newItem);
      * </pre>
      * 
      * 
      * <p>
-     * Objects of the following type(s) are allowed in the list {@link Item }
+     * Objects of the following type(s) are allowed in the list
+     * {@link Item }
      * 
      * 
      */
     public List<Item> getItem() {
-	if (item == null) {
-	    item = new ArrayList<Item>();
-	}
-	return this.item;
+        if (item == null) {
+            item = new ArrayList<Item>();
+        }
+        return this.item;
     }
 
 }

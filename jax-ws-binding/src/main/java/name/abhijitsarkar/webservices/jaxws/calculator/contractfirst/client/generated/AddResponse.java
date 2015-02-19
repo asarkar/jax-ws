@@ -1,16 +1,15 @@
+
 package name.abhijitsarkar.webservices.jaxws.calculator.contractfirst.client.generated;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlType;
 
+
 /**
- * <p>
- * Java class for addResponse complex type.
+ * <p>Java class for addResponse complex type.
  * 
- * <p>
- * The following schema fragment specifies the expected content contained within
- * this class.
+ * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
  * &lt;complexType name="addResponse">
@@ -27,7 +26,9 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "addResponse", propOrder = { "result" })
+@XmlType(name = "addResponse", propOrder = {
+    "result"
+})
 public class AddResponse {
 
     protected float result;
@@ -37,7 +38,7 @@ public class AddResponse {
      * 
      */
     public float getResult() {
-	return result;
+        return result;
     }
 
     /**
@@ -45,7 +46,7 @@ public class AddResponse {
      * 
      */
     public void setResult(float value) {
-	this.result = value;
+        this.result = value;
     }
 
 }

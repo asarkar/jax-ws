@@ -10,18 +10,28 @@
 	<packaging>war</packaging>
 
 	<name>jax-ws-provider</name>
+  
+  <description>
+    JAX-WS provider style service practice code.
+    
+    <![CDATA[
+      Run 'mvn clean package jetty:run -P jetty' from the basedir then run the main classes in the project.
+      
+      To start Jetty in debug mode, run 'mvn clean package jetty:run-forked -P jetty'.
+    ]]>
+  </description>
 
 	<dependencies>
-		<dependency>
-			<groupId>name.abhijitsarkar.webservices.jaxws</groupId>
-			<artifactId>jax-ws-handlers</artifactId>
-			<version>${project.version}</version>
-		</dependency>
 		<dependency>
 			<groupId>com.sun.xml.fastinfoset</groupId>
 			<artifactId>FastInfoset</artifactId>
 			<version>1.2.10</version>
 			<scope>runtime</scope>
 		</dependency>
+    <dependency>
+      <groupId>${project.groupId}</groupId>
+      <artifactId>jax-ws-handlers</artifactId>
+      <version>${project.version}</version>
+    </dependency>
 	</dependencies>
 </project>

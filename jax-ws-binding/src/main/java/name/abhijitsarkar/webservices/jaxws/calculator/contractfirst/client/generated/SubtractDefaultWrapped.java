@@ -1,16 +1,15 @@
+
 package name.abhijitsarkar.webservices.jaxws.calculator.contractfirst.client.generated;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlType;
 
+
 /**
- * <p>
- * Java class for subtractDefaultWrapped complex type.
+ * <p>Java class for subtractDefaultWrapped complex type.
  * 
- * <p>
- * The following schema fragment specifies the expected content contained within
- * this class.
+ * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
  * &lt;complexType name="subtractDefaultWrapped">
@@ -28,7 +27,10 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "subtractDefaultWrapped", propOrder = { "param1", "param2" })
+@XmlType(name = "subtractDefaultWrapped", propOrder = {
+    "param1",
+    "param2"
+})
 public class SubtractDefaultWrapped {
 
     protected float param1;
@@ -39,7 +41,7 @@ public class SubtractDefaultWrapped {
      * 
      */
     public float getParam1() {
-	return param1;
+        return param1;
     }
 
     /**
@@ -47,7 +49,7 @@ public class SubtractDefaultWrapped {
      * 
      */
     public void setParam1(float value) {
-	this.param1 = value;
+        this.param1 = value;
     }
 
     /**
@@ -55,7 +57,7 @@ public class SubtractDefaultWrapped {
      * 
      */
     public float getParam2() {
-	return param2;
+        return param2;
     }
 
     /**
@@ -63,7 +65,7 @@ public class SubtractDefaultWrapped {
      * 
      */
     public void setParam2(float value) {
-	this.param2 = value;
+        this.param2 = value;
     }
 
 }

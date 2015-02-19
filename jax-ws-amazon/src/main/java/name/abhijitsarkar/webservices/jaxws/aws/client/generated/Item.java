@@ -1,21 +1,19 @@
+
 package name.abhijitsarkar.webservices.jaxws.aws.client.generated;
 
 import java.util.ArrayList;
 import java.util.List;
-
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlType;
 
+
 /**
- * <p>
- * Java class for anonymous complex type.
+ * <p>Java class for anonymous complex type.
  * 
- * <p>
- * The following schema fragment specifies the expected content contained within
- * this class.
+ * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
  * &lt;complexType>
@@ -109,13 +107,34 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "", propOrder = { "asin", "parentASIN", "errors",
-	"detailPageURL", "itemLinks", "salesRank", "smallImage", "mediumImage",
-	"largeImage", "imageSets", "itemAttributes", "variationAttributes",
-	"relatedItems", "collections", "subjects", "offerSummary", "offers",
-	"variationSummary", "variations", "customerReviews",
-	"editorialReviews", "similarProducts", "accessories", "tracks",
-	"browseNodes", "alternateVersions" })
+@XmlType(name = "", propOrder = {
+    "asin",
+    "parentASIN",
+    "errors",
+    "detailPageURL",
+    "itemLinks",
+    "salesRank",
+    "smallImage",
+    "mediumImage",
+    "largeImage",
+    "imageSets",
+    "itemAttributes",
+    "variationAttributes",
+    "relatedItems",
+    "collections",
+    "subjects",
+    "offerSummary",
+    "offers",
+    "variationSummary",
+    "variations",
+    "customerReviews",
+    "editorialReviews",
+    "similarProducts",
+    "accessories",
+    "tracks",
+    "browseNodes",
+    "alternateVersions"
+})
 @XmlRootElement(name = "Item")
 public class Item {
 
@@ -175,206 +194,232 @@ public class Item {
     /**
      * Gets the value of the asin property.
      * 
-     * @return possible object is {@link String }
-     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getASIN() {
-	return asin;
+        return asin;
     }
 
     /**
      * Sets the value of the asin property.
      * 
      * @param value
-     *            allowed object is {@link String }
-     * 
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setASIN(String value) {
-	this.asin = value;
+        this.asin = value;
     }
 
     /**
      * Gets the value of the parentASIN property.
      * 
-     * @return possible object is {@link String }
-     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getParentASIN() {
-	return parentASIN;
+        return parentASIN;
     }
 
     /**
      * Sets the value of the parentASIN property.
      * 
      * @param value
-     *            allowed object is {@link String }
-     * 
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setParentASIN(String value) {
-	this.parentASIN = value;
+        this.parentASIN = value;
     }
 
     /**
      * Gets the value of the errors property.
      * 
-     * @return possible object is {@link Errors }
-     * 
+     * @return
+     *     possible object is
+     *     {@link Errors }
+     *     
      */
     public Errors getErrors() {
-	return errors;
+        return errors;
     }
 
     /**
      * Sets the value of the errors property.
      * 
      * @param value
-     *            allowed object is {@link Errors }
-     * 
+     *     allowed object is
+     *     {@link Errors }
+     *     
      */
     public void setErrors(Errors value) {
-	this.errors = value;
+        this.errors = value;
     }
 
     /**
      * Gets the value of the detailPageURL property.
      * 
-     * @return possible object is {@link String }
-     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getDetailPageURL() {
-	return detailPageURL;
+        return detailPageURL;
     }
 
     /**
      * Sets the value of the detailPageURL property.
      * 
      * @param value
-     *            allowed object is {@link String }
-     * 
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setDetailPageURL(String value) {
-	this.detailPageURL = value;
+        this.detailPageURL = value;
     }
 
     /**
      * Gets the value of the itemLinks property.
      * 
-     * @return possible object is {@link ItemLinks }
-     * 
+     * @return
+     *     possible object is
+     *     {@link ItemLinks }
+     *     
      */
     public ItemLinks getItemLinks() {
-	return itemLinks;
+        return itemLinks;
     }
 
     /**
      * Sets the value of the itemLinks property.
      * 
      * @param value
-     *            allowed object is {@link ItemLinks }
-     * 
+     *     allowed object is
+     *     {@link ItemLinks }
+     *     
      */
     public void setItemLinks(ItemLinks value) {
-	this.itemLinks = value;
+        this.itemLinks = value;
     }
 
     /**
      * Gets the value of the salesRank property.
      * 
-     * @return possible object is {@link String }
-     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getSalesRank() {
-	return salesRank;
+        return salesRank;
     }
 
     /**
      * Sets the value of the salesRank property.
      * 
      * @param value
-     *            allowed object is {@link String }
-     * 
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setSalesRank(String value) {
-	this.salesRank = value;
+        this.salesRank = value;
     }
 
     /**
      * Gets the value of the smallImage property.
      * 
-     * @return possible object is {@link Image }
-     * 
+     * @return
+     *     possible object is
+     *     {@link Image }
+     *     
      */
     public Image getSmallImage() {
-	return smallImage;
+        return smallImage;
     }
 
     /**
      * Sets the value of the smallImage property.
      * 
      * @param value
-     *            allowed object is {@link Image }
-     * 
+     *     allowed object is
+     *     {@link Image }
+     *     
      */
     public void setSmallImage(Image value) {
-	this.smallImage = value;
+        this.smallImage = value;
     }
 
     /**
      * Gets the value of the mediumImage property.
      * 
-     * @return possible object is {@link Image }
-     * 
+     * @return
+     *     possible object is
+     *     {@link Image }
+     *     
      */
     public Image getMediumImage() {
-	return mediumImage;
+        return mediumImage;
     }
 
     /**
      * Sets the value of the mediumImage property.
      * 
      * @param value
-     *            allowed object is {@link Image }
-     * 
+     *     allowed object is
+     *     {@link Image }
+     *     
      */
     public void setMediumImage(Image value) {
-	this.mediumImage = value;
+        this.mediumImage = value;
     }
 
     /**
      * Gets the value of the largeImage property.
      * 
-     * @return possible object is {@link Image }
-     * 
+     * @return
+     *     possible object is
+     *     {@link Image }
+     *     
      */
     public Image getLargeImage() {
-	return largeImage;
+        return largeImage;
     }
 
     /**
      * Sets the value of the largeImage property.
      * 
      * @param value
-     *            allowed object is {@link Image }
-     * 
+     *     allowed object is
+     *     {@link Image }
+     *     
      */
     public void setLargeImage(Image value) {
-	this.largeImage = value;
+        this.largeImage = value;
     }
 
     /**
      * Gets the value of the imageSets property.
      * 
      * <p>
-     * This accessor method returns a reference to the live list, not a
-     * snapshot. Therefore any modification you make to the returned list will
-     * be present inside the JAXB object. This is why there is not a
-     * <CODE>set</CODE> method for the imageSets property.
+     * This accessor method returns a reference to the live list,
+     * not a snapshot. Therefore any modification you make to the
+     * returned list will be present inside the JAXB object.
+     * This is why there is not a <CODE>set</CODE> method for the imageSets property.
      * 
      * <p>
      * For example, to add a new item, do as follows:
-     * 
      * <pre>
-     * getImageSets().add(newItem);
+     *    getImageSets().add(newItem);
      * </pre>
      * 
      * 
@@ -385,68 +430,73 @@ public class Item {
      * 
      */
     public List<Item.ImageSets> getImageSets() {
-	if (imageSets == null) {
-	    imageSets = new ArrayList<Item.ImageSets>();
-	}
-	return this.imageSets;
+        if (imageSets == null) {
+            imageSets = new ArrayList<Item.ImageSets>();
+        }
+        return this.imageSets;
     }
 
     /**
      * Gets the value of the itemAttributes property.
      * 
-     * @return possible object is {@link ItemAttributes }
-     * 
+     * @return
+     *     possible object is
+     *     {@link ItemAttributes }
+     *     
      */
     public ItemAttributes getItemAttributes() {
-	return itemAttributes;
+        return itemAttributes;
     }
 
     /**
      * Sets the value of the itemAttributes property.
      * 
      * @param value
-     *            allowed object is {@link ItemAttributes }
-     * 
+     *     allowed object is
+     *     {@link ItemAttributes }
+     *     
      */
     public void setItemAttributes(ItemAttributes value) {
-	this.itemAttributes = value;
+        this.itemAttributes = value;
     }
 
     /**
      * Gets the value of the variationAttributes property.
      * 
-     * @return possible object is {@link Item.VariationAttributes }
-     * 
+     * @return
+     *     possible object is
+     *     {@link Item.VariationAttributes }
+     *     
      */
     public Item.VariationAttributes getVariationAttributes() {
-	return variationAttributes;
+        return variationAttributes;
     }
 
     /**
      * Sets the value of the variationAttributes property.
      * 
      * @param value
-     *            allowed object is {@link Item.VariationAttributes }
-     * 
+     *     allowed object is
+     *     {@link Item.VariationAttributes }
+     *     
      */
     public void setVariationAttributes(Item.VariationAttributes value) {
-	this.variationAttributes = value;
+        this.variationAttributes = value;
     }
 
     /**
      * Gets the value of the relatedItems property.
      * 
      * <p>
-     * This accessor method returns a reference to the live list, not a
-     * snapshot. Therefore any modification you make to the returned list will
-     * be present inside the JAXB object. This is why there is not a
-     * <CODE>set</CODE> method for the relatedItems property.
+     * This accessor method returns a reference to the live list,
+     * not a snapshot. Therefore any modification you make to the
+     * returned list will be present inside the JAXB object.
+     * This is why there is not a <CODE>set</CODE> method for the relatedItems property.
      * 
      * <p>
      * For example, to add a new item, do as follows:
-     * 
      * <pre>
-     * getRelatedItems().add(newItem);
+     *    getRelatedItems().add(newItem);
      * </pre>
      * 
      * 
@@ -457,292 +507,329 @@ public class Item {
      * 
      */
     public List<RelatedItems> getRelatedItems() {
-	if (relatedItems == null) {
-	    relatedItems = new ArrayList<RelatedItems>();
-	}
-	return this.relatedItems;
+        if (relatedItems == null) {
+            relatedItems = new ArrayList<RelatedItems>();
+        }
+        return this.relatedItems;
     }
 
     /**
      * Gets the value of the collections property.
      * 
-     * @return possible object is {@link Collections }
-     * 
+     * @return
+     *     possible object is
+     *     {@link Collections }
+     *     
      */
     public Collections getCollections() {
-	return collections;
+        return collections;
     }
 
     /**
      * Sets the value of the collections property.
      * 
      * @param value
-     *            allowed object is {@link Collections }
-     * 
+     *     allowed object is
+     *     {@link Collections }
+     *     
      */
     public void setCollections(Collections value) {
-	this.collections = value;
+        this.collections = value;
     }
 
     /**
      * Gets the value of the subjects property.
      * 
-     * @return possible object is {@link Item.Subjects }
-     * 
+     * @return
+     *     possible object is
+     *     {@link Item.Subjects }
+     *     
      */
     public Item.Subjects getSubjects() {
-	return subjects;
+        return subjects;
     }
 
     /**
      * Sets the value of the subjects property.
      * 
      * @param value
-     *            allowed object is {@link Item.Subjects }
-     * 
+     *     allowed object is
+     *     {@link Item.Subjects }
+     *     
      */
     public void setSubjects(Item.Subjects value) {
-	this.subjects = value;
+        this.subjects = value;
     }
 
     /**
      * Gets the value of the offerSummary property.
      * 
-     * @return possible object is {@link OfferSummary }
-     * 
+     * @return
+     *     possible object is
+     *     {@link OfferSummary }
+     *     
      */
     public OfferSummary getOfferSummary() {
-	return offerSummary;
+        return offerSummary;
     }
 
     /**
      * Sets the value of the offerSummary property.
      * 
      * @param value
-     *            allowed object is {@link OfferSummary }
-     * 
+     *     allowed object is
+     *     {@link OfferSummary }
+     *     
      */
     public void setOfferSummary(OfferSummary value) {
-	this.offerSummary = value;
+        this.offerSummary = value;
     }
 
     /**
      * Gets the value of the offers property.
      * 
-     * @return possible object is {@link Offers }
-     * 
+     * @return
+     *     possible object is
+     *     {@link Offers }
+     *     
      */
     public Offers getOffers() {
-	return offers;
+        return offers;
     }
 
     /**
      * Sets the value of the offers property.
      * 
      * @param value
-     *            allowed object is {@link Offers }
-     * 
+     *     allowed object is
+     *     {@link Offers }
+     *     
      */
     public void setOffers(Offers value) {
-	this.offers = value;
+        this.offers = value;
     }
 
     /**
      * Gets the value of the variationSummary property.
      * 
-     * @return possible object is {@link VariationSummary }
-     * 
+     * @return
+     *     possible object is
+     *     {@link VariationSummary }
+     *     
      */
     public VariationSummary getVariationSummary() {
-	return variationSummary;
+        return variationSummary;
     }
 
     /**
      * Sets the value of the variationSummary property.
      * 
      * @param value
-     *            allowed object is {@link VariationSummary }
-     * 
+     *     allowed object is
+     *     {@link VariationSummary }
+     *     
      */
     public void setVariationSummary(VariationSummary value) {
-	this.variationSummary = value;
+        this.variationSummary = value;
     }
 
     /**
      * Gets the value of the variations property.
      * 
-     * @return possible object is {@link Variations }
-     * 
+     * @return
+     *     possible object is
+     *     {@link Variations }
+     *     
      */
     public Variations getVariations() {
-	return variations;
+        return variations;
     }
 
     /**
      * Sets the value of the variations property.
      * 
      * @param value
-     *            allowed object is {@link Variations }
-     * 
+     *     allowed object is
+     *     {@link Variations }
+     *     
      */
     public void setVariations(Variations value) {
-	this.variations = value;
+        this.variations = value;
     }
 
     /**
      * Gets the value of the customerReviews property.
      * 
-     * @return possible object is {@link CustomerReviews }
-     * 
+     * @return
+     *     possible object is
+     *     {@link CustomerReviews }
+     *     
      */
     public CustomerReviews getCustomerReviews() {
-	return customerReviews;
+        return customerReviews;
     }
 
     /**
      * Sets the value of the customerReviews property.
      * 
      * @param value
-     *            allowed object is {@link CustomerReviews }
-     * 
+     *     allowed object is
+     *     {@link CustomerReviews }
+     *     
      */
     public void setCustomerReviews(CustomerReviews value) {
-	this.customerReviews = value;
+        this.customerReviews = value;
     }
 
     /**
      * Gets the value of the editorialReviews property.
      * 
-     * @return possible object is {@link EditorialReviews }
-     * 
+     * @return
+     *     possible object is
+     *     {@link EditorialReviews }
+     *     
      */
     public EditorialReviews getEditorialReviews() {
-	return editorialReviews;
+        return editorialReviews;
     }
 
     /**
      * Sets the value of the editorialReviews property.
      * 
      * @param value
-     *            allowed object is {@link EditorialReviews }
-     * 
+     *     allowed object is
+     *     {@link EditorialReviews }
+     *     
      */
     public void setEditorialReviews(EditorialReviews value) {
-	this.editorialReviews = value;
+        this.editorialReviews = value;
     }
 
     /**
      * Gets the value of the similarProducts property.
      * 
-     * @return possible object is {@link SimilarProducts }
-     * 
+     * @return
+     *     possible object is
+     *     {@link SimilarProducts }
+     *     
      */
     public SimilarProducts getSimilarProducts() {
-	return similarProducts;
+        return similarProducts;
     }
 
     /**
      * Sets the value of the similarProducts property.
      * 
      * @param value
-     *            allowed object is {@link SimilarProducts }
-     * 
+     *     allowed object is
+     *     {@link SimilarProducts }
+     *     
      */
     public void setSimilarProducts(SimilarProducts value) {
-	this.similarProducts = value;
+        this.similarProducts = value;
     }
 
     /**
      * Gets the value of the accessories property.
      * 
-     * @return possible object is {@link Accessories }
-     * 
+     * @return
+     *     possible object is
+     *     {@link Accessories }
+     *     
      */
     public Accessories getAccessories() {
-	return accessories;
+        return accessories;
     }
 
     /**
      * Sets the value of the accessories property.
      * 
      * @param value
-     *            allowed object is {@link Accessories }
-     * 
+     *     allowed object is
+     *     {@link Accessories }
+     *     
      */
     public void setAccessories(Accessories value) {
-	this.accessories = value;
+        this.accessories = value;
     }
 
     /**
      * Gets the value of the tracks property.
      * 
-     * @return possible object is {@link Tracks }
-     * 
+     * @return
+     *     possible object is
+     *     {@link Tracks }
+     *     
      */
     public Tracks getTracks() {
-	return tracks;
+        return tracks;
     }
 
     /**
      * Sets the value of the tracks property.
      * 
      * @param value
-     *            allowed object is {@link Tracks }
-     * 
+     *     allowed object is
+     *     {@link Tracks }
+     *     
      */
     public void setTracks(Tracks value) {
-	this.tracks = value;
+        this.tracks = value;
     }
 
     /**
      * Gets the value of the browseNodes property.
      * 
-     * @return possible object is {@link BrowseNodes }
-     * 
+     * @return
+     *     possible object is
+     *     {@link BrowseNodes }
+     *     
      */
     public BrowseNodes getBrowseNodes() {
-	return browseNodes;
+        return browseNodes;
     }
 
     /**
      * Sets the value of the browseNodes property.
      * 
      * @param value
-     *            allowed object is {@link BrowseNodes }
-     * 
+     *     allowed object is
+     *     {@link BrowseNodes }
+     *     
      */
     public void setBrowseNodes(BrowseNodes value) {
-	this.browseNodes = value;
+        this.browseNodes = value;
     }
 
     /**
      * Gets the value of the alternateVersions property.
      * 
-     * @return possible object is {@link Item.AlternateVersions }
-     * 
+     * @return
+     *     possible object is
+     *     {@link Item.AlternateVersions }
+     *     
      */
     public Item.AlternateVersions getAlternateVersions() {
-	return alternateVersions;
+        return alternateVersions;
     }
 
     /**
      * Sets the value of the alternateVersions property.
      * 
      * @param value
-     *            allowed object is {@link Item.AlternateVersions }
-     * 
+     *     allowed object is
+     *     {@link Item.AlternateVersions }
+     *     
      */
     public void setAlternateVersions(Item.AlternateVersions value) {
-	this.alternateVersions = value;
+        this.alternateVersions = value;
     }
 
+
     /**
-     * <p>
-     * Java class for anonymous complex type.
+     * <p>Java class for anonymous complex type.
      * 
-     * <p>
-     * The following schema fragment specifies the expected content contained
-     * within this class.
+     * <p>The following schema fragment specifies the expected content contained within this class.
      * 
      * <pre>
      * &lt;complexType>
@@ -771,151 +858,161 @@ public class Item {
      * 
      */
     @XmlAccessorType(XmlAccessType.FIELD)
-    @XmlType(name = "", propOrder = { "alternateVersion" })
+    @XmlType(name = "", propOrder = {
+        "alternateVersion"
+    })
     public static class AlternateVersions {
 
-	@XmlElement(name = "AlternateVersion")
-	protected List<Item.AlternateVersions.AlternateVersion> alternateVersion;
+        @XmlElement(name = "AlternateVersion")
+        protected List<Item.AlternateVersions.AlternateVersion> alternateVersion;
 
-	/**
-	 * Gets the value of the alternateVersion property.
-	 * 
-	 * <p>
-	 * This accessor method returns a reference to the live list, not a
-	 * snapshot. Therefore any modification you make to the returned list
-	 * will be present inside the JAXB object. This is why there is not a
-	 * <CODE>set</CODE> method for the alternateVersion property.
-	 * 
-	 * <p>
-	 * For example, to add a new item, do as follows:
-	 * 
-	 * <pre>
-	 * getAlternateVersion().add(newItem);
-	 * </pre>
-	 * 
-	 * 
-	 * <p>
-	 * Objects of the following type(s) are allowed in the list
-	 * {@link Item.AlternateVersions.AlternateVersion }
-	 * 
-	 * 
-	 */
-	public List<Item.AlternateVersions.AlternateVersion> getAlternateVersion() {
-	    if (alternateVersion == null) {
-		alternateVersion = new ArrayList<Item.AlternateVersions.AlternateVersion>();
-	    }
-	    return this.alternateVersion;
-	}
+        /**
+         * Gets the value of the alternateVersion property.
+         * 
+         * <p>
+         * This accessor method returns a reference to the live list,
+         * not a snapshot. Therefore any modification you make to the
+         * returned list will be present inside the JAXB object.
+         * This is why there is not a <CODE>set</CODE> method for the alternateVersion property.
+         * 
+         * <p>
+         * For example, to add a new item, do as follows:
+         * <pre>
+         *    getAlternateVersion().add(newItem);
+         * </pre>
+         * 
+         * 
+         * <p>
+         * Objects of the following type(s) are allowed in the list
+         * {@link Item.AlternateVersions.AlternateVersion }
+         * 
+         * 
+         */
+        public List<Item.AlternateVersions.AlternateVersion> getAlternateVersion() {
+            if (alternateVersion == null) {
+                alternateVersion = new ArrayList<Item.AlternateVersions.AlternateVersion>();
+            }
+            return this.alternateVersion;
+        }
 
-	/**
-	 * <p>
-	 * Java class for anonymous complex type.
-	 * 
-	 * <p>
-	 * The following schema fragment specifies the expected content
-	 * contained within this class.
-	 * 
-	 * <pre>
-	 * &lt;complexType>
-	 *   &lt;complexContent>
-	 *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
-	 *       &lt;sequence>
-	 *         &lt;element name="ASIN" type="{http://www.w3.org/2001/XMLSchema}string"/>
-	 *         &lt;element name="Title" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-	 *         &lt;element name="Binding" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-	 *       &lt;/sequence>
-	 *     &lt;/restriction>
-	 *   &lt;/complexContent>
-	 * &lt;/complexType>
-	 * </pre>
-	 * 
-	 * 
-	 */
-	@XmlAccessorType(XmlAccessType.FIELD)
-	@XmlType(name = "", propOrder = { "asin", "title", "binding" })
-	public static class AlternateVersion {
 
-	    @XmlElement(name = "ASIN", required = true)
-	    protected String asin;
-	    @XmlElement(name = "Title")
-	    protected String title;
-	    @XmlElement(name = "Binding")
-	    protected String binding;
+        /**
+         * <p>Java class for anonymous complex type.
+         * 
+         * <p>The following schema fragment specifies the expected content contained within this class.
+         * 
+         * <pre>
+         * &lt;complexType>
+         *   &lt;complexContent>
+         *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+         *       &lt;sequence>
+         *         &lt;element name="ASIN" type="{http://www.w3.org/2001/XMLSchema}string"/>
+         *         &lt;element name="Title" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+         *         &lt;element name="Binding" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+         *       &lt;/sequence>
+         *     &lt;/restriction>
+         *   &lt;/complexContent>
+         * &lt;/complexType>
+         * </pre>
+         * 
+         * 
+         */
+        @XmlAccessorType(XmlAccessType.FIELD)
+        @XmlType(name = "", propOrder = {
+            "asin",
+            "title",
+            "binding"
+        })
+        public static class AlternateVersion {
 
-	    /**
-	     * Gets the value of the asin property.
-	     * 
-	     * @return possible object is {@link String }
-	     * 
-	     */
-	    public String getASIN() {
-		return asin;
-	    }
+            @XmlElement(name = "ASIN", required = true)
+            protected String asin;
+            @XmlElement(name = "Title")
+            protected String title;
+            @XmlElement(name = "Binding")
+            protected String binding;
 
-	    /**
-	     * Sets the value of the asin property.
-	     * 
-	     * @param value
-	     *            allowed object is {@link String }
-	     * 
-	     */
-	    public void setASIN(String value) {
-		this.asin = value;
-	    }
+            /**
+             * Gets the value of the asin property.
+             * 
+             * @return
+             *     possible object is
+             *     {@link String }
+             *     
+             */
+            public String getASIN() {
+                return asin;
+            }
 
-	    /**
-	     * Gets the value of the title property.
-	     * 
-	     * @return possible object is {@link String }
-	     * 
-	     */
-	    public String getTitle() {
-		return title;
-	    }
+            /**
+             * Sets the value of the asin property.
+             * 
+             * @param value
+             *     allowed object is
+             *     {@link String }
+             *     
+             */
+            public void setASIN(String value) {
+                this.asin = value;
+            }
 
-	    /**
-	     * Sets the value of the title property.
-	     * 
-	     * @param value
-	     *            allowed object is {@link String }
-	     * 
-	     */
-	    public void setTitle(String value) {
-		this.title = value;
-	    }
+            /**
+             * Gets the value of the title property.
+             * 
+             * @return
+             *     possible object is
+             *     {@link String }
+             *     
+             */
+            public String getTitle() {
+                return title;
+            }
 
-	    /**
-	     * Gets the value of the binding property.
-	     * 
-	     * @return possible object is {@link String }
-	     * 
-	     */
-	    public String getBinding() {
-		return binding;
-	    }
+            /**
+             * Sets the value of the title property.
+             * 
+             * @param value
+             *     allowed object is
+             *     {@link String }
+             *     
+             */
+            public void setTitle(String value) {
+                this.title = value;
+            }
 
-	    /**
-	     * Sets the value of the binding property.
-	     * 
-	     * @param value
-	     *            allowed object is {@link String }
-	     * 
-	     */
-	    public void setBinding(String value) {
-		this.binding = value;
-	    }
+            /**
+             * Gets the value of the binding property.
+             * 
+             * @return
+             *     possible object is
+             *     {@link String }
+             *     
+             */
+            public String getBinding() {
+                return binding;
+            }
 
-	}
+            /**
+             * Sets the value of the binding property.
+             * 
+             * @param value
+             *     allowed object is
+             *     {@link String }
+             *     
+             */
+            public void setBinding(String value) {
+                this.binding = value;
+            }
+
+        }
 
     }
 
+
     /**
-     * <p>
-     * Java class for anonymous complex type.
+     * <p>Java class for anonymous complex type.
      * 
-     * <p>
-     * The following schema fragment specifies the expected content contained
-     * within this class.
+     * <p>The following schema fragment specifies the expected content contained within this class.
      * 
      * <pre>
      * &lt;complexType>
@@ -932,51 +1029,50 @@ public class Item {
      * 
      */
     @XmlAccessorType(XmlAccessType.FIELD)
-    @XmlType(name = "", propOrder = { "imageSet" })
+    @XmlType(name = "", propOrder = {
+        "imageSet"
+    })
     public static class ImageSets {
 
-	@XmlElement(name = "ImageSet")
-	protected List<ImageSet> imageSet;
+        @XmlElement(name = "ImageSet")
+        protected List<ImageSet> imageSet;
 
-	/**
-	 * Gets the value of the imageSet property.
-	 * 
-	 * <p>
-	 * This accessor method returns a reference to the live list, not a
-	 * snapshot. Therefore any modification you make to the returned list
-	 * will be present inside the JAXB object. This is why there is not a
-	 * <CODE>set</CODE> method for the imageSet property.
-	 * 
-	 * <p>
-	 * For example, to add a new item, do as follows:
-	 * 
-	 * <pre>
-	 * getImageSet().add(newItem);
-	 * </pre>
-	 * 
-	 * 
-	 * <p>
-	 * Objects of the following type(s) are allowed in the list
-	 * {@link ImageSet }
-	 * 
-	 * 
-	 */
-	public List<ImageSet> getImageSet() {
-	    if (imageSet == null) {
-		imageSet = new ArrayList<ImageSet>();
-	    }
-	    return this.imageSet;
-	}
+        /**
+         * Gets the value of the imageSet property.
+         * 
+         * <p>
+         * This accessor method returns a reference to the live list,
+         * not a snapshot. Therefore any modification you make to the
+         * returned list will be present inside the JAXB object.
+         * This is why there is not a <CODE>set</CODE> method for the imageSet property.
+         * 
+         * <p>
+         * For example, to add a new item, do as follows:
+         * <pre>
+         *    getImageSet().add(newItem);
+         * </pre>
+         * 
+         * 
+         * <p>
+         * Objects of the following type(s) are allowed in the list
+         * {@link ImageSet }
+         * 
+         * 
+         */
+        public List<ImageSet> getImageSet() {
+            if (imageSet == null) {
+                imageSet = new ArrayList<ImageSet>();
+            }
+            return this.imageSet;
+        }
 
     }
 
+
     /**
-     * <p>
-     * Java class for anonymous complex type.
+     * <p>Java class for anonymous complex type.
      * 
-     * <p>
-     * The following schema fragment specifies the expected content contained
-     * within this class.
+     * <p>The following schema fragment specifies the expected content contained within this class.
      * 
      * <pre>
      * &lt;complexType>
@@ -993,51 +1089,50 @@ public class Item {
      * 
      */
     @XmlAccessorType(XmlAccessType.FIELD)
-    @XmlType(name = "", propOrder = { "subject" })
+    @XmlType(name = "", propOrder = {
+        "subject"
+    })
     public static class Subjects {
 
-	@XmlElement(name = "Subject")
-	protected List<String> subject;
+        @XmlElement(name = "Subject")
+        protected List<String> subject;
 
-	/**
-	 * Gets the value of the subject property.
-	 * 
-	 * <p>
-	 * This accessor method returns a reference to the live list, not a
-	 * snapshot. Therefore any modification you make to the returned list
-	 * will be present inside the JAXB object. This is why there is not a
-	 * <CODE>set</CODE> method for the subject property.
-	 * 
-	 * <p>
-	 * For example, to add a new item, do as follows:
-	 * 
-	 * <pre>
-	 * getSubject().add(newItem);
-	 * </pre>
-	 * 
-	 * 
-	 * <p>
-	 * Objects of the following type(s) are allowed in the list
-	 * {@link String }
-	 * 
-	 * 
-	 */
-	public List<String> getSubject() {
-	    if (subject == null) {
-		subject = new ArrayList<String>();
-	    }
-	    return this.subject;
-	}
+        /**
+         * Gets the value of the subject property.
+         * 
+         * <p>
+         * This accessor method returns a reference to the live list,
+         * not a snapshot. Therefore any modification you make to the
+         * returned list will be present inside the JAXB object.
+         * This is why there is not a <CODE>set</CODE> method for the subject property.
+         * 
+         * <p>
+         * For example, to add a new item, do as follows:
+         * <pre>
+         *    getSubject().add(newItem);
+         * </pre>
+         * 
+         * 
+         * <p>
+         * Objects of the following type(s) are allowed in the list
+         * {@link String }
+         * 
+         * 
+         */
+        public List<String> getSubject() {
+            if (subject == null) {
+                subject = new ArrayList<String>();
+            }
+            return this.subject;
+        }
 
     }
 
+
     /**
-     * <p>
-     * Java class for anonymous complex type.
+     * <p>Java class for anonymous complex type.
      * 
-     * <p>
-     * The following schema fragment specifies the expected content contained
-     * within this class.
+     * <p>The following schema fragment specifies the expected content contained within this class.
      * 
      * <pre>
      * &lt;complexType>
@@ -1054,41 +1149,42 @@ public class Item {
      * 
      */
     @XmlAccessorType(XmlAccessType.FIELD)
-    @XmlType(name = "", propOrder = { "variationAttribute" })
+    @XmlType(name = "", propOrder = {
+        "variationAttribute"
+    })
     public static class VariationAttributes {
 
-	@XmlElement(name = "VariationAttribute")
-	protected List<VariationAttribute> variationAttribute;
+        @XmlElement(name = "VariationAttribute")
+        protected List<VariationAttribute> variationAttribute;
 
-	/**
-	 * Gets the value of the variationAttribute property.
-	 * 
-	 * <p>
-	 * This accessor method returns a reference to the live list, not a
-	 * snapshot. Therefore any modification you make to the returned list
-	 * will be present inside the JAXB object. This is why there is not a
-	 * <CODE>set</CODE> method for the variationAttribute property.
-	 * 
-	 * <p>
-	 * For example, to add a new item, do as follows:
-	 * 
-	 * <pre>
-	 * getVariationAttribute().add(newItem);
-	 * </pre>
-	 * 
-	 * 
-	 * <p>
-	 * Objects of the following type(s) are allowed in the list
-	 * {@link VariationAttribute }
-	 * 
-	 * 
-	 */
-	public List<VariationAttribute> getVariationAttribute() {
-	    if (variationAttribute == null) {
-		variationAttribute = new ArrayList<VariationAttribute>();
-	    }
-	    return this.variationAttribute;
-	}
+        /**
+         * Gets the value of the variationAttribute property.
+         * 
+         * <p>
+         * This accessor method returns a reference to the live list,
+         * not a snapshot. Therefore any modification you make to the
+         * returned list will be present inside the JAXB object.
+         * This is why there is not a <CODE>set</CODE> method for the variationAttribute property.
+         * 
+         * <p>
+         * For example, to add a new item, do as follows:
+         * <pre>
+         *    getVariationAttribute().add(newItem);
+         * </pre>
+         * 
+         * 
+         * <p>
+         * Objects of the following type(s) are allowed in the list
+         * {@link VariationAttribute }
+         * 
+         * 
+         */
+        public List<VariationAttribute> getVariationAttribute() {
+            if (variationAttribute == null) {
+                variationAttribute = new ArrayList<VariationAttribute>();
+            }
+            return this.variationAttribute;
+        }
 
     }
 

@@ -10,7 +10,7 @@
       src/main/resources.
       
       https://java.net/jira/browse/GLASSFISH-19559 
-     -->
+    -->
     <!-- Must be unique in this document -->
     <webservice-description-name>Calculator Service</webservice-description-name>
     <!-- The following namespace is only used for the binding and service elements' 

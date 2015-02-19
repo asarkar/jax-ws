@@ -1,3 +1,4 @@
+
 package name.abhijitsarkar.webservices.jaxws.aws.client.generated;
 
 import javax.xml.bind.annotation.XmlAccessType;
@@ -5,13 +6,11 @@ import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
 
+
 /**
- * <p>
- * Java class for Image complex type.
+ * <p>Java class for Image complex type.
  * 
- * <p>
- * The following schema fragment specifies the expected content contained within
- * this class.
+ * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
  * &lt;complexType name="Image">
@@ -31,7 +30,12 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "Image", propOrder = { "url", "height", "width", "isVerified" })
+@XmlType(name = "Image", propOrder = {
+    "url",
+    "height",
+    "width",
+    "isVerified"
+})
 public class Image {
 
     @XmlElement(name = "URL", required = true)
@@ -46,85 +50,97 @@ public class Image {
     /**
      * Gets the value of the url property.
      * 
-     * @return possible object is {@link String }
-     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getURL() {
-	return url;
+        return url;
     }
 
     /**
      * Sets the value of the url property.
      * 
      * @param value
-     *            allowed object is {@link String }
-     * 
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setURL(String value) {
-	this.url = value;
+        this.url = value;
     }
 
     /**
      * Gets the value of the height property.
      * 
-     * @return possible object is {@link DecimalWithUnits }
-     * 
+     * @return
+     *     possible object is
+     *     {@link DecimalWithUnits }
+     *     
      */
     public DecimalWithUnits getHeight() {
-	return height;
+        return height;
     }
 
     /**
      * Sets the value of the height property.
      * 
      * @param value
-     *            allowed object is {@link DecimalWithUnits }
-     * 
+     *     allowed object is
+     *     {@link DecimalWithUnits }
+     *     
      */
     public void setHeight(DecimalWithUnits value) {
-	this.height = value;
+        this.height = value;
     }
 
     /**
      * Gets the value of the width property.
      * 
-     * @return possible object is {@link DecimalWithUnits }
-     * 
+     * @return
+     *     possible object is
+     *     {@link DecimalWithUnits }
+     *     
      */
     public DecimalWithUnits getWidth() {
-	return width;
+        return width;
     }
 
     /**
      * Sets the value of the width property.
      * 
      * @param value
-     *            allowed object is {@link DecimalWithUnits }
-     * 
+     *     allowed object is
+     *     {@link DecimalWithUnits }
+     *     
      */
     public void setWidth(DecimalWithUnits value) {
-	this.width = value;
+        this.width = value;
     }
 
     /**
      * Gets the value of the isVerified property.
      * 
-     * @return possible object is {@link String }
-     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getIsVerified() {
-	return isVerified;
+        return isVerified;
     }
 
     /**
      * Sets the value of the isVerified property.
      * 
      * @param value
-     *            allowed object is {@link String }
-     * 
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setIsVerified(String value) {
-	this.isVerified = value;
+        this.isVerified = value;
     }
 
 }

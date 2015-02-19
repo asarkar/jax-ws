@@ -1,20 +1,18 @@
+
 package name.abhijitsarkar.webservices.jaxws.aws.client.generated;
 
 import java.util.ArrayList;
 import java.util.List;
-
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
 
+
 /**
- * <p>
- * Java class for CartItem complex type.
+ * <p>Java class for CartItem complex type.
  * 
- * <p>
- * The following schema fragment specifies the expected content contained within
- * this class.
+ * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
  * &lt;complexType name="CartItem">
@@ -60,9 +58,17 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "CartItem", propOrder = { "cartItemId", "asin",
-	"sellerNickname", "quantity", "title", "productGroup", "metaData",
-	"price", "itemTotal" })
+@XmlType(name = "CartItem", propOrder = {
+    "cartItemId",
+    "asin",
+    "sellerNickname",
+    "quantity",
+    "title",
+    "productGroup",
+    "metaData",
+    "price",
+    "itemTotal"
+})
 public class CartItem {
 
     @XmlElement(name = "CartItemId", required = true)
@@ -87,199 +93,224 @@ public class CartItem {
     /**
      * Gets the value of the cartItemId property.
      * 
-     * @return possible object is {@link String }
-     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getCartItemId() {
-	return cartItemId;
+        return cartItemId;
     }
 
     /**
      * Sets the value of the cartItemId property.
      * 
      * @param value
-     *            allowed object is {@link String }
-     * 
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setCartItemId(String value) {
-	this.cartItemId = value;
+        this.cartItemId = value;
     }
 
     /**
      * Gets the value of the asin property.
      * 
-     * @return possible object is {@link String }
-     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getASIN() {
-	return asin;
+        return asin;
     }
 
     /**
      * Sets the value of the asin property.
      * 
      * @param value
-     *            allowed object is {@link String }
-     * 
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setASIN(String value) {
-	this.asin = value;
+        this.asin = value;
     }
 
     /**
      * Gets the value of the sellerNickname property.
      * 
-     * @return possible object is {@link String }
-     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getSellerNickname() {
-	return sellerNickname;
+        return sellerNickname;
     }
 
     /**
      * Sets the value of the sellerNickname property.
      * 
      * @param value
-     *            allowed object is {@link String }
-     * 
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setSellerNickname(String value) {
-	this.sellerNickname = value;
+        this.sellerNickname = value;
     }
 
     /**
      * Gets the value of the quantity property.
      * 
-     * @return possible object is {@link String }
-     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getQuantity() {
-	return quantity;
+        return quantity;
     }
 
     /**
      * Sets the value of the quantity property.
      * 
      * @param value
-     *            allowed object is {@link String }
-     * 
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setQuantity(String value) {
-	this.quantity = value;
+        this.quantity = value;
     }
 
     /**
      * Gets the value of the title property.
      * 
-     * @return possible object is {@link String }
-     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getTitle() {
-	return title;
+        return title;
     }
 
     /**
      * Sets the value of the title property.
      * 
      * @param value
-     *            allowed object is {@link String }
-     * 
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setTitle(String value) {
-	this.title = value;
+        this.title = value;
     }
 
     /**
      * Gets the value of the productGroup property.
      * 
-     * @return possible object is {@link String }
-     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getProductGroup() {
-	return productGroup;
+        return productGroup;
     }
 
     /**
      * Sets the value of the productGroup property.
      * 
      * @param value
-     *            allowed object is {@link String }
-     * 
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setProductGroup(String value) {
-	this.productGroup = value;
+        this.productGroup = value;
     }
 
     /**
      * Gets the value of the metaData property.
      * 
-     * @return possible object is {@link CartItem.MetaData }
-     * 
+     * @return
+     *     possible object is
+     *     {@link CartItem.MetaData }
+     *     
      */
     public CartItem.MetaData getMetaData() {
-	return metaData;
+        return metaData;
     }
 
     /**
      * Sets the value of the metaData property.
      * 
      * @param value
-     *            allowed object is {@link CartItem.MetaData }
-     * 
+     *     allowed object is
+     *     {@link CartItem.MetaData }
+     *     
      */
     public void setMetaData(CartItem.MetaData value) {
-	this.metaData = value;
+        this.metaData = value;
     }
 
     /**
      * Gets the value of the price property.
      * 
-     * @return possible object is {@link Price }
-     * 
+     * @return
+     *     possible object is
+     *     {@link Price }
+     *     
      */
     public Price getPrice() {
-	return price;
+        return price;
     }
 
     /**
      * Sets the value of the price property.
      * 
      * @param value
-     *            allowed object is {@link Price }
-     * 
+     *     allowed object is
+     *     {@link Price }
+     *     
      */
     public void setPrice(Price value) {
-	this.price = value;
+        this.price = value;
     }
 
     /**
      * Gets the value of the itemTotal property.
      * 
-     * @return possible object is {@link Price }
-     * 
+     * @return
+     *     possible object is
+     *     {@link Price }
+     *     
      */
     public Price getItemTotal() {
-	return itemTotal;
+        return itemTotal;
     }
 
     /**
      * Sets the value of the itemTotal property.
      * 
      * @param value
-     *            allowed object is {@link Price }
-     * 
+     *     allowed object is
+     *     {@link Price }
+     *     
      */
     public void setItemTotal(Price value) {
-	this.itemTotal = value;
+        this.itemTotal = value;
     }
 
+
     /**
-     * <p>
-     * Java class for anonymous complex type.
+     * <p>Java class for anonymous complex type.
      * 
-     * <p>
-     * The following schema fragment specifies the expected content contained
-     * within this class.
+     * <p>The following schema fragment specifies the expected content contained within this class.
      * 
      * <pre>
      * &lt;complexType>
@@ -307,117 +338,125 @@ public class CartItem {
      * 
      */
     @XmlAccessorType(XmlAccessType.FIELD)
-    @XmlType(name = "", propOrder = { "keyValuePair" })
+    @XmlType(name = "", propOrder = {
+        "keyValuePair"
+    })
     public static class MetaData {
 
-	@XmlElement(name = "KeyValuePair")
-	protected List<CartItem.MetaData.KeyValuePair> keyValuePair;
+        @XmlElement(name = "KeyValuePair")
+        protected List<CartItem.MetaData.KeyValuePair> keyValuePair;
 
-	/**
-	 * Gets the value of the keyValuePair property.
-	 * 
-	 * <p>
-	 * This accessor method returns a reference to the live list, not a
-	 * snapshot. Therefore any modification you make to the returned list
-	 * will be present inside the JAXB object. This is why there is not a
-	 * <CODE>set</CODE> method for the keyValuePair property.
-	 * 
-	 * <p>
-	 * For example, to add a new item, do as follows:
-	 * 
-	 * <pre>
-	 * getKeyValuePair().add(newItem);
-	 * </pre>
-	 * 
-	 * 
-	 * <p>
-	 * Objects of the following type(s) are allowed in the list
-	 * {@link CartItem.MetaData.KeyValuePair }
-	 * 
-	 * 
-	 */
-	public List<CartItem.MetaData.KeyValuePair> getKeyValuePair() {
-	    if (keyValuePair == null) {
-		keyValuePair = new ArrayList<CartItem.MetaData.KeyValuePair>();
-	    }
-	    return this.keyValuePair;
-	}
+        /**
+         * Gets the value of the keyValuePair property.
+         * 
+         * <p>
+         * This accessor method returns a reference to the live list,
+         * not a snapshot. Therefore any modification you make to the
+         * returned list will be present inside the JAXB object.
+         * This is why there is not a <CODE>set</CODE> method for the keyValuePair property.
+         * 
+         * <p>
+         * For example, to add a new item, do as follows:
+         * <pre>
+         *    getKeyValuePair().add(newItem);
+         * </pre>
+         * 
+         * 
+         * <p>
+         * Objects of the following type(s) are allowed in the list
+         * {@link CartItem.MetaData.KeyValuePair }
+         * 
+         * 
+         */
+        public List<CartItem.MetaData.KeyValuePair> getKeyValuePair() {
+            if (keyValuePair == null) {
+                keyValuePair = new ArrayList<CartItem.MetaData.KeyValuePair>();
+            }
+            return this.keyValuePair;
+        }
 
-	/**
-	 * <p>
-	 * Java class for anonymous complex type.
-	 * 
-	 * <p>
-	 * The following schema fragment specifies the expected content
-	 * contained within this class.
-	 * 
-	 * <pre>
-	 * &lt;complexType>
-	 *   &lt;complexContent>
-	 *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
-	 *       &lt;sequence>
-	 *         &lt;element name="Key" type="{http://www.w3.org/2001/XMLSchema}string"/>
-	 *         &lt;element name="Value" type="{http://www.w3.org/2001/XMLSchema}string"/>
-	 *       &lt;/sequence>
-	 *     &lt;/restriction>
-	 *   &lt;/complexContent>
-	 * &lt;/complexType>
-	 * </pre>
-	 * 
-	 * 
-	 */
-	@XmlAccessorType(XmlAccessType.FIELD)
-	@XmlType(name = "", propOrder = { "key", "value" })
-	public static class KeyValuePair {
 
-	    @XmlElement(name = "Key", required = true)
-	    protected String key;
-	    @XmlElement(name = "Value", required = true)
-	    protected String value;
+        /**
+         * <p>Java class for anonymous complex type.
+         * 
+         * <p>The following schema fragment specifies the expected content contained within this class.
+         * 
+         * <pre>
+         * &lt;complexType>
+         *   &lt;complexContent>
+         *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+         *       &lt;sequence>
+         *         &lt;element name="Key" type="{http://www.w3.org/2001/XMLSchema}string"/>
+         *         &lt;element name="Value" type="{http://www.w3.org/2001/XMLSchema}string"/>
+         *       &lt;/sequence>
+         *     &lt;/restriction>
+         *   &lt;/complexContent>
+         * &lt;/complexType>
+         * </pre>
+         * 
+         * 
+         */
+        @XmlAccessorType(XmlAccessType.FIELD)
+        @XmlType(name = "", propOrder = {
+            "key",
+            "value"
+        })
+        public static class KeyValuePair {
 
-	    /**
-	     * Gets the value of the key property.
-	     * 
-	     * @return possible object is {@link String }
-	     * 
-	     */
-	    public String getKey() {
-		return key;
-	    }
+            @XmlElement(name = "Key", required = true)
+            protected String key;
+            @XmlElement(name = "Value", required = true)
+            protected String value;
 
-	    /**
-	     * Sets the value of the key property.
-	     * 
-	     * @param value
-	     *            allowed object is {@link String }
-	     * 
-	     */
-	    public void setKey(String value) {
-		this.key = value;
-	    }
+            /**
+             * Gets the value of the key property.
+             * 
+             * @return
+             *     possible object is
+             *     {@link String }
+             *     
+             */
+            public String getKey() {
+                return key;
+            }
 
-	    /**
-	     * Gets the value of the value property.
-	     * 
-	     * @return possible object is {@link String }
-	     * 
-	     */
-	    public String getValue() {
-		return value;
-	    }
+            /**
+             * Sets the value of the key property.
+             * 
+             * @param value
+             *     allowed object is
+             *     {@link String }
+             *     
+             */
+            public void setKey(String value) {
+                this.key = value;
+            }
 
-	    /**
-	     * Sets the value of the value property.
-	     * 
-	     * @param value
-	     *            allowed object is {@link String }
-	     * 
-	     */
-	    public void setValue(String value) {
-		this.value = value;
-	    }
+            /**
+             * Gets the value of the value property.
+             * 
+             * @return
+             *     possible object is
+             *     {@link String }
+             *     
+             */
+            public String getValue() {
+                return value;
+            }
 
-	}
+            /**
+             * Sets the value of the value property.
+             * 
+             * @param value
+             *     allowed object is
+             *     {@link String }
+             *     
+             */
+            public void setValue(String value) {
+                this.value = value;
+            }
+
+        }
 
     }
 

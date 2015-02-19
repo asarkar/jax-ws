@@ -1,3 +1,4 @@
+
 package name.abhijitsarkar.webservices.jaxws.aws.client.generated;
 
 import javax.xml.bind.annotation.XmlAccessType;
@@ -6,13 +7,11 @@ import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlType;
 
+
 /**
- * <p>
- * Java class for anonymous complex type.
+ * <p>Java class for anonymous complex type.
  * 
- * <p>
- * The following schema fragment specifies the expected content contained within
- * this class.
+ * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
  * &lt;complexType>
@@ -30,7 +29,10 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "", propOrder = { "keywords", "message" })
+@XmlType(name = "", propOrder = {
+    "keywords",
+    "message"
+})
 @XmlRootElement(name = "CorrectedQuery")
 public class CorrectedQuery {
 
@@ -42,43 +44,49 @@ public class CorrectedQuery {
     /**
      * Gets the value of the keywords property.
      * 
-     * @return possible object is {@link String }
-     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getKeywords() {
-	return keywords;
+        return keywords;
     }
 
     /**
      * Sets the value of the keywords property.
      * 
      * @param value
-     *            allowed object is {@link String }
-     * 
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setKeywords(String value) {
-	this.keywords = value;
+        this.keywords = value;
     }
 
     /**
      * Gets the value of the message property.
      * 
-     * @return possible object is {@link String }
-     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getMessage() {
-	return message;
+        return message;
     }
 
     /**
      * Sets the value of the message property.
      * 
      * @param value
-     *            allowed object is {@link String }
-     * 
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setMessage(String value) {
-	this.message = value;
+        this.message = value;
     }
 
 }

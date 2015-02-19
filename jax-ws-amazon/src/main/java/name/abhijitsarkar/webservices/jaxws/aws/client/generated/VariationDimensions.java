@@ -1,21 +1,19 @@
+
 package name.abhijitsarkar.webservices.jaxws.aws.client.generated;
 
 import java.util.ArrayList;
 import java.util.List;
-
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlType;
 
+
 /**
- * <p>
- * Java class for anonymous complex type.
+ * <p>Java class for anonymous complex type.
  * 
- * <p>
- * The following schema fragment specifies the expected content contained within
- * this class.
+ * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
  * &lt;complexType>
@@ -32,7 +30,9 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "", propOrder = { "variationDimension" })
+@XmlType(name = "", propOrder = {
+    "variationDimension"
+})
 @XmlRootElement(name = "VariationDimensions")
 public class VariationDimensions {
 
@@ -43,29 +43,29 @@ public class VariationDimensions {
      * Gets the value of the variationDimension property.
      * 
      * <p>
-     * This accessor method returns a reference to the live list, not a
-     * snapshot. Therefore any modification you make to the returned list will
-     * be present inside the JAXB object. This is why there is not a
-     * <CODE>set</CODE> method for the variationDimension property.
+     * This accessor method returns a reference to the live list,
+     * not a snapshot. Therefore any modification you make to the
+     * returned list will be present inside the JAXB object.
+     * This is why there is not a <CODE>set</CODE> method for the variationDimension property.
      * 
      * <p>
      * For example, to add a new item, do as follows:
-     * 
      * <pre>
-     * getVariationDimension().add(newItem);
+     *    getVariationDimension().add(newItem);
      * </pre>
      * 
      * 
      * <p>
-     * Objects of the following type(s) are allowed in the list {@link String }
+     * Objects of the following type(s) are allowed in the list
+     * {@link String }
      * 
      * 
      */
     public List<String> getVariationDimension() {
-	if (variationDimension == null) {
-	    variationDimension = new ArrayList<String>();
-	}
-	return this.variationDimension;
+        if (variationDimension == null) {
+            variationDimension = new ArrayList<String>();
+        }
+        return this.variationDimension;
     }
 
 }

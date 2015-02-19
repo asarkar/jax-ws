@@ -1,3 +1,4 @@
+
 package name.abhijitsarkar.webservices.jaxws.aws.client.generated;
 
 import javax.xml.bind.annotation.XmlAccessType;
@@ -6,13 +7,11 @@ import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlType;
 
+
 /**
- * <p>
- * Java class for anonymous complex type.
+ * <p>Java class for anonymous complex type.
  * 
- * <p>
- * The following schema fragment specifies the expected content contained within
- * this class.
+ * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
  * &lt;complexType>
@@ -39,10 +38,19 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "", propOrder = { "isValid", "browseNodeLookupRequest",
-	"itemSearchRequest", "itemLookupRequest", "similarityLookupRequest",
-	"cartGetRequest", "cartAddRequest", "cartCreateRequest",
-	"cartModifyRequest", "cartClearRequest", "errors" })
+@XmlType(name = "", propOrder = {
+    "isValid",
+    "browseNodeLookupRequest",
+    "itemSearchRequest",
+    "itemLookupRequest",
+    "similarityLookupRequest",
+    "cartGetRequest",
+    "cartAddRequest",
+    "cartCreateRequest",
+    "cartModifyRequest",
+    "cartClearRequest",
+    "errors"
+})
 @XmlRootElement(name = "Request")
 public class Request {
 
@@ -72,232 +80,265 @@ public class Request {
     /**
      * Gets the value of the isValid property.
      * 
-     * @return possible object is {@link String }
-     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getIsValid() {
-	return isValid;
+        return isValid;
     }
 
     /**
      * Sets the value of the isValid property.
      * 
      * @param value
-     *            allowed object is {@link String }
-     * 
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setIsValid(String value) {
-	this.isValid = value;
+        this.isValid = value;
     }
 
     /**
      * Gets the value of the browseNodeLookupRequest property.
      * 
-     * @return possible object is {@link BrowseNodeLookupRequest }
-     * 
+     * @return
+     *     possible object is
+     *     {@link BrowseNodeLookupRequest }
+     *     
      */
     public BrowseNodeLookupRequest getBrowseNodeLookupRequest() {
-	return browseNodeLookupRequest;
+        return browseNodeLookupRequest;
     }
 
     /**
      * Sets the value of the browseNodeLookupRequest property.
      * 
      * @param value
-     *            allowed object is {@link BrowseNodeLookupRequest }
-     * 
+     *     allowed object is
+     *     {@link BrowseNodeLookupRequest }
+     *     
      */
     public void setBrowseNodeLookupRequest(BrowseNodeLookupRequest value) {
-	this.browseNodeLookupRequest = value;
+        this.browseNodeLookupRequest = value;
     }
 
     /**
      * Gets the value of the itemSearchRequest property.
      * 
-     * @return possible object is {@link ItemSearchRequest }
-     * 
+     * @return
+     *     possible object is
+     *     {@link ItemSearchRequest }
+     *     
      */
     public ItemSearchRequest getItemSearchRequest() {
-	return itemSearchRequest;
+        return itemSearchRequest;
     }
 
     /**
      * Sets the value of the itemSearchRequest property.
      * 
      * @param value
-     *            allowed object is {@link ItemSearchRequest }
-     * 
+     *     allowed object is
+     *     {@link ItemSearchRequest }
+     *     
      */
     public void setItemSearchRequest(ItemSearchRequest value) {
-	this.itemSearchRequest = value;
+        this.itemSearchRequest = value;
     }
 
     /**
      * Gets the value of the itemLookupRequest property.
      * 
-     * @return possible object is {@link ItemLookupRequest }
-     * 
+     * @return
+     *     possible object is
+     *     {@link ItemLookupRequest }
+     *     
      */
     public ItemLookupRequest getItemLookupRequest() {
-	return itemLookupRequest;
+        return itemLookupRequest;
     }
 
     /**
      * Sets the value of the itemLookupRequest property.
      * 
      * @param value
-     *            allowed object is {@link ItemLookupRequest }
-     * 
+     *     allowed object is
+     *     {@link ItemLookupRequest }
+     *     
      */
     public void setItemLookupRequest(ItemLookupRequest value) {
-	this.itemLookupRequest = value;
+        this.itemLookupRequest = value;
     }
 
     /**
      * Gets the value of the similarityLookupRequest property.
      * 
-     * @return possible object is {@link SimilarityLookupRequest }
-     * 
+     * @return
+     *     possible object is
+     *     {@link SimilarityLookupRequest }
+     *     
      */
     public SimilarityLookupRequest getSimilarityLookupRequest() {
-	return similarityLookupRequest;
+        return similarityLookupRequest;
     }
 
     /**
      * Sets the value of the similarityLookupRequest property.
      * 
      * @param value
-     *            allowed object is {@link SimilarityLookupRequest }
-     * 
+     *     allowed object is
+     *     {@link SimilarityLookupRequest }
+     *     
      */
     public void setSimilarityLookupRequest(SimilarityLookupRequest value) {
-	this.similarityLookupRequest = value;
+        this.similarityLookupRequest = value;
     }
 
     /**
      * Gets the value of the cartGetRequest property.
      * 
-     * @return possible object is {@link CartGetRequest }
-     * 
+     * @return
+     *     possible object is
+     *     {@link CartGetRequest }
+     *     
      */
     public CartGetRequest getCartGetRequest() {
-	return cartGetRequest;
+        return cartGetRequest;
     }
 
     /**
      * Sets the value of the cartGetRequest property.
      * 
      * @param value
-     *            allowed object is {@link CartGetRequest }
-     * 
+     *     allowed object is
+     *     {@link CartGetRequest }
+     *     
      */
     public void setCartGetRequest(CartGetRequest value) {
-	this.cartGetRequest = value;
+        this.cartGetRequest = value;
     }
 
     /**
      * Gets the value of the cartAddRequest property.
      * 
-     * @return possible object is {@link CartAddRequest }
-     * 
+     * @return
+     *     possible object is
+     *     {@link CartAddRequest }
+     *     
      */
     public CartAddRequest getCartAddRequest() {
-	return cartAddRequest;
+        return cartAddRequest;
     }
 
     /**
      * Sets the value of the cartAddRequest property.
      * 
      * @param value
-     *            allowed object is {@link CartAddRequest }
-     * 
+     *     allowed object is
+     *     {@link CartAddRequest }
+     *     
      */
     public void setCartAddRequest(CartAddRequest value) {
-	this.cartAddRequest = value;
+        this.cartAddRequest = value;
     }
 
     /**
      * Gets the value of the cartCreateRequest property.
      * 
-     * @return possible object is {@link CartCreateRequest }
-     * 
+     * @return
+     *     possible object is
+     *     {@link CartCreateRequest }
+     *     
      */
     public CartCreateRequest getCartCreateRequest() {
-	return cartCreateRequest;
+        return cartCreateRequest;
     }
 
     /**
      * Sets the value of the cartCreateRequest property.
      * 
      * @param value
-     *            allowed object is {@link CartCreateRequest }
-     * 
+     *     allowed object is
+     *     {@link CartCreateRequest }
+     *     
      */
     public void setCartCreateRequest(CartCreateRequest value) {
-	this.cartCreateRequest = value;
+        this.cartCreateRequest = value;
     }
 
     /**
      * Gets the value of the cartModifyRequest property.
      * 
-     * @return possible object is {@link CartModifyRequest }
-     * 
+     * @return
+     *     possible object is
+     *     {@link CartModifyRequest }
+     *     
      */
     public CartModifyRequest getCartModifyRequest() {
-	return cartModifyRequest;
+        return cartModifyRequest;
     }
 
     /**
      * Sets the value of the cartModifyRequest property.
      * 
      * @param value
-     *            allowed object is {@link CartModifyRequest }
-     * 
+     *     allowed object is
+     *     {@link CartModifyRequest }
+     *     
      */
     public void setCartModifyRequest(CartModifyRequest value) {
-	this.cartModifyRequest = value;
+        this.cartModifyRequest = value;
     }
 
     /**
      * Gets the value of the cartClearRequest property.
      * 
-     * @return possible object is {@link CartClearRequest }
-     * 
+     * @return
+     *     possible object is
+     *     {@link CartClearRequest }
+     *     
      */
     public CartClearRequest getCartClearRequest() {
-	return cartClearRequest;
+        return cartClearRequest;
     }
 
     /**
      * Sets the value of the cartClearRequest property.
      * 
      * @param value
-     *            allowed object is {@link CartClearRequest }
-     * 
+     *     allowed object is
+     *     {@link CartClearRequest }
+     *     
      */
     public void setCartClearRequest(CartClearRequest value) {
-	this.cartClearRequest = value;
+        this.cartClearRequest = value;
     }
 
     /**
      * Gets the value of the errors property.
      * 
-     * @return possible object is {@link Errors }
-     * 
+     * @return
+     *     possible object is
+     *     {@link Errors }
+     *     
      */
     public Errors getErrors() {
-	return errors;
+        return errors;
     }
 
     /**
      * Sets the value of the errors property.
      * 
      * @param value
-     *            allowed object is {@link Errors }
-     * 
+     *     allowed object is
+     *     {@link Errors }
+     *     
      */
     public void setErrors(Errors value) {
-	this.errors = value;
+        this.errors = value;
     }
 
 }

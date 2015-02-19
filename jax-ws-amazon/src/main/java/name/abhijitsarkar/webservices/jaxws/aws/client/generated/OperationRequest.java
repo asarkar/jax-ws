@@ -1,3 +1,4 @@
+
 package name.abhijitsarkar.webservices.jaxws.aws.client.generated;
 
 import javax.xml.bind.annotation.XmlAccessType;
@@ -6,13 +7,11 @@ import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlType;
 
+
 /**
- * <p>
- * Java class for anonymous complex type.
+ * <p>Java class for anonymous complex type.
  * 
- * <p>
- * The following schema fragment specifies the expected content contained within
- * this class.
+ * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
  * &lt;complexType>
@@ -33,8 +32,13 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "", propOrder = { "httpHeaders", "requestId", "arguments",
-	"errors", "requestProcessingTime" })
+@XmlType(name = "", propOrder = {
+    "httpHeaders",
+    "requestId",
+    "arguments",
+    "errors",
+    "requestProcessingTime"
+})
 @XmlRootElement(name = "OperationRequest")
 public class OperationRequest {
 
@@ -52,106 +56,121 @@ public class OperationRequest {
     /**
      * Gets the value of the httpHeaders property.
      * 
-     * @return possible object is {@link HTTPHeaders }
-     * 
+     * @return
+     *     possible object is
+     *     {@link HTTPHeaders }
+     *     
      */
     public HTTPHeaders getHTTPHeaders() {
-	return httpHeaders;
+        return httpHeaders;
     }
 
     /**
      * Sets the value of the httpHeaders property.
      * 
      * @param value
-     *            allowed object is {@link HTTPHeaders }
-     * 
+     *     allowed object is
+     *     {@link HTTPHeaders }
+     *     
      */
     public void setHTTPHeaders(HTTPHeaders value) {
-	this.httpHeaders = value;
+        this.httpHeaders = value;
     }
 
     /**
      * Gets the value of the requestId property.
      * 
-     * @return possible object is {@link String }
-     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getRequestId() {
-	return requestId;
+        return requestId;
     }
 
     /**
      * Sets the value of the requestId property.
      * 
      * @param value
-     *            allowed object is {@link String }
-     * 
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setRequestId(String value) {
-	this.requestId = value;
+        this.requestId = value;
     }
 
     /**
      * Gets the value of the arguments property.
      * 
-     * @return possible object is {@link Arguments }
-     * 
+     * @return
+     *     possible object is
+     *     {@link Arguments }
+     *     
      */
     public Arguments getArguments() {
-	return arguments;
+        return arguments;
     }
 
     /**
      * Sets the value of the arguments property.
      * 
      * @param value
-     *            allowed object is {@link Arguments }
-     * 
+     *     allowed object is
+     *     {@link Arguments }
+     *     
      */
     public void setArguments(Arguments value) {
-	this.arguments = value;
+        this.arguments = value;
     }
 
     /**
      * Gets the value of the errors property.
      * 
-     * @return possible object is {@link Errors }
-     * 
+     * @return
+     *     possible object is
+     *     {@link Errors }
+     *     
      */
     public Errors getErrors() {
-	return errors;
+        return errors;
     }
 
     /**
      * Sets the value of the errors property.
      * 
      * @param value
-     *            allowed object is {@link Errors }
-     * 
+     *     allowed object is
+     *     {@link Errors }
+     *     
      */
     public void setErrors(Errors value) {
-	this.errors = value;
+        this.errors = value;
     }
 
     /**
      * Gets the value of the requestProcessingTime property.
      * 
-     * @return possible object is {@link Float }
-     * 
+     * @return
+     *     possible object is
+     *     {@link Float }
+     *     
      */
     public Float getRequestProcessingTime() {
-	return requestProcessingTime;
+        return requestProcessingTime;
     }
 
     /**
      * Sets the value of the requestProcessingTime property.
      * 
      * @param value
-     *            allowed object is {@link Float }
-     * 
+     *     allowed object is
+     *     {@link Float }
+     *     
      */
     public void setRequestProcessingTime(Float value) {
-	this.requestProcessingTime = value;
+        this.requestProcessingTime = value;
     }
 
 }

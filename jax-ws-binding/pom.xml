@@ -8,84 +8,76 @@
   </parent>
   <artifactId>jax-ws-binding</artifactId>
   <name>jax-ws-binding</name>
-  <description>Different JAX-WS binding style practice code</description>
+  
+  <description>
+    JAX-WS binding practice code.
+    
+    <![CDATA[
+      Run 'mvn clean package jetty:run -P jetty' from the basedir then run the main classes in the project.
+      
+      To start Jetty in debug mode, run 'mvn clean package jetty:run-forked -P jetty'.
+    ]]>
+  </description>
 
-  <dependencies>
-    <dependency>
-      <groupId>
-        ${project.groupId}
-      </groupId>
-      <artifactId>jax-ws-handlers</artifactId>
-      <version>${project.version}</version>
-      <scope>runtime</scope>
-    </dependency>
-  </dependencies>
-
-  <profiles>
-    <profile>
-      <id>wsimport</id>
-      <build>
-        <defaultGoal>clean generate-sources</defaultGoal>
-        <plugins>
-          <plugin>
-            <groupId>org.jvnet.jax-ws-commons</groupId>
-            <artifactId>jaxws-maven-plugin</artifactId>
-            <executions>
-              <execution>
-                <id>wsimport-server</id>
-                <goals>
-                  <goal>wsimport</goal>
-                </goals>
-                <phase>generate-sources</phase>
-                <configuration>
-                  <packageName>name.abhijitsarkar.webservices.jaxws.calculator.contractfirst.generated</packageName>
-                  <staleFile>${project.build.directory}/jaxws/wsimport-server/stale</staleFile>
-                  <wsdlDirectory>src/main/resources/wsdl</wsdlDirectory>
-                  <wsdlFiles>
-                    <wsdlFile>calculator-cf.wsdl</wsdlFile>
-                  </wsdlFiles>
-                  <!-- This determines @WebService.wsdlLocation and @WebServiceClient.wsdlLocation 
-                    value. -->
-                  <wsdlLocation>http://localhost:8080/jax-ws-binding/calculator-cf?wsdl</wsdlLocation>
-                  <!-- Turn off generated source compilation; Maven will do it anyway -->
-                  <xnocompile>true</xnocompile>
-                </configuration>
-              </execution>
-              <execution>
-                <id>wsimport-client</id>
-                <goals>
-                  <goal>wsimport</goal>
-                </goals>
-                <phase>generate-sources</phase>
-                <configuration>
-                  <bindingDirectory>src/main/resources/jaxws-bindings</bindingDirectory>
-                  <bindingFiles>
-                    <bindingFile>jaxws-handler-chains.xml</bindingFile>
-                    <bindingFile>jaxws-binding-style.xml</bindingFile>
-                  </bindingFiles>
-                  <!-- It turns out that the generated handler file is placed deep 
-                    in the output dir; this puts that in the resources directory -->
-                  <destDir>src/main/resources</destDir>
-                  <packageName>name.abhijitsarkar.webservices.jaxws.calculator.contractfirst.client.generated</packageName>
-                  <!-- The stale file determines whether a WSDL has been processed 
-                    or not. As the server code is also generated from the same WSDL, this needs to be 
-                    different from the one used by the server else client code generation is skipped -->
-                  <staleFile>${project.build.directory}/jaxws/wsimport-client/stale</staleFile>
-                  <wsdlDirectory>src/main/resources/wsdl</wsdlDirectory>
-                  <wsdlFiles>
-                    <wsdlFile>calculator-cf.wsdl</wsdlFile>
-                  </wsdlFiles>
-                  <!-- This determines @WebService.wsdlLocation and @WebServiceClient.wsdlLocation 
-                    value. -->
-                  <wsdlLocation>http://localhost:8080/jax-ws-binding/calculator-cf?wsdl</wsdlLocation>
-                  <!-- Turn off generated source compilation; Maven will do it anyway -->
-                  <xnocompile>true</xnocompile>
-                </configuration>
-              </execution>
-            </executions>
-          </plugin>
-        </plugins>
-      </build>
-    </profile>
-  </profiles>
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.jvnet.jax-ws-commons</groupId>
+        <artifactId>jaxws-maven-plugin</artifactId>
+        <executions>
+          <execution>
+            <id>wsimport-server</id>
+            <goals>
+              <goal>wsimport</goal>
+            </goals>
+            <phase>generate-sources</phase>
+            <configuration>
+              <packageName>name.abhijitsarkar.webservices.jaxws.calculator.contractfirst.generated</packageName>
+              <staleFile>${project.build.directory}/jaxws/wsimport-server/stale</staleFile>
+              <wsdlDirectory>src/main/resources/wsdl</wsdlDirectory>
+              <wsdlFiles>
+                <wsdlFile>calculator-cf.wsdl</wsdlFile>
+              </wsdlFiles>
+              <!-- This determines @WebService.wsdlLocation and @WebServiceClient.wsdlLocation 
+                value. -->
+              <wsdlLocation>http://localhost:8080/jax-ws-binding/calculator-cf?wsdl</wsdlLocation>
+              <!-- Turn off generated source compilation; Maven will do it anyway -->
+              <xnocompile>true</xnocompile>
+            </configuration>
+          </execution>
+          <execution>
+            <id>wsimport-client</id>
+            <goals>
+              <goal>wsimport</goal>
+            </goals>
+            <phase>generate-sources</phase>
+            <configuration>
+              <bindingDirectory>src/main/resources/jaxws-bindings</bindingDirectory>
+              <bindingFiles>
+                <bindingFile>jaxws-handler-chains.xml</bindingFile>
+                <bindingFile>jaxws-binding-style.xml</bindingFile>
+              </bindingFiles>
+              <!-- It turns out that the generated handler file is placed deep in 
+                the output dir; this puts that in the resources directory -->
+              <destDir>src/main/resources</destDir>
+              <packageName>name.abhijitsarkar.webservices.jaxws.calculator.contractfirst.client.generated</packageName>
+              <!-- The stale file determines whether a WSDL has been processed or 
+                not. As the server code is also generated from the same WSDL, this needs to be different 
+                from the one used by the server else client code generation is skipped -->
+              <staleFile>${project.build.directory}/jaxws/wsimport-client/stale</staleFile>
+              <wsdlDirectory>src/main/resources/wsdl</wsdlDirectory>
+              <wsdlFiles>
+                <wsdlFile>calculator-cf.wsdl</wsdlFile>
+              </wsdlFiles>
+              <!-- This determines @WebService.wsdlLocation and @WebServiceClient.wsdlLocation 
+                value. -->
+              <wsdlLocation>http://localhost:8080/jax-ws-binding/calculator-cf?wsdl</wsdlLocation>
+              <!-- Turn off generated source compilation; Maven will do it anyway -->
+              <xnocompile>true</xnocompile>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
+    </plugins>
+  </build>
 </project>

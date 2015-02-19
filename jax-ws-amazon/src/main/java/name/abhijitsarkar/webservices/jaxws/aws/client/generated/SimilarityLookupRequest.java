@@ -1,20 +1,18 @@
+
 package name.abhijitsarkar.webservices.jaxws.aws.client.generated;
 
 import java.util.ArrayList;
 import java.util.List;
-
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
 
+
 /**
- * <p>
- * Java class for SimilarityLookupRequest complex type.
+ * <p>Java class for SimilarityLookupRequest complex type.
  * 
- * <p>
- * The following schema fragment specifies the expected content contained within
- * this class.
+ * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
  * &lt;complexType name="SimilarityLookupRequest">
@@ -42,8 +40,13 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "SimilarityLookupRequest", propOrder = { "condition", "itemId",
-	"merchantId", "responseGroup", "similarityType" })
+@XmlType(name = "SimilarityLookupRequest", propOrder = {
+    "condition",
+    "itemId",
+    "merchantId",
+    "responseGroup",
+    "similarityType"
+})
 public class SimilarityLookupRequest {
 
     @XmlElement(name = "Condition")
@@ -60,122 +63,131 @@ public class SimilarityLookupRequest {
     /**
      * Gets the value of the condition property.
      * 
-     * @return possible object is {@link String }
-     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getCondition() {
-	return condition;
+        return condition;
     }
 
     /**
      * Sets the value of the condition property.
      * 
      * @param value
-     *            allowed object is {@link String }
-     * 
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setCondition(String value) {
-	this.condition = value;
+        this.condition = value;
     }
 
     /**
      * Gets the value of the itemId property.
      * 
      * <p>
-     * This accessor method returns a reference to the live list, not a
-     * snapshot. Therefore any modification you make to the returned list will
-     * be present inside the JAXB object. This is why there is not a
-     * <CODE>set</CODE> method for the itemId property.
+     * This accessor method returns a reference to the live list,
+     * not a snapshot. Therefore any modification you make to the
+     * returned list will be present inside the JAXB object.
+     * This is why there is not a <CODE>set</CODE> method for the itemId property.
      * 
      * <p>
      * For example, to add a new item, do as follows:
-     * 
      * <pre>
-     * getItemId().add(newItem);
+     *    getItemId().add(newItem);
      * </pre>
      * 
      * 
      * <p>
-     * Objects of the following type(s) are allowed in the list {@link String }
+     * Objects of the following type(s) are allowed in the list
+     * {@link String }
      * 
      * 
      */
     public List<String> getItemId() {
-	if (itemId == null) {
-	    itemId = new ArrayList<String>();
-	}
-	return this.itemId;
+        if (itemId == null) {
+            itemId = new ArrayList<String>();
+        }
+        return this.itemId;
     }
 
     /**
      * Gets the value of the merchantId property.
      * 
-     * @return possible object is {@link String }
-     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getMerchantId() {
-	return merchantId;
+        return merchantId;
     }
 
     /**
      * Sets the value of the merchantId property.
      * 
      * @param value
-     *            allowed object is {@link String }
-     * 
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setMerchantId(String value) {
-	this.merchantId = value;
+        this.merchantId = value;
     }
 
     /**
      * Gets the value of the responseGroup property.
      * 
      * <p>
-     * This accessor method returns a reference to the live list, not a
-     * snapshot. Therefore any modification you make to the returned list will
-     * be present inside the JAXB object. This is why there is not a
-     * <CODE>set</CODE> method for the responseGroup property.
+     * This accessor method returns a reference to the live list,
+     * not a snapshot. Therefore any modification you make to the
+     * returned list will be present inside the JAXB object.
+     * This is why there is not a <CODE>set</CODE> method for the responseGroup property.
      * 
      * <p>
      * For example, to add a new item, do as follows:
-     * 
      * <pre>
-     * getResponseGroup().add(newItem);
+     *    getResponseGroup().add(newItem);
      * </pre>
      * 
      * 
      * <p>
-     * Objects of the following type(s) are allowed in the list {@link String }
+     * Objects of the following type(s) are allowed in the list
+     * {@link String }
      * 
      * 
      */
     public List<String> getResponseGroup() {
-	if (responseGroup == null) {
-	    responseGroup = new ArrayList<String>();
-	}
-	return this.responseGroup;
+        if (responseGroup == null) {
+            responseGroup = new ArrayList<String>();
+        }
+        return this.responseGroup;
     }
 
     /**
      * Gets the value of the similarityType property.
      * 
-     * @return possible object is {@link String }
-     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getSimilarityType() {
-	return similarityType;
+        return similarityType;
     }
 
     /**
      * Sets the value of the similarityType property.
      * 
      * @param value
-     *            allowed object is {@link String }
-     * 
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setSimilarityType(String value) {
-	this.similarityType = value;
+        this.similarityType = value;
     }
 
 }

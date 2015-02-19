@@ -1,3 +1,4 @@
+
 package name.abhijitsarkar.webservices.jaxws.aws.client.generated;
 
 import javax.xml.bind.annotation.XmlAccessType;
@@ -6,13 +7,11 @@ import javax.xml.bind.annotation.XmlAttribute;
 import javax.xml.bind.annotation.XmlType;
 import javax.xml.bind.annotation.XmlValue;
 
+
 /**
- * <p>
- * Java class for StringWithUnits complex type.
+ * <p>Java class for StringWithUnits complex type.
  * 
- * <p>
- * The following schema fragment specifies the expected content contained within
- * this class.
+ * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
  * &lt;complexType name="StringWithUnits">
@@ -27,7 +26,9 @@ import javax.xml.bind.annotation.XmlValue;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "StringWithUnits", propOrder = { "value" })
+@XmlType(name = "StringWithUnits", propOrder = {
+    "value"
+})
 public class StringWithUnits {
 
     @XmlValue
@@ -38,43 +39,49 @@ public class StringWithUnits {
     /**
      * Gets the value of the value property.
      * 
-     * @return possible object is {@link String }
-     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getValue() {
-	return value;
+        return value;
     }
 
     /**
      * Sets the value of the value property.
      * 
      * @param value
-     *            allowed object is {@link String }
-     * 
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setValue(String value) {
-	this.value = value;
+        this.value = value;
     }
 
     /**
      * Gets the value of the units property.
      * 
-     * @return possible object is {@link String }
-     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getUnits() {
-	return units;
+        return units;
     }
 
     /**
      * Sets the value of the units property.
      * 
      * @param value
-     *            allowed object is {@link String }
-     * 
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setUnits(String value) {
-	this.units = value;
+        this.units = value;
     }
 
 }

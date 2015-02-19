@@ -1,7 +1,7 @@
+
 package name.abhijitsarkar.webservices.jaxws.aws.client.generated;
 
 import java.math.BigInteger;
-
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlAttribute;
@@ -9,13 +9,11 @@ import javax.xml.bind.annotation.XmlSchemaType;
 import javax.xml.bind.annotation.XmlType;
 import javax.xml.bind.annotation.XmlValue;
 
+
 /**
- * <p>
- * Java class for NonNegativeIntegerWithUnits complex type.
+ * <p>Java class for NonNegativeIntegerWithUnits complex type.
  * 
- * <p>
- * The following schema fragment specifies the expected content contained within
- * this class.
+ * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
  * &lt;complexType name="NonNegativeIntegerWithUnits">
@@ -30,7 +28,9 @@ import javax.xml.bind.annotation.XmlValue;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "NonNegativeIntegerWithUnits", propOrder = { "value" })
+@XmlType(name = "NonNegativeIntegerWithUnits", propOrder = {
+    "value"
+})
 public class NonNegativeIntegerWithUnits {
 
     @XmlValue
@@ -42,43 +42,49 @@ public class NonNegativeIntegerWithUnits {
     /**
      * Gets the value of the value property.
      * 
-     * @return possible object is {@link BigInteger }
-     * 
+     * @return
+     *     possible object is
+     *     {@link BigInteger }
+     *     
      */
     public BigInteger getValue() {
-	return value;
+        return value;
     }
 
     /**
      * Sets the value of the value property.
      * 
      * @param value
-     *            allowed object is {@link BigInteger }
-     * 
+     *     allowed object is
+     *     {@link BigInteger }
+     *     
      */
     public void setValue(BigInteger value) {
-	this.value = value;
+        this.value = value;
     }
 
     /**
      * Gets the value of the units property.
      * 
-     * @return possible object is {@link String }
-     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getUnits() {
-	return units;
+        return units;
     }
 
     /**
      * Sets the value of the units property.
      * 
      * @param value
-     *            allowed object is {@link String }
-     * 
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setUnits(String value) {
-	this.units = value;
+        this.units = value;
     }
 
 }

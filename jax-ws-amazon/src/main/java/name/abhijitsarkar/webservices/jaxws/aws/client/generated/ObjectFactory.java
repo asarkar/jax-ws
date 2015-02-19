@@ -1,3 +1,4 @@
+
 package name.abhijitsarkar.webservices.jaxws.aws.client.generated;
 
 import javax.xml.bind.JAXBElement;
@@ -5,32 +6,29 @@ import javax.xml.bind.annotation.XmlElementDecl;
 import javax.xml.bind.annotation.XmlRegistry;
 import javax.xml.namespace.QName;
 
+
 /**
- * This object contains factory methods for each Java content interface and Java
- * element interface generated in the
- * name.abhijitsarkar.webservices.jaxws.aws.client.generated package.
- * <p>
- * An ObjectFactory allows you to programatically construct new instances of the
- * Java representation for XML content. The Java representation of XML content
- * can consist of schema derived interfaces and classes representing the binding
- * of schema type definitions, element declarations and model groups. Factory
- * methods for each of these are provided in this class.
+ * This object contains factory methods for each 
+ * Java content interface and Java element interface 
+ * generated in the name.abhijitsarkar.webservices.jaxws.aws.client.generated package. 
+ * <p>An ObjectFactory allows you to programatically 
+ * construct new instances of the Java representation 
+ * for XML content. The Java representation of XML 
+ * content can consist of schema derived interfaces 
+ * and classes representing the binding of schema 
+ * type definitions, element declarations and model 
+ * groups.  Factory methods for each of these are 
+ * provided in this class.
  * 
  */
 @XmlRegistry
 public class ObjectFactory {
 
-    private final static QName _Condition_QNAME = new QName(
-	    "http://webservices.amazon.com/AWSECommerceService/2011-08-01",
-	    "Condition");
-    private final static QName _AudienceRating_QNAME = new QName(
-	    "http://webservices.amazon.com/AWSECommerceService/2011-08-01",
-	    "AudienceRating");
+    private final static QName _Condition_QNAME = new QName("http://webservices.amazon.com/AWSECommerceService/2011-08-01", "Condition");
+    private final static QName _AudienceRating_QNAME = new QName("http://webservices.amazon.com/AWSECommerceService/2011-08-01", "AudienceRating");
 
     /**
-     * Create a new ObjectFactory that can be used to create new instances of
-     * schema derived classes for package:
-     * name.abhijitsarkar.webservices.jaxws.aws.client.generated
+     * Create a new ObjectFactory that can be used to create new instances of schema derived classes for package: name.abhijitsarkar.webservices.jaxws.aws.client.generated
      * 
      */
     public ObjectFactory() {
@@ -41,16 +39,15 @@ public class ObjectFactory {
      * 
      */
     public Errors createErrors() {
-	return new Errors();
+        return new Errors();
     }
 
     /**
-     * Create an instance of
-     * {@link name.abhijitsarkar.webservices.jaxws.aws.client.generated.Item }
+     * Create an instance of {@link name.abhijitsarkar.webservices.jaxws.aws.client.generated.Item }
      * 
      */
     public name.abhijitsarkar.webservices.jaxws.aws.client.generated.Item createItem() {
-	return new name.abhijitsarkar.webservices.jaxws.aws.client.generated.Item();
+        return new name.abhijitsarkar.webservices.jaxws.aws.client.generated.Item();
     }
 
     /**
@@ -58,7 +55,7 @@ public class ObjectFactory {
      * 
      */
     public ItemAttributes createItemAttributes() {
-	return new ItemAttributes();
+        return new ItemAttributes();
     }
 
     /**
@@ -66,7 +63,7 @@ public class ObjectFactory {
      * 
      */
     public Collections createCollections() {
-	return new Collections();
+        return new Collections();
     }
 
     /**
@@ -74,7 +71,7 @@ public class ObjectFactory {
      * 
      */
     public OfferListing createOfferListing() {
-	return new OfferListing();
+        return new OfferListing();
     }
 
     /**
@@ -82,7 +79,7 @@ public class ObjectFactory {
      * 
      */
     public Promotion createPromotion() {
-	return new Promotion();
+        return new Promotion();
     }
 
     /**
@@ -90,7 +87,7 @@ public class ObjectFactory {
      * 
      */
     public SimilarProducts createSimilarProducts() {
-	return new SimilarProducts();
+        return new SimilarProducts();
     }
 
     /**
@@ -98,7 +95,7 @@ public class ObjectFactory {
      * 
      */
     public Accessories createAccessories() {
-	return new Accessories();
+        return new Accessories();
     }
 
     /**
@@ -106,7 +103,7 @@ public class ObjectFactory {
      * 
      */
     public Tracks createTracks() {
-	return new Tracks();
+        return new Tracks();
     }
 
     /**
@@ -114,7 +111,7 @@ public class ObjectFactory {
      * 
      */
     public BrowseNode createBrowseNode() {
-	return new BrowseNode();
+        return new BrowseNode();
     }
 
     /**
@@ -122,7 +119,7 @@ public class ObjectFactory {
      * 
      */
     public TopSellers createTopSellers() {
-	return new TopSellers();
+        return new TopSellers();
     }
 
     /**
@@ -130,7 +127,7 @@ public class ObjectFactory {
      * 
      */
     public NewReleases createNewReleases() {
-	return new NewReleases();
+        return new NewReleases();
     }
 
     /**
@@ -138,7 +135,7 @@ public class ObjectFactory {
      * 
      */
     public TopItemSet createTopItemSet() {
-	return new TopItemSet();
+        return new TopItemSet();
     }
 
     /**
@@ -146,7 +143,7 @@ public class ObjectFactory {
      * 
      */
     public HTTPHeaders createHTTPHeaders() {
-	return new HTTPHeaders();
+        return new HTTPHeaders();
     }
 
     /**
@@ -154,7 +151,7 @@ public class ObjectFactory {
      * 
      */
     public Arguments createArguments() {
-	return new Arguments();
+        return new Arguments();
     }
 
     /**
@@ -162,7 +159,7 @@ public class ObjectFactory {
      * 
      */
     public SimilarViewedProducts createSimilarViewedProducts() {
-	return new SimilarViewedProducts();
+        return new SimilarViewedProducts();
     }
 
     /**
@@ -170,7 +167,7 @@ public class ObjectFactory {
      * 
      */
     public OtherCategoriesSimilarProducts createOtherCategoriesSimilarProducts() {
-	return new OtherCategoriesSimilarProducts();
+        return new OtherCategoriesSimilarProducts();
     }
 
     /**
@@ -178,7 +175,7 @@ public class ObjectFactory {
      * 
      */
     public Bin createBin() {
-	return new Bin();
+        return new Bin();
     }
 
     /**
@@ -186,7 +183,7 @@ public class ObjectFactory {
      * 
      */
     public SearchResultsMap createSearchResultsMap() {
-	return new SearchResultsMap();
+        return new SearchResultsMap();
     }
 
     /**
@@ -194,7 +191,7 @@ public class ObjectFactory {
      * 
      */
     public CartItem createCartItem() {
-	return new CartItem();
+        return new CartItem();
     }
 
     /**
@@ -202,16 +199,15 @@ public class ObjectFactory {
      * 
      */
     public CartItem.MetaData createCartItemMetaData() {
-	return new CartItem.MetaData();
+        return new CartItem.MetaData();
     }
 
     /**
-     * Create an instance of
-     * {@link name.abhijitsarkar.webservices.jaxws.aws.client.generated.Item.AlternateVersions }
+     * Create an instance of {@link name.abhijitsarkar.webservices.jaxws.aws.client.generated.Item.AlternateVersions }
      * 
      */
     public name.abhijitsarkar.webservices.jaxws.aws.client.generated.Item.AlternateVersions createItemAlternateVersions() {
-	return new name.abhijitsarkar.webservices.jaxws.aws.client.generated.Item.AlternateVersions();
+        return new name.abhijitsarkar.webservices.jaxws.aws.client.generated.Item.AlternateVersions();
     }
 
     /**
@@ -219,7 +215,7 @@ public class ObjectFactory {
      * 
      */
     public CartModifyRequest createCartModifyRequest() {
-	return new CartModifyRequest();
+        return new CartModifyRequest();
     }
 
     /**
@@ -227,7 +223,7 @@ public class ObjectFactory {
      * 
      */
     public CartModifyRequest.Items createCartModifyRequestItems() {
-	return new CartModifyRequest.Items();
+        return new CartModifyRequest.Items();
     }
 
     /**
@@ -235,7 +231,7 @@ public class ObjectFactory {
      * 
      */
     public CartCreateRequest createCartCreateRequest() {
-	return new CartCreateRequest();
+        return new CartCreateRequest();
     }
 
     /**
@@ -243,7 +239,7 @@ public class ObjectFactory {
      * 
      */
     public CartCreateRequest.Items createCartCreateRequestItems() {
-	return new CartCreateRequest.Items();
+        return new CartCreateRequest.Items();
     }
 
     /**
@@ -251,7 +247,7 @@ public class ObjectFactory {
      * 
      */
     public CartCreateRequest.Items.Item createCartCreateRequestItemsItem() {
-	return new CartCreateRequest.Items.Item();
+        return new CartCreateRequest.Items.Item();
     }
 
     /**
@@ -259,7 +255,7 @@ public class ObjectFactory {
      * 
      */
     public Tracks.Disc createTracksDisc() {
-	return new Tracks.Disc();
+        return new Tracks.Disc();
     }
 
     /**
@@ -267,7 +263,7 @@ public class ObjectFactory {
      * 
      */
     public Collections.Collection createCollectionsCollection() {
-	return new Collections.Collection();
+        return new Collections.Collection();
     }
 
     /**
@@ -275,7 +271,7 @@ public class ObjectFactory {
      * 
      */
     public ItemAttributes.Languages createItemAttributesLanguages() {
-	return new ItemAttributes.Languages();
+        return new ItemAttributes.Languages();
     }
 
     /**
@@ -283,7 +279,7 @@ public class ObjectFactory {
      * 
      */
     public CartAddRequest createCartAddRequest() {
-	return new CartAddRequest();
+        return new CartAddRequest();
     }
 
     /**
@@ -291,7 +287,7 @@ public class ObjectFactory {
      * 
      */
     public CartAddRequest.Items createCartAddRequestItems() {
-	return new CartAddRequest.Items();
+        return new CartAddRequest.Items();
     }
 
     /**
@@ -299,7 +295,7 @@ public class ObjectFactory {
      * 
      */
     public CartAdd createCartAdd() {
-	return new CartAdd();
+        return new CartAdd();
     }
 
     /**
@@ -307,7 +303,7 @@ public class ObjectFactory {
      * 
      */
     public RelatedItem createRelatedItem() {
-	return new RelatedItem();
+        return new RelatedItem();
     }
 
     /**
@@ -315,7 +311,7 @@ public class ObjectFactory {
      * 
      */
     public Errors.Error createErrorsError() {
-	return new Errors.Error();
+        return new Errors.Error();
     }
 
     /**
@@ -323,7 +319,7 @@ public class ObjectFactory {
      * 
      */
     public ItemLinks createItemLinks() {
-	return new ItemLinks();
+        return new ItemLinks();
     }
 
     /**
@@ -331,7 +327,7 @@ public class ObjectFactory {
      * 
      */
     public ItemLink createItemLink() {
-	return new ItemLink();
+        return new ItemLink();
     }
 
     /**
@@ -339,16 +335,15 @@ public class ObjectFactory {
      * 
      */
     public Image createImage() {
-	return new Image();
+        return new Image();
     }
 
     /**
-     * Create an instance of
-     * {@link name.abhijitsarkar.webservices.jaxws.aws.client.generated.Item.ImageSets }
+     * Create an instance of {@link name.abhijitsarkar.webservices.jaxws.aws.client.generated.Item.ImageSets }
      * 
      */
     public name.abhijitsarkar.webservices.jaxws.aws.client.generated.Item.ImageSets createItemImageSets() {
-	return new name.abhijitsarkar.webservices.jaxws.aws.client.generated.Item.ImageSets();
+        return new name.abhijitsarkar.webservices.jaxws.aws.client.generated.Item.ImageSets();
     }
 
     /**
@@ -356,7 +351,7 @@ public class ObjectFactory {
      * 
      */
     public ItemAttributes.CatalogNumberList createItemAttributesCatalogNumberList() {
-	return new ItemAttributes.CatalogNumberList();
+        return new ItemAttributes.CatalogNumberList();
     }
 
     /**
@@ -364,7 +359,7 @@ public class ObjectFactory {
      * 
      */
     public ItemAttributes.Creator createItemAttributesCreator() {
-	return new ItemAttributes.Creator();
+        return new ItemAttributes.Creator();
     }
 
     /**
@@ -372,7 +367,7 @@ public class ObjectFactory {
      * 
      */
     public ItemAttributes.EANList createItemAttributesEANList() {
-	return new ItemAttributes.EANList();
+        return new ItemAttributes.EANList();
     }
 
     /**
@@ -380,7 +375,7 @@ public class ObjectFactory {
      * 
      */
     public ItemAttributes.ItemDimensions createItemAttributesItemDimensions() {
-	return new ItemAttributes.ItemDimensions();
+        return new ItemAttributes.ItemDimensions();
     }
 
     /**
@@ -388,7 +383,7 @@ public class ObjectFactory {
      * 
      */
     public Price createPrice() {
-	return new Price();
+        return new Price();
     }
 
     /**
@@ -396,7 +391,7 @@ public class ObjectFactory {
      * 
      */
     public DecimalWithUnits createDecimalWithUnits() {
-	return new DecimalWithUnits();
+        return new DecimalWithUnits();
     }
 
     /**
@@ -404,7 +399,7 @@ public class ObjectFactory {
      * 
      */
     public ItemAttributes.PackageDimensions createItemAttributesPackageDimensions() {
-	return new ItemAttributes.PackageDimensions();
+        return new ItemAttributes.PackageDimensions();
     }
 
     /**
@@ -412,7 +407,7 @@ public class ObjectFactory {
      * 
      */
     public NonNegativeIntegerWithUnits createNonNegativeIntegerWithUnits() {
-	return new NonNegativeIntegerWithUnits();
+        return new NonNegativeIntegerWithUnits();
     }
 
     /**
@@ -420,16 +415,15 @@ public class ObjectFactory {
      * 
      */
     public ItemAttributes.UPCList createItemAttributesUPCList() {
-	return new ItemAttributes.UPCList();
+        return new ItemAttributes.UPCList();
     }
 
     /**
-     * Create an instance of
-     * {@link name.abhijitsarkar.webservices.jaxws.aws.client.generated.Item.VariationAttributes }
+     * Create an instance of {@link name.abhijitsarkar.webservices.jaxws.aws.client.generated.Item.VariationAttributes }
      * 
      */
     public name.abhijitsarkar.webservices.jaxws.aws.client.generated.Item.VariationAttributes createItemVariationAttributes() {
-	return new name.abhijitsarkar.webservices.jaxws.aws.client.generated.Item.VariationAttributes();
+        return new name.abhijitsarkar.webservices.jaxws.aws.client.generated.Item.VariationAttributes();
     }
 
     /**
@@ -437,16 +431,15 @@ public class ObjectFactory {
      * 
      */
     public RelatedItems createRelatedItems() {
-	return new RelatedItems();
+        return new RelatedItems();
     }
 
     /**
-     * Create an instance of
-     * {@link name.abhijitsarkar.webservices.jaxws.aws.client.generated.Item.Subjects }
+     * Create an instance of {@link name.abhijitsarkar.webservices.jaxws.aws.client.generated.Item.Subjects }
      * 
      */
     public name.abhijitsarkar.webservices.jaxws.aws.client.generated.Item.Subjects createItemSubjects() {
-	return new name.abhijitsarkar.webservices.jaxws.aws.client.generated.Item.Subjects();
+        return new name.abhijitsarkar.webservices.jaxws.aws.client.generated.Item.Subjects();
     }
 
     /**
@@ -454,7 +447,7 @@ public class ObjectFactory {
      * 
      */
     public OfferSummary createOfferSummary() {
-	return new OfferSummary();
+        return new OfferSummary();
     }
 
     /**
@@ -462,7 +455,7 @@ public class ObjectFactory {
      * 
      */
     public Offers createOffers() {
-	return new Offers();
+        return new Offers();
     }
 
     /**
@@ -470,7 +463,7 @@ public class ObjectFactory {
      * 
      */
     public Offer createOffer() {
-	return new Offer();
+        return new Offer();
     }
 
     /**
@@ -478,7 +471,7 @@ public class ObjectFactory {
      * 
      */
     public Merchant createMerchant() {
-	return new Merchant();
+        return new Merchant();
     }
 
     /**
@@ -486,7 +479,7 @@ public class ObjectFactory {
      * 
      */
     public OfferAttributes createOfferAttributes() {
-	return new OfferAttributes();
+        return new OfferAttributes();
     }
 
     /**
@@ -494,7 +487,7 @@ public class ObjectFactory {
      * 
      */
     public OfferListing.AvailabilityAttributes createOfferListingAvailabilityAttributes() {
-	return new OfferListing.AvailabilityAttributes();
+        return new OfferListing.AvailabilityAttributes();
     }
 
     /**
@@ -502,7 +495,7 @@ public class ObjectFactory {
      * 
      */
     public LoyaltyPoints createLoyaltyPoints() {
-	return new LoyaltyPoints();
+        return new LoyaltyPoints();
     }
 
     /**
@@ -510,7 +503,7 @@ public class ObjectFactory {
      * 
      */
     public Promotions createPromotions() {
-	return new Promotions();
+        return new Promotions();
     }
 
     /**
@@ -518,7 +511,7 @@ public class ObjectFactory {
      * 
      */
     public Promotion.Summary createPromotionSummary() {
-	return new Promotion.Summary();
+        return new Promotion.Summary();
     }
 
     /**
@@ -526,7 +519,7 @@ public class ObjectFactory {
      * 
      */
     public VariationSummary createVariationSummary() {
-	return new VariationSummary();
+        return new VariationSummary();
     }
 
     /**
@@ -534,7 +527,7 @@ public class ObjectFactory {
      * 
      */
     public Variations createVariations() {
-	return new Variations();
+        return new Variations();
     }
 
     /**
@@ -542,7 +535,7 @@ public class ObjectFactory {
      * 
      */
     public VariationDimensions createVariationDimensions() {
-	return new VariationDimensions();
+        return new VariationDimensions();
     }
 
     /**
@@ -550,7 +543,7 @@ public class ObjectFactory {
      * 
      */
     public CustomerReviews createCustomerReviews() {
-	return new CustomerReviews();
+        return new CustomerReviews();
     }
 
     /**
@@ -558,7 +551,7 @@ public class ObjectFactory {
      * 
      */
     public EditorialReviews createEditorialReviews() {
-	return new EditorialReviews();
+        return new EditorialReviews();
     }
 
     /**
@@ -566,7 +559,7 @@ public class ObjectFactory {
      * 
      */
     public EditorialReview createEditorialReview() {
-	return new EditorialReview();
+        return new EditorialReview();
     }
 
     /**
@@ -574,7 +567,7 @@ public class ObjectFactory {
      * 
      */
     public SimilarProducts.SimilarProduct createSimilarProductsSimilarProduct() {
-	return new SimilarProducts.SimilarProduct();
+        return new SimilarProducts.SimilarProduct();
     }
 
     /**
@@ -582,7 +575,7 @@ public class ObjectFactory {
      * 
      */
     public Accessories.Accessory createAccessoriesAccessory() {
-	return new Accessories.Accessory();
+        return new Accessories.Accessory();
     }
 
     /**
@@ -590,7 +583,7 @@ public class ObjectFactory {
      * 
      */
     public BrowseNodes createBrowseNodes() {
-	return new BrowseNodes();
+        return new BrowseNodes();
     }
 
     /**
@@ -598,7 +591,7 @@ public class ObjectFactory {
      * 
      */
     public Request createRequest() {
-	return new Request();
+        return new Request();
     }
 
     /**
@@ -606,7 +599,7 @@ public class ObjectFactory {
      * 
      */
     public BrowseNodeLookupRequest createBrowseNodeLookupRequest() {
-	return new BrowseNodeLookupRequest();
+        return new BrowseNodeLookupRequest();
     }
 
     /**
@@ -614,7 +607,7 @@ public class ObjectFactory {
      * 
      */
     public ItemSearchRequest createItemSearchRequest() {
-	return new ItemSearchRequest();
+        return new ItemSearchRequest();
     }
 
     /**
@@ -622,7 +615,7 @@ public class ObjectFactory {
      * 
      */
     public ItemLookupRequest createItemLookupRequest() {
-	return new ItemLookupRequest();
+        return new ItemLookupRequest();
     }
 
     /**
@@ -630,7 +623,7 @@ public class ObjectFactory {
      * 
      */
     public SimilarityLookupRequest createSimilarityLookupRequest() {
-	return new SimilarityLookupRequest();
+        return new SimilarityLookupRequest();
     }
 
     /**
@@ -638,7 +631,7 @@ public class ObjectFactory {
      * 
      */
     public CartGetRequest createCartGetRequest() {
-	return new CartGetRequest();
+        return new CartGetRequest();
     }
 
     /**
@@ -646,7 +639,7 @@ public class ObjectFactory {
      * 
      */
     public CartClearRequest createCartClearRequest() {
-	return new CartClearRequest();
+        return new CartClearRequest();
     }
 
     /**
@@ -654,7 +647,7 @@ public class ObjectFactory {
      * 
      */
     public BrowseNode.Properties createBrowseNodeProperties() {
-	return new BrowseNode.Properties();
+        return new BrowseNode.Properties();
     }
 
     /**
@@ -662,7 +655,7 @@ public class ObjectFactory {
      * 
      */
     public BrowseNode.Children createBrowseNodeChildren() {
-	return new BrowseNode.Children();
+        return new BrowseNode.Children();
     }
 
     /**
@@ -670,7 +663,7 @@ public class ObjectFactory {
      * 
      */
     public BrowseNode.Ancestors createBrowseNodeAncestors() {
-	return new BrowseNode.Ancestors();
+        return new BrowseNode.Ancestors();
     }
 
     /**
@@ -678,7 +671,7 @@ public class ObjectFactory {
      * 
      */
     public TopSellers.TopSeller createTopSellersTopSeller() {
-	return new TopSellers.TopSeller();
+        return new TopSellers.TopSeller();
     }
 
     /**
@@ -686,7 +679,7 @@ public class ObjectFactory {
      * 
      */
     public NewReleases.NewRelease createNewReleasesNewRelease() {
-	return new NewReleases.NewRelease();
+        return new NewReleases.NewRelease();
     }
 
     /**
@@ -694,7 +687,7 @@ public class ObjectFactory {
      * 
      */
     public TopItemSet.TopItem createTopItemSetTopItem() {
-	return new TopItemSet.TopItem();
+        return new TopItemSet.TopItem();
     }
 
     /**
@@ -702,7 +695,7 @@ public class ObjectFactory {
      * 
      */
     public HTTPHeaders.Header createHTTPHeadersHeader() {
-	return new HTTPHeaders.Header();
+        return new HTTPHeaders.Header();
     }
 
     /**
@@ -710,7 +703,7 @@ public class ObjectFactory {
      * 
      */
     public CartClearResponse createCartClearResponse() {
-	return new CartClearResponse();
+        return new CartClearResponse();
     }
 
     /**
@@ -718,7 +711,7 @@ public class ObjectFactory {
      * 
      */
     public OperationRequest createOperationRequest() {
-	return new OperationRequest();
+        return new OperationRequest();
     }
 
     /**
@@ -726,7 +719,7 @@ public class ObjectFactory {
      * 
      */
     public Arguments.Argument createArgumentsArgument() {
-	return new Arguments.Argument();
+        return new Arguments.Argument();
     }
 
     /**
@@ -734,7 +727,7 @@ public class ObjectFactory {
      * 
      */
     public Cart createCart() {
-	return new Cart();
+        return new Cart();
     }
 
     /**
@@ -742,7 +735,7 @@ public class ObjectFactory {
      * 
      */
     public CartItems createCartItems() {
-	return new CartItems();
+        return new CartItems();
     }
 
     /**
@@ -750,7 +743,7 @@ public class ObjectFactory {
      * 
      */
     public SavedForLaterItems createSavedForLaterItems() {
-	return new SavedForLaterItems();
+        return new SavedForLaterItems();
     }
 
     /**
@@ -758,16 +751,15 @@ public class ObjectFactory {
      * 
      */
     public SimilarViewedProducts.SimilarViewedProduct createSimilarViewedProductsSimilarViewedProduct() {
-	return new SimilarViewedProducts.SimilarViewedProduct();
+        return new SimilarViewedProducts.SimilarViewedProduct();
     }
 
     /**
-     * Create an instance of
-     * {@link OtherCategoriesSimilarProducts.OtherCategoriesSimilarProduct }
+     * Create an instance of {@link OtherCategoriesSimilarProducts.OtherCategoriesSimilarProduct }
      * 
      */
     public OtherCategoriesSimilarProducts.OtherCategoriesSimilarProduct createOtherCategoriesSimilarProductsOtherCategoriesSimilarProduct() {
-	return new OtherCategoriesSimilarProducts.OtherCategoriesSimilarProduct();
+        return new OtherCategoriesSimilarProducts.OtherCategoriesSimilarProduct();
     }
 
     /**
@@ -775,7 +767,7 @@ public class ObjectFactory {
      * 
      */
     public ItemSearch createItemSearch() {
-	return new ItemSearch();
+        return new ItemSearch();
     }
 
     /**
@@ -783,7 +775,7 @@ public class ObjectFactory {
      * 
      */
     public SearchBinSets createSearchBinSets() {
-	return new SearchBinSets();
+        return new SearchBinSets();
     }
 
     /**
@@ -791,7 +783,7 @@ public class ObjectFactory {
      * 
      */
     public SearchBinSet createSearchBinSet() {
-	return new SearchBinSet();
+        return new SearchBinSet();
     }
 
     /**
@@ -799,7 +791,7 @@ public class ObjectFactory {
      * 
      */
     public Bin.BinParameter createBinBinParameter() {
-	return new Bin.BinParameter();
+        return new Bin.BinParameter();
     }
 
     /**
@@ -807,16 +799,15 @@ public class ObjectFactory {
      * 
      */
     public ItemLookupResponse createItemLookupResponse() {
-	return new ItemLookupResponse();
+        return new ItemLookupResponse();
     }
 
     /**
-     * Create an instance of
-     * {@link name.abhijitsarkar.webservices.jaxws.aws.client.generated.Items }
+     * Create an instance of {@link name.abhijitsarkar.webservices.jaxws.aws.client.generated.Items }
      * 
      */
     public name.abhijitsarkar.webservices.jaxws.aws.client.generated.Items createItems() {
-	return new name.abhijitsarkar.webservices.jaxws.aws.client.generated.Items();
+        return new name.abhijitsarkar.webservices.jaxws.aws.client.generated.Items();
     }
 
     /**
@@ -824,7 +815,7 @@ public class ObjectFactory {
      * 
      */
     public CorrectedQuery createCorrectedQuery() {
-	return new CorrectedQuery();
+        return new CorrectedQuery();
     }
 
     /**
@@ -832,7 +823,7 @@ public class ObjectFactory {
      * 
      */
     public SearchResultsMap.SearchIndex createSearchResultsMapSearchIndex() {
-	return new SearchResultsMap.SearchIndex();
+        return new SearchResultsMap.SearchIndex();
     }
 
     /**
@@ -840,7 +831,7 @@ public class ObjectFactory {
      * 
      */
     public ItemSearchResponse createItemSearchResponse() {
-	return new ItemSearchResponse();
+        return new ItemSearchResponse();
     }
 
     /**
@@ -848,7 +839,7 @@ public class ObjectFactory {
      * 
      */
     public SimilarityLookupResponse createSimilarityLookupResponse() {
-	return new SimilarityLookupResponse();
+        return new SimilarityLookupResponse();
     }
 
     /**
@@ -856,7 +847,7 @@ public class ObjectFactory {
      * 
      */
     public CartGetResponse createCartGetResponse() {
-	return new CartGetResponse();
+        return new CartGetResponse();
     }
 
     /**
@@ -864,7 +855,7 @@ public class ObjectFactory {
      * 
      */
     public BrowseNodeLookup createBrowseNodeLookup() {
-	return new BrowseNodeLookup();
+        return new BrowseNodeLookup();
     }
 
     /**
@@ -872,7 +863,7 @@ public class ObjectFactory {
      * 
      */
     public CartModifyResponse createCartModifyResponse() {
-	return new CartModifyResponse();
+        return new CartModifyResponse();
     }
 
     /**
@@ -880,7 +871,7 @@ public class ObjectFactory {
      * 
      */
     public CartGet createCartGet() {
-	return new CartGet();
+        return new CartGet();
     }
 
     /**
@@ -888,7 +879,7 @@ public class ObjectFactory {
      * 
      */
     public ImageSet createImageSet() {
-	return new ImageSet();
+        return new ImageSet();
     }
 
     /**
@@ -896,7 +887,7 @@ public class ObjectFactory {
      * 
      */
     public BrowseNodeLookupResponse createBrowseNodeLookupResponse() {
-	return new BrowseNodeLookupResponse();
+        return new BrowseNodeLookupResponse();
     }
 
     /**
@@ -904,7 +895,7 @@ public class ObjectFactory {
      * 
      */
     public CartCreate createCartCreate() {
-	return new CartCreate();
+        return new CartCreate();
     }
 
     /**
@@ -912,7 +903,7 @@ public class ObjectFactory {
      * 
      */
     public CartCreateResponse createCartCreateResponse() {
-	return new CartCreateResponse();
+        return new CartCreateResponse();
     }
 
     /**
@@ -920,7 +911,7 @@ public class ObjectFactory {
      * 
      */
     public Property createProperty() {
-	return new Property();
+        return new Property();
     }
 
     /**
@@ -928,7 +919,7 @@ public class ObjectFactory {
      * 
      */
     public ItemLookup createItemLookup() {
-	return new ItemLookup();
+        return new ItemLookup();
     }
 
     /**
@@ -936,7 +927,7 @@ public class ObjectFactory {
      * 
      */
     public VariationAttribute createVariationAttribute() {
-	return new VariationAttribute();
+        return new VariationAttribute();
     }
 
     /**
@@ -944,7 +935,7 @@ public class ObjectFactory {
      * 
      */
     public SimilarityLookup createSimilarityLookup() {
-	return new SimilarityLookup();
+        return new SimilarityLookup();
     }
 
     /**
@@ -952,7 +943,7 @@ public class ObjectFactory {
      * 
      */
     public CartModify createCartModify() {
-	return new CartModify();
+        return new CartModify();
     }
 
     /**
@@ -960,7 +951,7 @@ public class ObjectFactory {
      * 
      */
     public CartClear createCartClear() {
-	return new CartClear();
+        return new CartClear();
     }
 
     /**
@@ -968,7 +959,7 @@ public class ObjectFactory {
      * 
      */
     public CartAddResponse createCartAddResponse() {
-	return new CartAddResponse();
+        return new CartAddResponse();
     }
 
     /**
@@ -976,7 +967,7 @@ public class ObjectFactory {
      * 
      */
     public StringWithUnits createStringWithUnits() {
-	return new StringWithUnits();
+        return new StringWithUnits();
     }
 
     /**
@@ -984,16 +975,15 @@ public class ObjectFactory {
      * 
      */
     public CartItem.MetaData.KeyValuePair createCartItemMetaDataKeyValuePair() {
-	return new CartItem.MetaData.KeyValuePair();
+        return new CartItem.MetaData.KeyValuePair();
     }
 
     /**
-     * Create an instance of
-     * {@link name.abhijitsarkar.webservices.jaxws.aws.client.generated.Item.AlternateVersions.AlternateVersion }
+     * Create an instance of {@link name.abhijitsarkar.webservices.jaxws.aws.client.generated.Item.AlternateVersions.AlternateVersion }
      * 
      */
     public name.abhijitsarkar.webservices.jaxws.aws.client.generated.Item.AlternateVersions.AlternateVersion createItemAlternateVersionsAlternateVersion() {
-	return new name.abhijitsarkar.webservices.jaxws.aws.client.generated.Item.AlternateVersions.AlternateVersion();
+        return new name.abhijitsarkar.webservices.jaxws.aws.client.generated.Item.AlternateVersions.AlternateVersion();
     }
 
     /**
@@ -1001,7 +991,7 @@ public class ObjectFactory {
      * 
      */
     public CartModifyRequest.Items.Item createCartModifyRequestItemsItem() {
-	return new CartModifyRequest.Items.Item();
+        return new CartModifyRequest.Items.Item();
     }
 
     /**
@@ -1009,7 +999,7 @@ public class ObjectFactory {
      * 
      */
     public CartCreateRequest.Items.Item.MetaData createCartCreateRequestItemsItemMetaData() {
-	return new CartCreateRequest.Items.Item.MetaData();
+        return new CartCreateRequest.Items.Item.MetaData();
     }
 
     /**
@@ -1017,7 +1007,7 @@ public class ObjectFactory {
      * 
      */
     public Tracks.Disc.Track createTracksDiscTrack() {
-	return new Tracks.Disc.Track();
+        return new Tracks.Disc.Track();
     }
 
     /**
@@ -1025,7 +1015,7 @@ public class ObjectFactory {
      * 
      */
     public Collections.Collection.CollectionSummary createCollectionsCollectionCollectionSummary() {
-	return new Collections.Collection.CollectionSummary();
+        return new Collections.Collection.CollectionSummary();
     }
 
     /**
@@ -1033,7 +1023,7 @@ public class ObjectFactory {
      * 
      */
     public Collections.Collection.CollectionParent createCollectionsCollectionCollectionParent() {
-	return new Collections.Collection.CollectionParent();
+        return new Collections.Collection.CollectionParent();
     }
 
     /**
@@ -1041,7 +1031,7 @@ public class ObjectFactory {
      * 
      */
     public Collections.Collection.CollectionItem createCollectionsCollectionCollectionItem() {
-	return new Collections.Collection.CollectionItem();
+        return new Collections.Collection.CollectionItem();
     }
 
     /**
@@ -1049,7 +1039,7 @@ public class ObjectFactory {
      * 
      */
     public ItemAttributes.Languages.Language createItemAttributesLanguagesLanguage() {
-	return new ItemAttributes.Languages.Language();
+        return new ItemAttributes.Languages.Language();
     }
 
     /**
@@ -1057,27 +1047,25 @@ public class ObjectFactory {
      * 
      */
     public CartAddRequest.Items.Item createCartAddRequestItemsItem() {
-	return new CartAddRequest.Items.Item();
+        return new CartAddRequest.Items.Item();
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}
+     * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
      * 
      */
     @XmlElementDecl(namespace = "http://webservices.amazon.com/AWSECommerceService/2011-08-01", name = "Condition")
     public JAXBElement<String> createCondition(String value) {
-	return new JAXBElement<String>(_Condition_QNAME, String.class, null,
-		value);
+        return new JAXBElement<String>(_Condition_QNAME, String.class, null, value);
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}
+     * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
      * 
      */
     @XmlElementDecl(namespace = "http://webservices.amazon.com/AWSECommerceService/2011-08-01", name = "AudienceRating")
     public JAXBElement<String> createAudienceRating(String value) {
-	return new JAXBElement<String>(_AudienceRating_QNAME, String.class,
-		null, value);
+        return new JAXBElement<String>(_AudienceRating_QNAME, String.class, null, value);
     }
 
 }

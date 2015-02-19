@@ -1,7 +1,7 @@
+
 package name.abhijitsarkar.webservices.jaxws.aws.client.generated;
 
 import java.math.BigInteger;
-
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
@@ -9,13 +9,11 @@ import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlSchemaType;
 import javax.xml.bind.annotation.XmlType;
 
+
 /**
- * <p>
- * Java class for anonymous complex type.
+ * <p>Java class for anonymous complex type.
  * 
- * <p>
- * The following schema fragment specifies the expected content contained within
- * this class.
+ * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
  * &lt;complexType>
@@ -33,7 +31,10 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "", propOrder = { "points", "typicalRedemptionValue" })
+@XmlType(name = "", propOrder = {
+    "points",
+    "typicalRedemptionValue"
+})
 @XmlRootElement(name = "LoyaltyPoints")
 public class LoyaltyPoints {
 
@@ -46,43 +47,49 @@ public class LoyaltyPoints {
     /**
      * Gets the value of the points property.
      * 
-     * @return possible object is {@link BigInteger }
-     * 
+     * @return
+     *     possible object is
+     *     {@link BigInteger }
+     *     
      */
     public BigInteger getPoints() {
-	return points;
+        return points;
     }
 
     /**
      * Sets the value of the points property.
      * 
      * @param value
-     *            allowed object is {@link BigInteger }
-     * 
+     *     allowed object is
+     *     {@link BigInteger }
+     *     
      */
     public void setPoints(BigInteger value) {
-	this.points = value;
+        this.points = value;
     }
 
     /**
      * Gets the value of the typicalRedemptionValue property.
      * 
-     * @return possible object is {@link Price }
-     * 
+     * @return
+     *     possible object is
+     *     {@link Price }
+     *     
      */
     public Price getTypicalRedemptionValue() {
-	return typicalRedemptionValue;
+        return typicalRedemptionValue;
     }
 
     /**
      * Sets the value of the typicalRedemptionValue property.
      * 
      * @param value
-     *            allowed object is {@link Price }
-     * 
+     *     allowed object is
+     *     {@link Price }
+     *     
      */
     public void setTypicalRedemptionValue(Price value) {
-	this.typicalRedemptionValue = value;
+        this.typicalRedemptionValue = value;
     }
 
 }

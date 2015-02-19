@@ -25,53 +25,42 @@
     in the form of the generated exception class and unmapped exceptions as a ProtocolException subclass, 
     which almost always is SOAPFaultException class. 
     If the client is a dispatch type, regardless of how the service is implemented, 
-    it'll see the exception in the form of a ProtocolException subclass, which almost always is SOAPFaultException class.  
+    it'll see the exception in the form of a ProtocolException subclass, which almost always is SOAPFaultException class. 
+    
+    <![CDATA[
+      Run 'mvn clean package jetty:run -P jetty' from the basedir then run the main classes in the project.
+      
+      To start Jetty in debug mode, run 'mvn clean package jetty:run-forked -P jetty'.
+    ]]>
   </description>
 
-  <dependencies>
-    <dependency>
-      <groupId>
-        ${project.groupId}
-      </groupId>
-      <artifactId>jax-ws-handlers</artifactId>
-      <version>${project.version}</version>
-      <scope>runtime</scope>
-    </dependency>
-  </dependencies>
-
-  <profiles>
-    <profile>
-      <id>wsimport</id>
-      <build>
-        <defaultGoal>clean generate-sources</defaultGoal>
-        <plugins>
-          <plugin>
-            <groupId>org.jvnet.jax-ws-commons</groupId>
-            <artifactId>jaxws-maven-plugin</artifactId>
-            <executions>
-              <execution>
-                <id>wsimport-jaxws-exception-client</id>
-                <goals>
-                  <goal>wsimport</goal>
-                </goals>
-                <phase>generate-sources</phase>
-                <configuration>
-                  <packageName>name.abhijitsarkar.webservices.jaxws.exception.client.generated</packageName>
-                  <wsdlDirectory>src/main/resources/wsdl</wsdlDirectory>
-                  <wsdlFiles>
-                    <wsdlFile>calculator.wsdl</wsdlFile>
-                  </wsdlFiles>
-                  <!-- This determines @WebService.wsdlLocation and @WebServiceClient.wsdlLocation 
-                    value. -->
-                  <wsdlLocation>http://localhost:8080/jax-ws-exception/CalculatorService?wsdl</wsdlLocation>
-                  <!-- Turn off generated source compilation; Maven will do it anyway -->
-                  <xnocompile>true</xnocompile>
-                </configuration>
-              </execution>
-            </executions>
-          </plugin>
-        </plugins>
-      </build>
-    </profile>
-  </profiles>
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.jvnet.jax-ws-commons</groupId>
+        <artifactId>jaxws-maven-plugin</artifactId>
+        <executions>
+          <execution>
+            <id>wsimport-jaxws-exception-client</id>
+            <goals>
+              <goal>wsimport</goal>
+            </goals>
+            <phase>generate-sources</phase>
+            <configuration>
+              <packageName>name.abhijitsarkar.webservices.jaxws.exception.client.generated</packageName>
+              <wsdlDirectory>src/main/resources/wsdl</wsdlDirectory>
+              <wsdlFiles>
+                <wsdlFile>calculator.wsdl</wsdlFile>
+              </wsdlFiles>
+              <!-- This determines @WebService.wsdlLocation and @WebServiceClient.wsdlLocation 
+                value. -->
+              <wsdlLocation>http://localhost:8080/jax-ws-exception/CalculatorService?wsdl</wsdlLocation>
+              <!-- Turn off generated source compilation; Maven will do it anyway -->
+              <xnocompile>true</xnocompile>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
+    </plugins>
+  </build>
 </project>

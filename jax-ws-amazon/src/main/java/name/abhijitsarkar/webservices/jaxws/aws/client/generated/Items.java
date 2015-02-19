@@ -1,9 +1,9 @@
+
 package name.abhijitsarkar.webservices.jaxws.aws.client.generated;
 
 import java.math.BigInteger;
 import java.util.ArrayList;
 import java.util.List;
-
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
@@ -11,13 +11,11 @@ import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlSchemaType;
 import javax.xml.bind.annotation.XmlType;
 
+
 /**
- * <p>
- * Java class for anonymous complex type.
+ * <p>Java class for anonymous complex type.
  * 
- * <p>
- * The following schema fragment specifies the expected content contained within
- * this class.
+ * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
  * &lt;complexType>
@@ -43,9 +41,18 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "", propOrder = { "request", "correctedQuery", "qid",
-	"engineQuery", "totalResults", "totalPages", "moreSearchResultsUrl",
-	"searchResultsMap", "item", "searchBinSets" })
+@XmlType(name = "", propOrder = {
+    "request",
+    "correctedQuery",
+    "qid",
+    "engineQuery",
+    "totalResults",
+    "totalPages",
+    "moreSearchResultsUrl",
+    "searchResultsMap",
+    "item",
+    "searchBinSets"
+})
 @XmlRootElement(name = "Items")
 public class Items {
 
@@ -75,219 +82,246 @@ public class Items {
     /**
      * Gets the value of the request property.
      * 
-     * @return possible object is {@link Request }
-     * 
+     * @return
+     *     possible object is
+     *     {@link Request }
+     *     
      */
     public Request getRequest() {
-	return request;
+        return request;
     }
 
     /**
      * Sets the value of the request property.
      * 
      * @param value
-     *            allowed object is {@link Request }
-     * 
+     *     allowed object is
+     *     {@link Request }
+     *     
      */
     public void setRequest(Request value) {
-	this.request = value;
+        this.request = value;
     }
 
     /**
      * Gets the value of the correctedQuery property.
      * 
-     * @return possible object is {@link CorrectedQuery }
-     * 
+     * @return
+     *     possible object is
+     *     {@link CorrectedQuery }
+     *     
      */
     public CorrectedQuery getCorrectedQuery() {
-	return correctedQuery;
+        return correctedQuery;
     }
 
     /**
      * Sets the value of the correctedQuery property.
      * 
      * @param value
-     *            allowed object is {@link CorrectedQuery }
-     * 
+     *     allowed object is
+     *     {@link CorrectedQuery }
+     *     
      */
     public void setCorrectedQuery(CorrectedQuery value) {
-	this.correctedQuery = value;
+        this.correctedQuery = value;
     }
 
     /**
      * Gets the value of the qid property.
      * 
-     * @return possible object is {@link String }
-     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getQid() {
-	return qid;
+        return qid;
     }
 
     /**
      * Sets the value of the qid property.
      * 
      * @param value
-     *            allowed object is {@link String }
-     * 
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setQid(String value) {
-	this.qid = value;
+        this.qid = value;
     }
 
     /**
      * Gets the value of the engineQuery property.
      * 
-     * @return possible object is {@link String }
-     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getEngineQuery() {
-	return engineQuery;
+        return engineQuery;
     }
 
     /**
      * Sets the value of the engineQuery property.
      * 
      * @param value
-     *            allowed object is {@link String }
-     * 
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setEngineQuery(String value) {
-	this.engineQuery = value;
+        this.engineQuery = value;
     }
 
     /**
      * Gets the value of the totalResults property.
      * 
-     * @return possible object is {@link BigInteger }
-     * 
+     * @return
+     *     possible object is
+     *     {@link BigInteger }
+     *     
      */
     public BigInteger getTotalResults() {
-	return totalResults;
+        return totalResults;
     }
 
     /**
      * Sets the value of the totalResults property.
      * 
      * @param value
-     *            allowed object is {@link BigInteger }
-     * 
+     *     allowed object is
+     *     {@link BigInteger }
+     *     
      */
     public void setTotalResults(BigInteger value) {
-	this.totalResults = value;
+        this.totalResults = value;
     }
 
     /**
      * Gets the value of the totalPages property.
      * 
-     * @return possible object is {@link BigInteger }
-     * 
+     * @return
+     *     possible object is
+     *     {@link BigInteger }
+     *     
      */
     public BigInteger getTotalPages() {
-	return totalPages;
+        return totalPages;
     }
 
     /**
      * Sets the value of the totalPages property.
      * 
      * @param value
-     *            allowed object is {@link BigInteger }
-     * 
+     *     allowed object is
+     *     {@link BigInteger }
+     *     
      */
     public void setTotalPages(BigInteger value) {
-	this.totalPages = value;
+        this.totalPages = value;
     }
 
     /**
      * Gets the value of the moreSearchResultsUrl property.
      * 
-     * @return possible object is {@link String }
-     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getMoreSearchResultsUrl() {
-	return moreSearchResultsUrl;
+        return moreSearchResultsUrl;
     }
 
     /**
      * Sets the value of the moreSearchResultsUrl property.
      * 
      * @param value
-     *            allowed object is {@link String }
-     * 
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setMoreSearchResultsUrl(String value) {
-	this.moreSearchResultsUrl = value;
+        this.moreSearchResultsUrl = value;
     }
 
     /**
      * Gets the value of the searchResultsMap property.
      * 
-     * @return possible object is {@link SearchResultsMap }
-     * 
+     * @return
+     *     possible object is
+     *     {@link SearchResultsMap }
+     *     
      */
     public SearchResultsMap getSearchResultsMap() {
-	return searchResultsMap;
+        return searchResultsMap;
     }
 
     /**
      * Sets the value of the searchResultsMap property.
      * 
      * @param value
-     *            allowed object is {@link SearchResultsMap }
-     * 
+     *     allowed object is
+     *     {@link SearchResultsMap }
+     *     
      */
     public void setSearchResultsMap(SearchResultsMap value) {
-	this.searchResultsMap = value;
+        this.searchResultsMap = value;
     }
 
     /**
      * Gets the value of the item property.
      * 
      * <p>
-     * This accessor method returns a reference to the live list, not a
-     * snapshot. Therefore any modification you make to the returned list will
-     * be present inside the JAXB object. This is why there is not a
-     * <CODE>set</CODE> method for the item property.
+     * This accessor method returns a reference to the live list,
+     * not a snapshot. Therefore any modification you make to the
+     * returned list will be present inside the JAXB object.
+     * This is why there is not a <CODE>set</CODE> method for the item property.
      * 
      * <p>
      * For example, to add a new item, do as follows:
-     * 
      * <pre>
-     * getItem().add(newItem);
+     *    getItem().add(newItem);
      * </pre>
      * 
      * 
      * <p>
-     * Objects of the following type(s) are allowed in the list {@link Item }
+     * Objects of the following type(s) are allowed in the list
+     * {@link Item }
      * 
      * 
      */
     public List<Item> getItem() {
-	if (item == null) {
-	    item = new ArrayList<Item>();
-	}
-	return this.item;
+        if (item == null) {
+            item = new ArrayList<Item>();
+        }
+        return this.item;
     }
 
     /**
      * Gets the value of the searchBinSets property.
      * 
-     * @return possible object is {@link SearchBinSets }
-     * 
+     * @return
+     *     possible object is
+     *     {@link SearchBinSets }
+     *     
      */
     public SearchBinSets getSearchBinSets() {
-	return searchBinSets;
+        return searchBinSets;
     }
 
     /**
      * Sets the value of the searchBinSets property.
      * 
      * @param value
-     *            allowed object is {@link SearchBinSets }
-     * 
+     *     allowed object is
+     *     {@link SearchBinSets }
+     *     
      */
     public void setSearchBinSets(SearchBinSets value) {
-	this.searchBinSets = value;
+        this.searchBinSets = value;
     }
 
 }

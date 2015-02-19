@@ -1,9 +1,9 @@
+
 package name.abhijitsarkar.webservices.jaxws.aws.client.generated;
 
 import java.math.BigInteger;
 import java.util.ArrayList;
 import java.util.List;
-
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
@@ -11,13 +11,11 @@ import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlSchemaType;
 import javax.xml.bind.annotation.XmlType;
 
+
 /**
- * <p>
- * Java class for anonymous complex type.
+ * <p>Java class for anonymous complex type.
  * 
- * <p>
- * The following schema fragment specifies the expected content contained within
- * this class.
+ * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
  * &lt;complexType>
@@ -47,7 +45,11 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "", propOrder = { "binName", "binItemCount", "binParameter" })
+@XmlType(name = "", propOrder = {
+    "binName",
+    "binItemCount",
+    "binParameter"
+})
 @XmlRootElement(name = "Bin")
 public class Bin {
 
@@ -62,59 +64,64 @@ public class Bin {
     /**
      * Gets the value of the binName property.
      * 
-     * @return possible object is {@link String }
-     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getBinName() {
-	return binName;
+        return binName;
     }
 
     /**
      * Sets the value of the binName property.
      * 
      * @param value
-     *            allowed object is {@link String }
-     * 
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setBinName(String value) {
-	this.binName = value;
+        this.binName = value;
     }
 
     /**
      * Gets the value of the binItemCount property.
      * 
-     * @return possible object is {@link BigInteger }
-     * 
+     * @return
+     *     possible object is
+     *     {@link BigInteger }
+     *     
      */
     public BigInteger getBinItemCount() {
-	return binItemCount;
+        return binItemCount;
     }
 
     /**
      * Sets the value of the binItemCount property.
      * 
      * @param value
-     *            allowed object is {@link BigInteger }
-     * 
+     *     allowed object is
+     *     {@link BigInteger }
+     *     
      */
     public void setBinItemCount(BigInteger value) {
-	this.binItemCount = value;
+        this.binItemCount = value;
     }
 
     /**
      * Gets the value of the binParameter property.
      * 
      * <p>
-     * This accessor method returns a reference to the live list, not a
-     * snapshot. Therefore any modification you make to the returned list will
-     * be present inside the JAXB object. This is why there is not a
-     * <CODE>set</CODE> method for the binParameter property.
+     * This accessor method returns a reference to the live list,
+     * not a snapshot. Therefore any modification you make to the
+     * returned list will be present inside the JAXB object.
+     * This is why there is not a <CODE>set</CODE> method for the binParameter property.
      * 
      * <p>
      * For example, to add a new item, do as follows:
-     * 
      * <pre>
-     * getBinParameter().add(newItem);
+     *    getBinParameter().add(newItem);
      * </pre>
      * 
      * 
@@ -125,19 +132,17 @@ public class Bin {
      * 
      */
     public List<Bin.BinParameter> getBinParameter() {
-	if (binParameter == null) {
-	    binParameter = new ArrayList<Bin.BinParameter>();
-	}
-	return this.binParameter;
+        if (binParameter == null) {
+            binParameter = new ArrayList<Bin.BinParameter>();
+        }
+        return this.binParameter;
     }
 
+
     /**
-     * <p>
-     * Java class for anonymous complex type.
+     * <p>Java class for anonymous complex type.
      * 
-     * <p>
-     * The following schema fragment specifies the expected content contained
-     * within this class.
+     * <p>The following schema fragment specifies the expected content contained within this class.
      * 
      * <pre>
      * &lt;complexType>
@@ -155,55 +160,64 @@ public class Bin {
      * 
      */
     @XmlAccessorType(XmlAccessType.FIELD)
-    @XmlType(name = "", propOrder = { "name", "value" })
+    @XmlType(name = "", propOrder = {
+        "name",
+        "value"
+    })
     public static class BinParameter {
 
-	@XmlElement(name = "Name", required = true)
-	protected String name;
-	@XmlElement(name = "Value", required = true)
-	protected String value;
+        @XmlElement(name = "Name", required = true)
+        protected String name;
+        @XmlElement(name = "Value", required = true)
+        protected String value;
 
-	/**
-	 * Gets the value of the name property.
-	 * 
-	 * @return possible object is {@link String }
-	 * 
-	 */
-	public String getName() {
-	    return name;
-	}
+        /**
+         * Gets the value of the name property.
+         * 
+         * @return
+         *     possible object is
+         *     {@link String }
+         *     
+         */
+        public String getName() {
+            return name;
+        }
 
-	/**
-	 * Sets the value of the name property.
-	 * 
-	 * @param value
-	 *            allowed object is {@link String }
-	 * 
-	 */
-	public void setName(String value) {
-	    this.name = value;
-	}
+        /**
+         * Sets the value of the name property.
+         * 
+         * @param value
+         *     allowed object is
+         *     {@link String }
+         *     
+         */
+        public void setName(String value) {
+            this.name = value;
+        }
 
-	/**
-	 * Gets the value of the value property.
-	 * 
-	 * @return possible object is {@link String }
-	 * 
-	 */
-	public String getValue() {
-	    return value;
-	}
+        /**
+         * Gets the value of the value property.
+         * 
+         * @return
+         *     possible object is
+         *     {@link String }
+         *     
+         */
+        public String getValue() {
+            return value;
+        }
 
-	/**
-	 * Sets the value of the value property.
-	 * 
-	 * @param value
-	 *            allowed object is {@link String }
-	 * 
-	 */
-	public void setValue(String value) {
-	    this.value = value;
-	}
+        /**
+         * Sets the value of the value property.
+         * 
+         * @param value
+         *     allowed object is
+         *     {@link String }
+         *     
+         */
+        public void setValue(String value) {
+            this.value = value;
+        }
 
     }
 

@@ -1,3 +1,4 @@
+
 package name.abhijitsarkar.webservices.jaxws.aws.client.generated;
 
 import javax.xml.bind.annotation.XmlAccessType;
@@ -6,13 +7,11 @@ import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlType;
 
+
 /**
- * <p>
- * Java class for anonymous complex type.
+ * <p>Java class for anonymous complex type.
  * 
- * <p>
- * The following schema fragment specifies the expected content contained within
- * this class.
+ * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
  * &lt;complexType>
@@ -42,11 +41,22 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "", propOrder = { "request", "cartId", "hmac",
-	"urlEncodedHMAC", "purchaseURL", "mobileCartURL", "subTotal",
-	"cartItems", "savedForLaterItems", "similarProducts", "topSellers",
-	"newReleases", "similarViewedProducts",
-	"otherCategoriesSimilarProducts" })
+@XmlType(name = "", propOrder = {
+    "request",
+    "cartId",
+    "hmac",
+    "urlEncodedHMAC",
+    "purchaseURL",
+    "mobileCartURL",
+    "subTotal",
+    "cartItems",
+    "savedForLaterItems",
+    "similarProducts",
+    "topSellers",
+    "newReleases",
+    "similarViewedProducts",
+    "otherCategoriesSimilarProducts"
+})
 @XmlRootElement(name = "Cart")
 public class Cart {
 
@@ -82,296 +92,337 @@ public class Cart {
     /**
      * Gets the value of the request property.
      * 
-     * @return possible object is {@link Request }
-     * 
+     * @return
+     *     possible object is
+     *     {@link Request }
+     *     
      */
     public Request getRequest() {
-	return request;
+        return request;
     }
 
     /**
      * Sets the value of the request property.
      * 
      * @param value
-     *            allowed object is {@link Request }
-     * 
+     *     allowed object is
+     *     {@link Request }
+     *     
      */
     public void setRequest(Request value) {
-	this.request = value;
+        this.request = value;
     }
 
     /**
      * Gets the value of the cartId property.
      * 
-     * @return possible object is {@link String }
-     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getCartId() {
-	return cartId;
+        return cartId;
     }
 
     /**
      * Sets the value of the cartId property.
      * 
      * @param value
-     *            allowed object is {@link String }
-     * 
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setCartId(String value) {
-	this.cartId = value;
+        this.cartId = value;
     }
 
     /**
      * Gets the value of the hmac property.
      * 
-     * @return possible object is {@link String }
-     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getHMAC() {
-	return hmac;
+        return hmac;
     }
 
     /**
      * Sets the value of the hmac property.
      * 
      * @param value
-     *            allowed object is {@link String }
-     * 
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setHMAC(String value) {
-	this.hmac = value;
+        this.hmac = value;
     }
 
     /**
      * Gets the value of the urlEncodedHMAC property.
      * 
-     * @return possible object is {@link String }
-     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getURLEncodedHMAC() {
-	return urlEncodedHMAC;
+        return urlEncodedHMAC;
     }
 
     /**
      * Sets the value of the urlEncodedHMAC property.
      * 
      * @param value
-     *            allowed object is {@link String }
-     * 
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setURLEncodedHMAC(String value) {
-	this.urlEncodedHMAC = value;
+        this.urlEncodedHMAC = value;
     }
 
     /**
      * Gets the value of the purchaseURL property.
      * 
-     * @return possible object is {@link String }
-     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getPurchaseURL() {
-	return purchaseURL;
+        return purchaseURL;
     }
 
     /**
      * Sets the value of the purchaseURL property.
      * 
      * @param value
-     *            allowed object is {@link String }
-     * 
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setPurchaseURL(String value) {
-	this.purchaseURL = value;
+        this.purchaseURL = value;
     }
 
     /**
      * Gets the value of the mobileCartURL property.
      * 
-     * @return possible object is {@link String }
-     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getMobileCartURL() {
-	return mobileCartURL;
+        return mobileCartURL;
     }
 
     /**
      * Sets the value of the mobileCartURL property.
      * 
      * @param value
-     *            allowed object is {@link String }
-     * 
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setMobileCartURL(String value) {
-	this.mobileCartURL = value;
+        this.mobileCartURL = value;
     }
 
     /**
      * Gets the value of the subTotal property.
      * 
-     * @return possible object is {@link Price }
-     * 
+     * @return
+     *     possible object is
+     *     {@link Price }
+     *     
      */
     public Price getSubTotal() {
-	return subTotal;
+        return subTotal;
     }
 
     /**
      * Sets the value of the subTotal property.
      * 
      * @param value
-     *            allowed object is {@link Price }
-     * 
+     *     allowed object is
+     *     {@link Price }
+     *     
      */
     public void setSubTotal(Price value) {
-	this.subTotal = value;
+        this.subTotal = value;
     }
 
     /**
      * Gets the value of the cartItems property.
      * 
-     * @return possible object is {@link CartItems }
-     * 
+     * @return
+     *     possible object is
+     *     {@link CartItems }
+     *     
      */
     public CartItems getCartItems() {
-	return cartItems;
+        return cartItems;
     }
 
     /**
      * Sets the value of the cartItems property.
      * 
      * @param value
-     *            allowed object is {@link CartItems }
-     * 
+     *     allowed object is
+     *     {@link CartItems }
+     *     
      */
     public void setCartItems(CartItems value) {
-	this.cartItems = value;
+        this.cartItems = value;
     }
 
     /**
      * Gets the value of the savedForLaterItems property.
      * 
-     * @return possible object is {@link SavedForLaterItems }
-     * 
+     * @return
+     *     possible object is
+     *     {@link SavedForLaterItems }
+     *     
      */
     public SavedForLaterItems getSavedForLaterItems() {
-	return savedForLaterItems;
+        return savedForLaterItems;
     }
 
     /**
      * Sets the value of the savedForLaterItems property.
      * 
      * @param value
-     *            allowed object is {@link SavedForLaterItems }
-     * 
+     *     allowed object is
+     *     {@link SavedForLaterItems }
+     *     
      */
     public void setSavedForLaterItems(SavedForLaterItems value) {
-	this.savedForLaterItems = value;
+        this.savedForLaterItems = value;
     }
 
     /**
      * Gets the value of the similarProducts property.
      * 
-     * @return possible object is {@link SimilarProducts }
-     * 
+     * @return
+     *     possible object is
+     *     {@link SimilarProducts }
+     *     
      */
     public SimilarProducts getSimilarProducts() {
-	return similarProducts;
+        return similarProducts;
     }
 
     /**
      * Sets the value of the similarProducts property.
      * 
      * @param value
-     *            allowed object is {@link SimilarProducts }
-     * 
+     *     allowed object is
+     *     {@link SimilarProducts }
+     *     
      */
     public void setSimilarProducts(SimilarProducts value) {
-	this.similarProducts = value;
+        this.similarProducts = value;
     }
 
     /**
      * Gets the value of the topSellers property.
      * 
-     * @return possible object is {@link TopSellers }
-     * 
+     * @return
+     *     possible object is
+     *     {@link TopSellers }
+     *     
      */
     public TopSellers getTopSellers() {
-	return topSellers;
+        return topSellers;
     }
 
     /**
      * Sets the value of the topSellers property.
      * 
      * @param value
-     *            allowed object is {@link TopSellers }
-     * 
+     *     allowed object is
+     *     {@link TopSellers }
+     *     
      */
     public void setTopSellers(TopSellers value) {
-	this.topSellers = value;
+        this.topSellers = value;
     }
 
     /**
      * Gets the value of the newReleases property.
      * 
-     * @return possible object is {@link NewReleases }
-     * 
+     * @return
+     *     possible object is
+     *     {@link NewReleases }
+     *     
      */
     public NewReleases getNewReleases() {
-	return newReleases;
+        return newReleases;
     }
 
     /**
      * Sets the value of the newReleases property.
      * 
      * @param value
-     *            allowed object is {@link NewReleases }
-     * 
+     *     allowed object is
+     *     {@link NewReleases }
+     *     
      */
     public void setNewReleases(NewReleases value) {
-	this.newReleases = value;
+        this.newReleases = value;
     }
 
     /**
      * Gets the value of the similarViewedProducts property.
      * 
-     * @return possible object is {@link SimilarViewedProducts }
-     * 
+     * @return
+     *     possible object is
+     *     {@link SimilarViewedProducts }
+     *     
      */
     public SimilarViewedProducts getSimilarViewedProducts() {
-	return similarViewedProducts;
+        return similarViewedProducts;
     }
 
     /**
      * Sets the value of the similarViewedProducts property.
      * 
      * @param value
-     *            allowed object is {@link SimilarViewedProducts }
-     * 
+     *     allowed object is
+     *     {@link SimilarViewedProducts }
+     *     
      */
     public void setSimilarViewedProducts(SimilarViewedProducts value) {
-	this.similarViewedProducts = value;
+        this.similarViewedProducts = value;
     }
 
     /**
      * Gets the value of the otherCategoriesSimilarProducts property.
      * 
-     * @return possible object is {@link OtherCategoriesSimilarProducts }
-     * 
+     * @return
+     *     possible object is
+     *     {@link OtherCategoriesSimilarProducts }
+     *     
      */
     public OtherCategoriesSimilarProducts getOtherCategoriesSimilarProducts() {
-	return otherCategoriesSimilarProducts;
+        return otherCategoriesSimilarProducts;
     }
 
     /**
      * Sets the value of the otherCategoriesSimilarProducts property.
      * 
      * @param value
-     *            allowed object is {@link OtherCategoriesSimilarProducts }
-     * 
+     *     allowed object is
+     *     {@link OtherCategoriesSimilarProducts }
+     *     
      */
-    public void setOtherCategoriesSimilarProducts(
-	    OtherCategoriesSimilarProducts value) {
-	this.otherCategoriesSimilarProducts = value;
+    public void setOtherCategoriesSimilarProducts(OtherCategoriesSimilarProducts value) {
+        this.otherCategoriesSimilarProducts = value;
     }
 
 }

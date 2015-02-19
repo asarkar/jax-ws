@@ -1,7 +1,7 @@
+
 package name.abhijitsarkar.webservices.jaxws.aws.client.generated;
 
 import java.math.BigInteger;
-
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
@@ -9,13 +9,11 @@ import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlSchemaType;
 import javax.xml.bind.annotation.XmlType;
 
+
 /**
- * <p>
- * Java class for anonymous complex type.
+ * <p>Java class for anonymous complex type.
  * 
- * <p>
- * The following schema fragment specifies the expected content contained within
- * this class.
+ * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
  * &lt;complexType>
@@ -53,10 +51,17 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "", propOrder = { "offerListingId", "price", "salePrice",
-	"amountSaved", "percentageSaved", "availability",
-	"availabilityAttributes", "isEligibleForSuperSaverShipping",
-	"isEligibleForPrime" })
+@XmlType(name = "", propOrder = {
+    "offerListingId",
+    "price",
+    "salePrice",
+    "amountSaved",
+    "percentageSaved",
+    "availability",
+    "availabilityAttributes",
+    "isEligibleForSuperSaverShipping",
+    "isEligibleForPrime"
+})
 @XmlRootElement(name = "OfferListing")
 public class OfferListing {
 
@@ -83,200 +88,224 @@ public class OfferListing {
     /**
      * Gets the value of the offerListingId property.
      * 
-     * @return possible object is {@link String }
-     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getOfferListingId() {
-	return offerListingId;
+        return offerListingId;
     }
 
     /**
      * Sets the value of the offerListingId property.
      * 
      * @param value
-     *            allowed object is {@link String }
-     * 
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setOfferListingId(String value) {
-	this.offerListingId = value;
+        this.offerListingId = value;
     }
 
     /**
      * Gets the value of the price property.
      * 
-     * @return possible object is {@link Price }
-     * 
+     * @return
+     *     possible object is
+     *     {@link Price }
+     *     
      */
     public Price getPrice() {
-	return price;
+        return price;
     }
 
     /**
      * Sets the value of the price property.
      * 
      * @param value
-     *            allowed object is {@link Price }
-     * 
+     *     allowed object is
+     *     {@link Price }
+     *     
      */
     public void setPrice(Price value) {
-	this.price = value;
+        this.price = value;
     }
 
     /**
      * Gets the value of the salePrice property.
      * 
-     * @return possible object is {@link Price }
-     * 
+     * @return
+     *     possible object is
+     *     {@link Price }
+     *     
      */
     public Price getSalePrice() {
-	return salePrice;
+        return salePrice;
     }
 
     /**
      * Sets the value of the salePrice property.
      * 
      * @param value
-     *            allowed object is {@link Price }
-     * 
+     *     allowed object is
+     *     {@link Price }
+     *     
      */
     public void setSalePrice(Price value) {
-	this.salePrice = value;
+        this.salePrice = value;
     }
 
     /**
      * Gets the value of the amountSaved property.
      * 
-     * @return possible object is {@link Price }
-     * 
+     * @return
+     *     possible object is
+     *     {@link Price }
+     *     
      */
     public Price getAmountSaved() {
-	return amountSaved;
+        return amountSaved;
     }
 
     /**
      * Sets the value of the amountSaved property.
      * 
      * @param value
-     *            allowed object is {@link Price }
-     * 
+     *     allowed object is
+     *     {@link Price }
+     *     
      */
     public void setAmountSaved(Price value) {
-	this.amountSaved = value;
+        this.amountSaved = value;
     }
 
     /**
      * Gets the value of the percentageSaved property.
      * 
-     * @return possible object is {@link BigInteger }
-     * 
+     * @return
+     *     possible object is
+     *     {@link BigInteger }
+     *     
      */
     public BigInteger getPercentageSaved() {
-	return percentageSaved;
+        return percentageSaved;
     }
 
     /**
      * Sets the value of the percentageSaved property.
      * 
      * @param value
-     *            allowed object is {@link BigInteger }
-     * 
+     *     allowed object is
+     *     {@link BigInteger }
+     *     
      */
     public void setPercentageSaved(BigInteger value) {
-	this.percentageSaved = value;
+        this.percentageSaved = value;
     }
 
     /**
      * Gets the value of the availability property.
      * 
-     * @return possible object is {@link String }
-     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getAvailability() {
-	return availability;
+        return availability;
     }
 
     /**
      * Sets the value of the availability property.
      * 
      * @param value
-     *            allowed object is {@link String }
-     * 
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setAvailability(String value) {
-	this.availability = value;
+        this.availability = value;
     }
 
     /**
      * Gets the value of the availabilityAttributes property.
      * 
-     * @return possible object is {@link OfferListing.AvailabilityAttributes }
-     * 
+     * @return
+     *     possible object is
+     *     {@link OfferListing.AvailabilityAttributes }
+     *     
      */
     public OfferListing.AvailabilityAttributes getAvailabilityAttributes() {
-	return availabilityAttributes;
+        return availabilityAttributes;
     }
 
     /**
      * Sets the value of the availabilityAttributes property.
      * 
      * @param value
-     *            allowed object is {@link OfferListing.AvailabilityAttributes }
-     * 
+     *     allowed object is
+     *     {@link OfferListing.AvailabilityAttributes }
+     *     
      */
-    public void setAvailabilityAttributes(
-	    OfferListing.AvailabilityAttributes value) {
-	this.availabilityAttributes = value;
+    public void setAvailabilityAttributes(OfferListing.AvailabilityAttributes value) {
+        this.availabilityAttributes = value;
     }
 
     /**
      * Gets the value of the isEligibleForSuperSaverShipping property.
      * 
-     * @return possible object is {@link Boolean }
-     * 
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isIsEligibleForSuperSaverShipping() {
-	return isEligibleForSuperSaverShipping;
+        return isEligibleForSuperSaverShipping;
     }
 
     /**
      * Sets the value of the isEligibleForSuperSaverShipping property.
      * 
      * @param value
-     *            allowed object is {@link Boolean }
-     * 
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setIsEligibleForSuperSaverShipping(Boolean value) {
-	this.isEligibleForSuperSaverShipping = value;
+        this.isEligibleForSuperSaverShipping = value;
     }
 
     /**
      * Gets the value of the isEligibleForPrime property.
      * 
-     * @return possible object is {@link Boolean }
-     * 
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isIsEligibleForPrime() {
-	return isEligibleForPrime;
+        return isEligibleForPrime;
     }
 
     /**
      * Sets the value of the isEligibleForPrime property.
      * 
      * @param value
-     *            allowed object is {@link Boolean }
-     * 
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setIsEligibleForPrime(Boolean value) {
-	this.isEligibleForPrime = value;
+        this.isEligibleForPrime = value;
     }
 
+
     /**
-     * <p>
-     * Java class for anonymous complex type.
+     * <p>Java class for anonymous complex type.
      * 
-     * <p>
-     * The following schema fragment specifies the expected content contained
-     * within this class.
+     * <p>The following schema fragment specifies the expected content contained within this class.
      * 
      * <pre>
      * &lt;complexType>
@@ -296,102 +325,118 @@ public class OfferListing {
      * 
      */
     @XmlAccessorType(XmlAccessType.FIELD)
-    @XmlType(name = "", propOrder = { "availabilityType", "isPreorder",
-	    "minimumHours", "maximumHours" })
+    @XmlType(name = "", propOrder = {
+        "availabilityType",
+        "isPreorder",
+        "minimumHours",
+        "maximumHours"
+    })
     public static class AvailabilityAttributes {
 
-	@XmlElement(name = "AvailabilityType")
-	protected String availabilityType;
-	@XmlElement(name = "IsPreorder")
-	protected Boolean isPreorder;
-	@XmlElement(name = "MinimumHours")
-	protected BigInteger minimumHours;
-	@XmlElement(name = "MaximumHours")
-	protected BigInteger maximumHours;
+        @XmlElement(name = "AvailabilityType")
+        protected String availabilityType;
+        @XmlElement(name = "IsPreorder")
+        protected Boolean isPreorder;
+        @XmlElement(name = "MinimumHours")
+        protected BigInteger minimumHours;
+        @XmlElement(name = "MaximumHours")
+        protected BigInteger maximumHours;
 
-	/**
-	 * Gets the value of the availabilityType property.
-	 * 
-	 * @return possible object is {@link String }
-	 * 
-	 */
-	public String getAvailabilityType() {
-	    return availabilityType;
-	}
+        /**
+         * Gets the value of the availabilityType property.
+         * 
+         * @return
+         *     possible object is
+         *     {@link String }
+         *     
+         */
+        public String getAvailabilityType() {
+            return availabilityType;
+        }
 
-	/**
-	 * Sets the value of the availabilityType property.
-	 * 
-	 * @param value
-	 *            allowed object is {@link String }
-	 * 
-	 */
-	public void setAvailabilityType(String value) {
-	    this.availabilityType = value;
-	}
+        /**
+         * Sets the value of the availabilityType property.
+         * 
+         * @param value
+         *     allowed object is
+         *     {@link String }
+         *     
+         */
+        public void setAvailabilityType(String value) {
+            this.availabilityType = value;
+        }
 
-	/**
-	 * Gets the value of the isPreorder property.
-	 * 
-	 * @return possible object is {@link Boolean }
-	 * 
-	 */
-	public Boolean isIsPreorder() {
-	    return isPreorder;
-	}
+        /**
+         * Gets the value of the isPreorder property.
+         * 
+         * @return
+         *     possible object is
+         *     {@link Boolean }
+         *     
+         */
+        public Boolean isIsPreorder() {
+            return isPreorder;
+        }
 
-	/**
-	 * Sets the value of the isPreorder property.
-	 * 
-	 * @param value
-	 *            allowed object is {@link Boolean }
-	 * 
-	 */
-	public void setIsPreorder(Boolean value) {
-	    this.isPreorder = value;
-	}
+        /**
+         * Sets the value of the isPreorder property.
+         * 
+         * @param value
+         *     allowed object is
+         *     {@link Boolean }
+         *     
+         */
+        public void setIsPreorder(Boolean value) {
+            this.isPreorder = value;
+        }
 
-	/**
-	 * Gets the value of the minimumHours property.
-	 * 
-	 * @return possible object is {@link BigInteger }
-	 * 
-	 */
-	public BigInteger getMinimumHours() {
-	    return minimumHours;
-	}
+        /**
+         * Gets the value of the minimumHours property.
+         * 
+         * @return
+         *     possible object is
+         *     {@link BigInteger }
+         *     
+         */
+        public BigInteger getMinimumHours() {
+            return minimumHours;
+        }
 
-	/**
-	 * Sets the value of the minimumHours property.
-	 * 
-	 * @param value
-	 *            allowed object is {@link BigInteger }
-	 * 
-	 */
-	public void setMinimumHours(BigInteger value) {
-	    this.minimumHours = value;
-	}
+        /**
+         * Sets the value of the minimumHours property.
+         * 
+         * @param value
+         *     allowed object is
+         *     {@link BigInteger }
+         *     
+         */
+        public void setMinimumHours(BigInteger value) {
+            this.minimumHours = value;
+        }
 
-	/**
-	 * Gets the value of the maximumHours property.
-	 * 
-	 * @return possible object is {@link BigInteger }
-	 * 
-	 */
-	public BigInteger getMaximumHours() {
-	    return maximumHours;
-	}
+        /**
+         * Gets the value of the maximumHours property.
+         * 
+         * @return
+         *     possible object is
+         *     {@link BigInteger }
+         *     
+         */
+        public BigInteger getMaximumHours() {
+            return maximumHours;
+        }
 
-	/**
-	 * Sets the value of the maximumHours property.
-	 * 
-	 * @param value
-	 *            allowed object is {@link BigInteger }
-	 * 
-	 */
-	public void setMaximumHours(BigInteger value) {
-	    this.maximumHours = value;
-	}
+        /**
+         * Sets the value of the maximumHours property.
+         * 
+         * @param value
+         *     allowed object is
+         *     {@link BigInteger }
+         *     
+         */
+        public void setMaximumHours(BigInteger value) {
+            this.maximumHours = value;
+        }
 
     }
 

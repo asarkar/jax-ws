@@ -1,9 +1,9 @@
+
 package name.abhijitsarkar.webservices.jaxws.aws.client.generated;
 
 import java.math.BigInteger;
 import java.util.ArrayList;
 import java.util.List;
-
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
@@ -11,13 +11,11 @@ import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlSchemaType;
 import javax.xml.bind.annotation.XmlType;
 
+
 /**
- * <p>
- * Java class for anonymous complex type.
+ * <p>Java class for anonymous complex type.
  * 
- * <p>
- * The following schema fragment specifies the expected content contained within
- * this class.
+ * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
  * &lt;complexType>
@@ -46,9 +44,14 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "", propOrder = { "relationship", "relationshipType",
-	"relatedItemCount", "relatedItemPageCount", "relatedItemPage",
-	"relatedItem" })
+@XmlType(name = "", propOrder = {
+    "relationship",
+    "relationshipType",
+    "relatedItemCount",
+    "relatedItemPageCount",
+    "relatedItemPage",
+    "relatedItem"
+})
 @XmlRootElement(name = "RelatedItems")
 public class RelatedItems {
 
@@ -71,122 +74,136 @@ public class RelatedItems {
     /**
      * Gets the value of the relationship property.
      * 
-     * @return possible object is {@link String }
-     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getRelationship() {
-	return relationship;
+        return relationship;
     }
 
     /**
      * Sets the value of the relationship property.
      * 
      * @param value
-     *            allowed object is {@link String }
-     * 
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setRelationship(String value) {
-	this.relationship = value;
+        this.relationship = value;
     }
 
     /**
      * Gets the value of the relationshipType property.
      * 
-     * @return possible object is {@link String }
-     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getRelationshipType() {
-	return relationshipType;
+        return relationshipType;
     }
 
     /**
      * Sets the value of the relationshipType property.
      * 
      * @param value
-     *            allowed object is {@link String }
-     * 
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setRelationshipType(String value) {
-	this.relationshipType = value;
+        this.relationshipType = value;
     }
 
     /**
      * Gets the value of the relatedItemCount property.
      * 
-     * @return possible object is {@link BigInteger }
-     * 
+     * @return
+     *     possible object is
+     *     {@link BigInteger }
+     *     
      */
     public BigInteger getRelatedItemCount() {
-	return relatedItemCount;
+        return relatedItemCount;
     }
 
     /**
      * Sets the value of the relatedItemCount property.
      * 
      * @param value
-     *            allowed object is {@link BigInteger }
-     * 
+     *     allowed object is
+     *     {@link BigInteger }
+     *     
      */
     public void setRelatedItemCount(BigInteger value) {
-	this.relatedItemCount = value;
+        this.relatedItemCount = value;
     }
 
     /**
      * Gets the value of the relatedItemPageCount property.
      * 
-     * @return possible object is {@link BigInteger }
-     * 
+     * @return
+     *     possible object is
+     *     {@link BigInteger }
+     *     
      */
     public BigInteger getRelatedItemPageCount() {
-	return relatedItemPageCount;
+        return relatedItemPageCount;
     }
 
     /**
      * Sets the value of the relatedItemPageCount property.
      * 
      * @param value
-     *            allowed object is {@link BigInteger }
-     * 
+     *     allowed object is
+     *     {@link BigInteger }
+     *     
      */
     public void setRelatedItemPageCount(BigInteger value) {
-	this.relatedItemPageCount = value;
+        this.relatedItemPageCount = value;
     }
 
     /**
      * Gets the value of the relatedItemPage property.
      * 
-     * @return possible object is {@link BigInteger }
-     * 
+     * @return
+     *     possible object is
+     *     {@link BigInteger }
+     *     
      */
     public BigInteger getRelatedItemPage() {
-	return relatedItemPage;
+        return relatedItemPage;
     }
 
     /**
      * Sets the value of the relatedItemPage property.
      * 
      * @param value
-     *            allowed object is {@link BigInteger }
-     * 
+     *     allowed object is
+     *     {@link BigInteger }
+     *     
      */
     public void setRelatedItemPage(BigInteger value) {
-	this.relatedItemPage = value;
+        this.relatedItemPage = value;
     }
 
     /**
      * Gets the value of the relatedItem property.
      * 
      * <p>
-     * This accessor method returns a reference to the live list, not a
-     * snapshot. Therefore any modification you make to the returned list will
-     * be present inside the JAXB object. This is why there is not a
-     * <CODE>set</CODE> method for the relatedItem property.
+     * This accessor method returns a reference to the live list,
+     * not a snapshot. Therefore any modification you make to the
+     * returned list will be present inside the JAXB object.
+     * This is why there is not a <CODE>set</CODE> method for the relatedItem property.
      * 
      * <p>
      * For example, to add a new item, do as follows:
-     * 
      * <pre>
-     * getRelatedItem().add(newItem);
+     *    getRelatedItem().add(newItem);
      * </pre>
      * 
      * 
@@ -197,10 +214,10 @@ public class RelatedItems {
      * 
      */
     public List<RelatedItem> getRelatedItem() {
-	if (relatedItem == null) {
-	    relatedItem = new ArrayList<RelatedItem>();
-	}
-	return this.relatedItem;
+        if (relatedItem == null) {
+            relatedItem = new ArrayList<RelatedItem>();
+        }
+        return this.relatedItem;
     }
 
 }

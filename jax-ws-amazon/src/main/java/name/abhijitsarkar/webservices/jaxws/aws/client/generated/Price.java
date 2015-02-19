@@ -1,19 +1,17 @@
+
 package name.abhijitsarkar.webservices.jaxws.aws.client.generated;
 
 import java.math.BigInteger;
-
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
 
+
 /**
- * <p>
- * Java class for Price complex type.
+ * <p>Java class for Price complex type.
  * 
- * <p>
- * The following schema fragment specifies the expected content contained within
- * this class.
+ * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
  * &lt;complexType name="Price">
@@ -32,8 +30,11 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "Price", propOrder = { "amount", "currencyCode",
-	"formattedPrice" })
+@XmlType(name = "Price", propOrder = {
+    "amount",
+    "currencyCode",
+    "formattedPrice"
+})
 public class Price {
 
     @XmlElement(name = "Amount")
@@ -46,64 +47,73 @@ public class Price {
     /**
      * Gets the value of the amount property.
      * 
-     * @return possible object is {@link BigInteger }
-     * 
+     * @return
+     *     possible object is
+     *     {@link BigInteger }
+     *     
      */
     public BigInteger getAmount() {
-	return amount;
+        return amount;
     }
 
     /**
      * Sets the value of the amount property.
      * 
      * @param value
-     *            allowed object is {@link BigInteger }
-     * 
+     *     allowed object is
+     *     {@link BigInteger }
+     *     
      */
     public void setAmount(BigInteger value) {
-	this.amount = value;
+        this.amount = value;
     }
 
     /**
      * Gets the value of the currencyCode property.
      * 
-     * @return possible object is {@link String }
-     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getCurrencyCode() {
-	return currencyCode;
+        return currencyCode;
     }
 
     /**
      * Sets the value of the currencyCode property.
      * 
      * @param value
-     *            allowed object is {@link String }
-     * 
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setCurrencyCode(String value) {
-	this.currencyCode = value;
+        this.currencyCode = value;
     }
 
     /**
      * Gets the value of the formattedPrice property.
      * 
-     * @return possible object is {@link String }
-     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getFormattedPrice() {
-	return formattedPrice;
+        return formattedPrice;
     }
 
     /**
      * Sets the value of the formattedPrice property.
      * 
      * @param value
-     *            allowed object is {@link String }
-     * 
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setFormattedPrice(String value) {
-	this.formattedPrice = value;
+        this.formattedPrice = value;
     }
 
 }

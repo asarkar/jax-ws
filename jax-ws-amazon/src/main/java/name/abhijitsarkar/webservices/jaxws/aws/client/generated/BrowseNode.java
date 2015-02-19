@@ -1,21 +1,19 @@
+
 package name.abhijitsarkar.webservices.jaxws.aws.client.generated;
 
 import java.util.ArrayList;
 import java.util.List;
-
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlType;
 
+
 /**
- * <p>
- * Java class for anonymous complex type.
+ * <p>Java class for anonymous complex type.
  * 
- * <p>
- * The following schema fragment specifies the expected content contained within
- * this class.
+ * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
  * &lt;complexType>
@@ -70,9 +68,17 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "", propOrder = { "browseNodeId", "name", "isCategoryRoot",
-	"properties", "children", "ancestors", "topSellers", "newReleases",
-	"topItemSet" })
+@XmlType(name = "", propOrder = {
+    "browseNodeId",
+    "name",
+    "isCategoryRoot",
+    "properties",
+    "children",
+    "ancestors",
+    "topSellers",
+    "newReleases",
+    "topItemSet"
+})
 @XmlRootElement(name = "BrowseNode")
 public class BrowseNode {
 
@@ -98,185 +104,208 @@ public class BrowseNode {
     /**
      * Gets the value of the browseNodeId property.
      * 
-     * @return possible object is {@link String }
-     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getBrowseNodeId() {
-	return browseNodeId;
+        return browseNodeId;
     }
 
     /**
      * Sets the value of the browseNodeId property.
      * 
      * @param value
-     *            allowed object is {@link String }
-     * 
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setBrowseNodeId(String value) {
-	this.browseNodeId = value;
+        this.browseNodeId = value;
     }
 
     /**
      * Gets the value of the name property.
      * 
-     * @return possible object is {@link String }
-     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getName() {
-	return name;
+        return name;
     }
 
     /**
      * Sets the value of the name property.
      * 
      * @param value
-     *            allowed object is {@link String }
-     * 
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setName(String value) {
-	this.name = value;
+        this.name = value;
     }
 
     /**
      * Gets the value of the isCategoryRoot property.
      * 
-     * @return possible object is {@link Boolean }
-     * 
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isIsCategoryRoot() {
-	return isCategoryRoot;
+        return isCategoryRoot;
     }
 
     /**
      * Sets the value of the isCategoryRoot property.
      * 
      * @param value
-     *            allowed object is {@link Boolean }
-     * 
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setIsCategoryRoot(Boolean value) {
-	this.isCategoryRoot = value;
+        this.isCategoryRoot = value;
     }
 
     /**
      * Gets the value of the properties property.
      * 
-     * @return possible object is {@link BrowseNode.Properties }
-     * 
+     * @return
+     *     possible object is
+     *     {@link BrowseNode.Properties }
+     *     
      */
     public BrowseNode.Properties getProperties() {
-	return properties;
+        return properties;
     }
 
     /**
      * Sets the value of the properties property.
      * 
      * @param value
-     *            allowed object is {@link BrowseNode.Properties }
-     * 
+     *     allowed object is
+     *     {@link BrowseNode.Properties }
+     *     
      */
     public void setProperties(BrowseNode.Properties value) {
-	this.properties = value;
+        this.properties = value;
     }
 
     /**
      * Gets the value of the children property.
      * 
-     * @return possible object is {@link BrowseNode.Children }
-     * 
+     * @return
+     *     possible object is
+     *     {@link BrowseNode.Children }
+     *     
      */
     public BrowseNode.Children getChildren() {
-	return children;
+        return children;
     }
 
     /**
      * Sets the value of the children property.
      * 
      * @param value
-     *            allowed object is {@link BrowseNode.Children }
-     * 
+     *     allowed object is
+     *     {@link BrowseNode.Children }
+     *     
      */
     public void setChildren(BrowseNode.Children value) {
-	this.children = value;
+        this.children = value;
     }
 
     /**
      * Gets the value of the ancestors property.
      * 
-     * @return possible object is {@link BrowseNode.Ancestors }
-     * 
+     * @return
+     *     possible object is
+     *     {@link BrowseNode.Ancestors }
+     *     
      */
     public BrowseNode.Ancestors getAncestors() {
-	return ancestors;
+        return ancestors;
     }
 
     /**
      * Sets the value of the ancestors property.
      * 
      * @param value
-     *            allowed object is {@link BrowseNode.Ancestors }
-     * 
+     *     allowed object is
+     *     {@link BrowseNode.Ancestors }
+     *     
      */
     public void setAncestors(BrowseNode.Ancestors value) {
-	this.ancestors = value;
+        this.ancestors = value;
     }
 
     /**
      * Gets the value of the topSellers property.
      * 
-     * @return possible object is {@link TopSellers }
-     * 
+     * @return
+     *     possible object is
+     *     {@link TopSellers }
+     *     
      */
     public TopSellers getTopSellers() {
-	return topSellers;
+        return topSellers;
     }
 
     /**
      * Sets the value of the topSellers property.
      * 
      * @param value
-     *            allowed object is {@link TopSellers }
-     * 
+     *     allowed object is
+     *     {@link TopSellers }
+     *     
      */
     public void setTopSellers(TopSellers value) {
-	this.topSellers = value;
+        this.topSellers = value;
     }
 
     /**
      * Gets the value of the newReleases property.
      * 
-     * @return possible object is {@link NewReleases }
-     * 
+     * @return
+     *     possible object is
+     *     {@link NewReleases }
+     *     
      */
     public NewReleases getNewReleases() {
-	return newReleases;
+        return newReleases;
     }
 
     /**
      * Sets the value of the newReleases property.
      * 
      * @param value
-     *            allowed object is {@link NewReleases }
-     * 
+     *     allowed object is
+     *     {@link NewReleases }
+     *     
      */
     public void setNewReleases(NewReleases value) {
-	this.newReleases = value;
+        this.newReleases = value;
     }
 
     /**
      * Gets the value of the topItemSet property.
      * 
      * <p>
-     * This accessor method returns a reference to the live list, not a
-     * snapshot. Therefore any modification you make to the returned list will
-     * be present inside the JAXB object. This is why there is not a
-     * <CODE>set</CODE> method for the topItemSet property.
+     * This accessor method returns a reference to the live list,
+     * not a snapshot. Therefore any modification you make to the
+     * returned list will be present inside the JAXB object.
+     * This is why there is not a <CODE>set</CODE> method for the topItemSet property.
      * 
      * <p>
      * For example, to add a new item, do as follows:
-     * 
      * <pre>
-     * getTopItemSet().add(newItem);
+     *    getTopItemSet().add(newItem);
      * </pre>
      * 
      * 
@@ -287,19 +316,17 @@ public class BrowseNode {
      * 
      */
     public List<TopItemSet> getTopItemSet() {
-	if (topItemSet == null) {
-	    topItemSet = new ArrayList<TopItemSet>();
-	}
-	return this.topItemSet;
+        if (topItemSet == null) {
+            topItemSet = new ArrayList<TopItemSet>();
+        }
+        return this.topItemSet;
     }
 
+
     /**
-     * <p>
-     * Java class for anonymous complex type.
+     * <p>Java class for anonymous complex type.
      * 
-     * <p>
-     * The following schema fragment specifies the expected content contained
-     * within this class.
+     * <p>The following schema fragment specifies the expected content contained within this class.
      * 
      * <pre>
      * &lt;complexType>
@@ -316,51 +343,50 @@ public class BrowseNode {
      * 
      */
     @XmlAccessorType(XmlAccessType.FIELD)
-    @XmlType(name = "", propOrder = { "browseNode" })
+    @XmlType(name = "", propOrder = {
+        "browseNode"
+    })
     public static class Ancestors {
 
-	@XmlElement(name = "BrowseNode", required = true)
-	protected List<BrowseNode> browseNode;
+        @XmlElement(name = "BrowseNode", required = true)
+        protected List<BrowseNode> browseNode;
 
-	/**
-	 * Gets the value of the browseNode property.
-	 * 
-	 * <p>
-	 * This accessor method returns a reference to the live list, not a
-	 * snapshot. Therefore any modification you make to the returned list
-	 * will be present inside the JAXB object. This is why there is not a
-	 * <CODE>set</CODE> method for the browseNode property.
-	 * 
-	 * <p>
-	 * For example, to add a new item, do as follows:
-	 * 
-	 * <pre>
-	 * getBrowseNode().add(newItem);
-	 * </pre>
-	 * 
-	 * 
-	 * <p>
-	 * Objects of the following type(s) are allowed in the list
-	 * {@link BrowseNode }
-	 * 
-	 * 
-	 */
-	public List<BrowseNode> getBrowseNode() {
-	    if (browseNode == null) {
-		browseNode = new ArrayList<BrowseNode>();
-	    }
-	    return this.browseNode;
-	}
+        /**
+         * Gets the value of the browseNode property.
+         * 
+         * <p>
+         * This accessor method returns a reference to the live list,
+         * not a snapshot. Therefore any modification you make to the
+         * returned list will be present inside the JAXB object.
+         * This is why there is not a <CODE>set</CODE> method for the browseNode property.
+         * 
+         * <p>
+         * For example, to add a new item, do as follows:
+         * <pre>
+         *    getBrowseNode().add(newItem);
+         * </pre>
+         * 
+         * 
+         * <p>
+         * Objects of the following type(s) are allowed in the list
+         * {@link BrowseNode }
+         * 
+         * 
+         */
+        public List<BrowseNode> getBrowseNode() {
+            if (browseNode == null) {
+                browseNode = new ArrayList<BrowseNode>();
+            }
+            return this.browseNode;
+        }
 
     }
 
+
     /**
-     * <p>
-     * Java class for anonymous complex type.
+     * <p>Java class for anonymous complex type.
      * 
-     * <p>
-     * The following schema fragment specifies the expected content contained
-     * within this class.
+     * <p>The following schema fragment specifies the expected content contained within this class.
      * 
      * <pre>
      * &lt;complexType>
@@ -377,51 +403,50 @@ public class BrowseNode {
      * 
      */
     @XmlAccessorType(XmlAccessType.FIELD)
-    @XmlType(name = "", propOrder = { "browseNode" })
+    @XmlType(name = "", propOrder = {
+        "browseNode"
+    })
     public static class Children {
 
-	@XmlElement(name = "BrowseNode", required = true)
-	protected List<BrowseNode> browseNode;
+        @XmlElement(name = "BrowseNode", required = true)
+        protected List<BrowseNode> browseNode;
 
-	/**
-	 * Gets the value of the browseNode property.
-	 * 
-	 * <p>
-	 * This accessor method returns a reference to the live list, not a
-	 * snapshot. Therefore any modification you make to the returned list
-	 * will be present inside the JAXB object. This is why there is not a
-	 * <CODE>set</CODE> method for the browseNode property.
-	 * 
-	 * <p>
-	 * For example, to add a new item, do as follows:
-	 * 
-	 * <pre>
-	 * getBrowseNode().add(newItem);
-	 * </pre>
-	 * 
-	 * 
-	 * <p>
-	 * Objects of the following type(s) are allowed in the list
-	 * {@link BrowseNode }
-	 * 
-	 * 
-	 */
-	public List<BrowseNode> getBrowseNode() {
-	    if (browseNode == null) {
-		browseNode = new ArrayList<BrowseNode>();
-	    }
-	    return this.browseNode;
-	}
+        /**
+         * Gets the value of the browseNode property.
+         * 
+         * <p>
+         * This accessor method returns a reference to the live list,
+         * not a snapshot. Therefore any modification you make to the
+         * returned list will be present inside the JAXB object.
+         * This is why there is not a <CODE>set</CODE> method for the browseNode property.
+         * 
+         * <p>
+         * For example, to add a new item, do as follows:
+         * <pre>
+         *    getBrowseNode().add(newItem);
+         * </pre>
+         * 
+         * 
+         * <p>
+         * Objects of the following type(s) are allowed in the list
+         * {@link BrowseNode }
+         * 
+         * 
+         */
+        public List<BrowseNode> getBrowseNode() {
+            if (browseNode == null) {
+                browseNode = new ArrayList<BrowseNode>();
+            }
+            return this.browseNode;
+        }
 
     }
 
+
     /**
-     * <p>
-     * Java class for anonymous complex type.
+     * <p>Java class for anonymous complex type.
      * 
-     * <p>
-     * The following schema fragment specifies the expected content contained
-     * within this class.
+     * <p>The following schema fragment specifies the expected content contained within this class.
      * 
      * <pre>
      * &lt;complexType>
@@ -438,41 +463,42 @@ public class BrowseNode {
      * 
      */
     @XmlAccessorType(XmlAccessType.FIELD)
-    @XmlType(name = "", propOrder = { "property" })
+    @XmlType(name = "", propOrder = {
+        "property"
+    })
     public static class Properties {
 
-	@XmlElement(name = "Property", required = true)
-	protected List<Property> property;
+        @XmlElement(name = "Property", required = true)
+        protected List<Property> property;
 
-	/**
-	 * Gets the value of the property property.
-	 * 
-	 * <p>
-	 * This accessor method returns a reference to the live list, not a
-	 * snapshot. Therefore any modification you make to the returned list
-	 * will be present inside the JAXB object. This is why there is not a
-	 * <CODE>set</CODE> method for the property property.
-	 * 
-	 * <p>
-	 * For example, to add a new item, do as follows:
-	 * 
-	 * <pre>
-	 * getProperty().add(newItem);
-	 * </pre>
-	 * 
-	 * 
-	 * <p>
-	 * Objects of the following type(s) are allowed in the list
-	 * {@link Property }
-	 * 
-	 * 
-	 */
-	public List<Property> getProperty() {
-	    if (property == null) {
-		property = new ArrayList<Property>();
-	    }
-	    return this.property;
-	}
+        /**
+         * Gets the value of the property property.
+         * 
+         * <p>
+         * This accessor method returns a reference to the live list,
+         * not a snapshot. Therefore any modification you make to the
+         * returned list will be present inside the JAXB object.
+         * This is why there is not a <CODE>set</CODE> method for the property property.
+         * 
+         * <p>
+         * For example, to add a new item, do as follows:
+         * <pre>
+         *    getProperty().add(newItem);
+         * </pre>
+         * 
+         * 
+         * <p>
+         * Objects of the following type(s) are allowed in the list
+         * {@link Property }
+         * 
+         * 
+         */
+        public List<Property> getProperty() {
+            if (property == null) {
+                property = new ArrayList<Property>();
+            }
+            return this.property;
+        }
 
     }
 
