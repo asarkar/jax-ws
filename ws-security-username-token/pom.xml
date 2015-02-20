@@ -8,43 +8,46 @@
 	</parent>
 	<artifactId>ws-security-username-token</artifactId>
 
-	<packaging>war</packaging>
+	<packaging>pom</packaging>
 	<name>ws-security-username-token</name>
-	<description>WS-Security Username Token. The following are needed in order for the services to work:
-    
-    c.f. http://www.ibm.com/developerworks/java/library/j-jws10/index.html
-    
-    <![CDATA[
-    1) Starting code-first, copy the generated WSDL and rename to wsit-<fully-qualified-service-name>.xml. 
-      Put it directly under WEB-INF.
-      Starting contract-first, create the WSDL and provide the location in WEB-INF/sun-jaxws.xml file.
-      
-    2) Add the WSIT extensions as needed. In this project, a username/password validator is configured.
-      If a validator is not configured, the container's authentication mechanism will be used.   
-          
-    3) Deploy the service by running 'mvn clean package jetty:run -P jetty'.
-    4) Hit http://localhost:8080/ws-security-username-token/CalculatorUTService?wsdl from a browser 
-      and verify that the policy is included in the generated WSDL.
-    ]]>
-    
-    c.f. http://www.ibm.com/developerworks/java/library/j-jws10/index.html 
-  </description>
+
+	<build>
+		<plugins>
+			<plugin>
+				<artifactId>maven-enforcer-plugin</artifactId>
+				<dependencies>
+					<dependency>
+						<groupId>name.abhijitsarkar.maven</groupId>
+						<artifactId>maven-enforcer-rules-engine</artifactId>
+						<version>0.0.1-SNAPSHOT</version>
+					</dependency>
+				</dependencies>
+				<executions>
+					<execution>
+						<id>bannedProfiles</id>
+						<configuration>
+							<rules>
+								<bannedProfiles
+									implementation="name.abhijitsarkar.maven.enforcer.rule.BannedProfiles">
+									<profiles>
+										jetty
+									</profiles>
+								</bannedProfiles>
+							</rules>
+						</configuration>
+						<goals>
+							<goal>enforce</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+		</plugins>
+	</build>
 
 	<dependencies>
 		<dependency>
-			<groupId>org.glassfish.metro</groupId>
-			<artifactId>webservices-rt</artifactId>
-			<version>2.1</version>
-		</dependency>
-		<!-- Exclude jaxws-rt that came with 'jetty' parent profile. webservices-rt 
-			contains full JAX-WS implementation. Check dependency by running 'mvn dependency:tree 
-			-Dverbose -Dincludes=com.sun.xml.ws:jaxws-rt -P jetty' -->
-		<dependency>
-			<groupId>com.sun.xml.ws</groupId>
-			<artifactId>jaxws-rt</artifactId>
-			<version>${jaxws.version}</version>
-			<scope>provided</scope>
-			<optional>true</optional>
+			<groupId>org.jboss.arquillian.junit</groupId>
+			<artifactId>arquillian-junit-container</artifactId>
 		</dependency>
 		<dependency>
 			<groupId>${project.groupId}</groupId>
@@ -54,4 +57,21 @@
 		</dependency>
 	</dependencies>
 
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>org.wildfly.bom</groupId>
+				<artifactId>jboss-javaee-7.0-with-tools</artifactId>
+				<version>${wildfly.version}</version>
+				<type>pom</type>
+				<scope>import</scope>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
+
+	<modules>
+		<module>ws-security-ut-service</module>
+		<module>ws-security-ut-client</module>
+		<module>ws-security-ut-ear</module>
+	</modules>
 </project>

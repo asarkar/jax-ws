@@ -104,7 +104,7 @@
                 <requireMutuallyExclusiveActiveProfiles
                   implementation="name.abhijitsarkar.maven.enforcer.rule.RequireMutuallyExclusiveActiveProfiles">
                   <profiles>
-                    jetty,wildfly.*
+                    jetty,wildfly*
                   </profiles>
                 </requireMutuallyExclusiveActiveProfiles>
               </rules>
@@ -334,6 +334,5 @@
     <module>jax-ws-exception</module>
     <module>jax-ws-provider</module>
     <module>ws-security-username-token</module>
-    <module>ws-security-username-token-client</module>
   </modules>
 </project>

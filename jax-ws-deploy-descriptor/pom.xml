@@ -16,7 +16,8 @@
     JAX-WS customization using deployment descriptor (webservice.xml).
     
     <![CDATA[
-      To run integration tests, run 'mvn clean test -Pwildfly-arq -DintegTests'.     
+      Run 'mvn clean package wildfly:run -P wildfly' from the basedir then run the main classes in the project.
+      To run integration tests, run 'mvn clean test -P wildfly-arq -DintegTests'.     
     ]]>
   </description>
 
@@ -70,7 +71,7 @@
       <dependency>
         <groupId>org.wildfly.bom</groupId>
         <artifactId>jboss-javaee-7.0-with-tools</artifactId>
-        <version>8.2.1.Final</version>
+        <version>${wildfly.version}</version>
         <type>pom</type>
         <scope>import</scope>
       </dependency>
