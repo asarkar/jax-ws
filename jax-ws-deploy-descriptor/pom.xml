@@ -16,15 +16,52 @@
     JAX-WS customization using deployment descriptor (webservice.xml).
     
     <![CDATA[
-      Run 'mvn clean package wildfly:run -P wildfly' from the basedir then run the main classes in the project.      
+      To run integration tests, run 'mvn clean test -Pwildfly-arq -DintegTests'.     
     ]]>
   </description>
+
+  <build>
+    <plugins>
+      <plugin>
+        <artifactId>maven-enforcer-plugin</artifactId>
+        <dependencies>
+          <dependency>
+            <groupId>name.abhijitsarkar.maven</groupId>
+            <artifactId>maven-enforcer-rules-engine</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+          </dependency>
+        </dependencies>
+        <executions>
+          <execution>
+            <id>bannedProfiles</id>
+            <configuration>
+              <rules>
+                <bannedProfiles
+                  implementation="name.abhijitsarkar.maven.enforcer.rule.BannedProfiles">
+                  <profiles>
+                    jetty
+                  </profiles>
+                </bannedProfiles>
+              </rules>
+            </configuration>
+            <goals>
+              <goal>enforce</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
+    </plugins>
+  </build>
 
   <dependencies>
     <dependency>
       <groupId>${project.groupId}</groupId>
       <artifactId>jax-ws-handlers</artifactId>
       <version>${project.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.jboss.arquillian.junit</groupId>
+      <artifactId>arquillian-junit-container</artifactId>
     </dependency>
   </dependencies>
 
