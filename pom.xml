@@ -345,5 +345,6 @@
     <module>jax-ws-exception</module>
     <module>jax-ws-provider</module>
     <module>ws-security-username-token</module>
+    <module>ws-security-symmetric-encryption</module>
   </modules>
 </project>

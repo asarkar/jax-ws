@@ -70,9 +70,9 @@
   </wsdl:service>
 
   <!-- Policy declaration for username token with plain text password, sent from 
-    client to server only. Note that this is in "normal" form -->
+    client to server only. http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0.pdf -->
 
-  <!-- Excellent article: http://www.ibm.com/developerworks/java/library/j-jws4/index.html -->
+  <!-- Excellent article, uses Axis for implementation but good talk: http://www.ibm.com/developerworks/java/library/j-jws4/index.html -->
   <wsp:Policy wsu:Id="UsernameTokenPolicy"
     xmlns:sp="http://docs.oasis-open.org/ws-sx/ws-securitypolicy/200702">
     <wsp:ExactlyOne>

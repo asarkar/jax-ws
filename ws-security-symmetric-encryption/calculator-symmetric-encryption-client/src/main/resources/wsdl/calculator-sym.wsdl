@@ -1,0 +1,116 @@
+<?xml version='1.0' encoding='UTF-8'?><wsdl:definitions xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:wsp1_2="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsp="http://www.w3.org/ns/ws-policy" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:tns="http://abhijitsarkar.name/webservices/jaxws/security/CalculatorSym/" xmlns:sp="http://docs.oasis-open.org/ws-sx/ws-securitypolicy/200702" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:ns1="http://schemas.xmlsoap.org/soap/http" name="CalculatorSymService" targetNamespace="http://abhijitsarkar.name/webservices/jaxws/security/CalculatorSym/">
+  <wsdl:types>
+<xs:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:wsp1_2="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsp="http://www.w3.org/ns/ws-policy" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:tns="http://abhijitsarkar.name/webservices/jaxws/security/CalculatorSym/" xmlns:sp="http://docs.oasis-open.org/ws-sx/ws-securitypolicy/200702" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:ns1="http://schemas.xmlsoap.org/soap/http" elementFormDefault="unqualified" targetNamespace="http://abhijitsarkar.name/webservices/jaxws/security/CalculatorSym/" version="1.0">
+
+      
+  <xs:element name="add" type="tns:add"/>
+
+      
+  <xs:element name="addResponse" type="tns:addResponse"/>
+
+      
+  <xs:complexType name="add">
+        
+    <xs:sequence>
+          
+      <xs:element name="i" type="xs:int"/>
+          
+      <xs:element name="j" type="xs:int"/>
+        
+    </xs:sequence>
+      
+  </xs:complexType>
+
+      
+  <xs:complexType name="addResponse">
+        
+    <xs:sequence>
+          
+      <xs:element name="return" type="xs:int"/>
+        
+    </xs:sequence>
+      
+  </xs:complexType>
+
+    
+</xs:schema>
+  </wsdl:types>
+  <wsdl:message name="addResponse">
+    <wsdl:part element="tns:addResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="add">
+    <wsdl:part element="tns:add" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:portType name="CalculatorSym">
+    <wsdl:operation name="add">
+      <wsdl:input message="tns:add" name="add">
+    </wsdl:input>
+      <wsdl:output message="tns:addResponse" name="addResponse">
+    </wsdl:output>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="CalculatorSymServiceSoapBinding" type="tns:CalculatorSym">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsp:PolicyReference URI="#SymmetricEncryptionPolicy"/>
+    <wsdl:operation name="add">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="add">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="addResponse">
+    <wsp:PolicyReference URI="#EncryptBody"/>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="CalculatorSymService">
+    <wsdl:port binding="tns:CalculatorSymServiceSoapBinding" name="CalculatorSym">
+      <soap:address location="http://localhost:8080/calculator-symmetric-encryption-service/CalculatorSymService"/>
+    </wsdl:port>
+  </wsdl:service>
+    <wsp:Policy xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:wsp="http://www.w3.org/ns/ws-policy" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:sp="http://docs.oasis-open.org/ws-sx/ws-securitypolicy/200702" wsu:Id="SymmetricEncryptionPolicy">
+    <sp:SymmetricBinding>
+      <wsp:Policy>
+        <sp:ProtectionToken>
+          <wsp:Policy>
+            <sp:X509Token sp:IncludeToken="http://docs.oasis-open.org/ws-sx/ws-securitypolicy/200702/IncludeToken/Never">
+              <wsp:Policy>
+                <sp:RequireThumbprintReference/>
+                <sp:WssX509V3Token10/>
+              </wsp:Policy>
+            </sp:X509Token>
+          </wsp:Policy>
+        </sp:ProtectionToken>
+        <!-- A timestamp will be included with every message, useful against replay 
+          attacks -->
+        <sp:IncludeTimestamp/>
+        <!-- Signing will be done on the entire header or body of the message, rather 
+          than on some nested element, useful against attacks where part of the message is 
+          changed -->
+        <sp:OnlySignEntireHeadersAndBody/>
+        <!-- Algorithm used for signing -->
+        <sp:AlgorithmSuite>
+          <wsp:Policy>
+            <sp:Basic128/>
+          </wsp:Policy>
+        </sp:AlgorithmSuite>
+      </wsp:Policy>
+    </sp:SymmetricBinding>
+    <!-- I don't understand this element but it seems to be present in every symmetric 
+      example so must be useful :) -->
+    <sp:Wss11>
+      <wsp:Policy>
+        <sp:MustSupportRefKeyIdentifier/>
+        <sp:MustSupportRefThumbprint/>
+        <sp:MustSupportRefEncryptedKey/>
+      </wsp:Policy>
+    </sp:Wss11>
+  </wsp:Policy>
+    <wsp:Policy xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:wsp="http://www.w3.org/ns/ws-policy" xmlns:sp="http://docs.oasis-open.org/ws-sx/ws-securitypolicy/200702" wsu:Id="EncryptBody">
+    <sp:EncryptedParts>
+      <sp:Body/>
+    </sp:EncryptedParts>
+  </wsp:Policy>
+</wsdl:definitions>
