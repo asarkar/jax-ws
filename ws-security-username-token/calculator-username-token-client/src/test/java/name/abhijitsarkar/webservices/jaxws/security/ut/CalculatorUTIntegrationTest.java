@@ -1,5 +1,8 @@
 package name.abhijitsarkar.webservices.jaxws.security.ut;
 
+import static javax.ws.rs.core.MediaType.TEXT_PLAIN;
+import static javax.ws.rs.core.Response.Status.INTERNAL_SERVER_ERROR;
+import static javax.ws.rs.core.Response.Status.OK;
 import static org.junit.Assert.assertEquals;
 
 import java.io.File;
@@ -8,7 +11,6 @@ import javax.ws.rs.client.Client;
 import javax.ws.rs.client.ClientBuilder;
 import javax.ws.rs.client.Invocation.Builder;
 import javax.ws.rs.client.WebTarget;
-import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 
 import name.abhijitsarkar.webservices.jaxws.security.ut.client.CalculatorUTClientResource;
@@ -32,6 +34,10 @@ public class CalculatorUTIntegrationTest {
     Client client;
     WebTarget root;
 
+    /*
+     * For error "Could not invoke deployment method", check if all artifacts
+     * that're being added, exist. Arquillian doesn't say anything useful.
+     */
     @Deployment(testable = false)
     public static EnterpriseArchive createDeployment() {
 	WebArchive server = ShrinkWrap.createFromZipFile(WebArchive.class,
@@ -71,7 +77,7 @@ public class CalculatorUTIntegrationTest {
 	Builder reqBuilder = buildRequest(1, 2, "abhijit");
 	Response response = reqBuilder.get();
 
-	assertEquals(200, response.getStatus());
+	assertEquals(OK.getStatusCode(), response.getStatus());
 	assertEquals(Integer.valueOf(3), response.readEntity(Integer.class));
     }
 
@@ -80,12 +86,16 @@ public class CalculatorUTIntegrationTest {
 	Builder reqBuilder = buildRequest(1, 2, "junk");
 	Response response = reqBuilder.get();
 
-	assertEquals(500, response.getStatus());
+	/*
+	 * Ideally this should be a 401 UNAUTHORIZED but we're really not
+	 * testing the resource here.
+	 */
+	assertEquals(INTERNAL_SERVER_ERROR.getStatusCode(),
+		response.getStatus());
     }
 
     private Builder buildRequest(int augend, int addend, String username) {
 	return root.queryParam("augend", augend).queryParam("addend", addend)
-		.queryParam("username", username).request()
-		.accept(MediaType.TEXT_PLAIN);
+		.queryParam("username", username).request().accept(TEXT_PLAIN);
     }
 }

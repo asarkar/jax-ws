@@ -17,6 +17,10 @@ public class CalculatorUTClientResource {
     public int add(@QueryParam(value = "augend") int augend,
 	    @QueryParam(value = "addend") int addend,
 	    @QueryParam(value = "username") String username) {
+	/*
+	 * In reality, there should be check for exceptions and if unauthorized,
+	 * status code 401 returned with a WWW-Authenticate header field
+	 */
 	return client.add(augend, addend, username);
     }
 }
