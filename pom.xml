@@ -214,6 +214,17 @@
     </profile>
     <profile>
       <id>wildfly</id>
+      <dependencyManagement>
+        <dependencies>
+          <dependency>
+                <groupId>org.jboss.spec</groupId>
+                <artifactId>jboss-javaee-7.0</artifactId>
+                <version>1.0.0.Final</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+        </dependencies>
+      </dependencyManagement>
       <build>
         <finalName>${project.artifactId}</finalName>
         <plugins>
