@@ -1,0 +1,151 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>name.abhijitsarkar.webservices.jaxws</groupId>
+    <artifactId>jax-ws</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+  </parent>
+  <artifactId>jax-ws-ejb-security</artifactId>
+  <packaging>war</packaging>
+
+  <description>JAX-WS secure EJB endpoint. Tested in Wildfly 8.2.0.Final.
+    <![CDATA[
+    1) Add a <login-config> in the web.xml to challenge the requester. EJBs can't do that, so in this
+      case web.xml isn't optional.
+    2) Specify the security domain to use. The default is 'other' but relying on defaults might be risky. The domain
+      may be specified using a proprietary @SecurityDomain annotation on the endpoint or, in a vendor-specific 
+      deployment descriptor like the jboss-ejb3.xml. For a war deployment, the jboss-ejb3.xml goes in WEB-INF.
+    3) The groundwork is almost complete except that application users need to be created. There's no portable  
+      and automated way to do this during integration testing so I cheated by creating 2 users in a standalone 
+      Wildfly instance  and then copying the 2 application-*.properties files to src/main/config. 
+      I then configured the maven resources plugin to copy those files into the downloaded Wildfly instance. 
+      Boom, we've 2 users!
+    4) Generate client artifacts from the WSDL and we're in business!
+    ]]>
+    
+    References:
+    https://docs.jboss.org/author/display/WFLY8/Securing+EJBs 
+  </description>
+
+  <dependencies>
+    <dependency>
+      <groupId>org.jboss.spec.javax.annotation</groupId>
+      <artifactId>jboss-annotations-api_1.2_spec</artifactId>
+      <scope>provided</scope>
+    </dependency>
+
+    <dependency>
+      <groupId>org.jboss.spec.javax.ejb</groupId>
+      <artifactId>jboss-ejb-api_3.2_spec</artifactId>
+    </dependency> 
+
+    <dependency>
+      <groupId>org.jboss.arquillian.junit</groupId>
+      <artifactId>arquillian-junit-container</artifactId>
+    </dependency>
+  </dependencies>
+
+  <dependencyManagement>
+    <dependencies>
+      <dependency>
+        <groupId>org.jboss.spec</groupId>
+        <artifactId>jboss-javaee-7.0</artifactId>
+        <version>1.0.2.Final</version>
+        <type>pom</type>
+        <scope>import</scope>
+      </dependency>
+      <dependency>
+        <groupId>org.wildfly</groupId>
+        <artifactId>wildfly-ejb-client-bom</artifactId>
+        <version>8.2.0.Final</version>
+        <type>pom</type>
+        <scope>import</scope>
+      </dependency>
+    </dependencies>
+  </dependencyManagement>
+
+  <build>
+    <plugins>
+      <plugin>
+        <artifactId>maven-enforcer-plugin</artifactId>
+        <dependencies>
+          <dependency>
+            <groupId>name.abhijitsarkar.maven</groupId>
+            <artifactId>maven-enforcer-rules-engine</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+          </dependency>
+        </dependencies>
+        <executions>
+          <execution>
+            <id>bannedProfiles</id>
+            <configuration>
+              <rules>
+                <bannedProfiles
+                  implementation="name.abhijitsarkar.maven.enforcer.rule.BannedProfiles">
+                  <profiles>
+                    jetty
+                  </profiles>
+                </bannedProfiles>
+              </rules>
+            </configuration>
+            <goals>
+              <goal>enforce</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
+      <plugin>
+        <groupId>org.jvnet.jax-ws-commons</groupId>
+        <artifactId>jaxws-maven-plugin</artifactId>
+        <executions>
+          <execution>
+            <id>wsimport-jaxws-ejb-security-client</id>
+            <goals>
+              <goal>wsimport</goal>
+            </goals>
+            <phase>generate-sources</phase>
+            <configuration>
+              <packageName>name.abhijitsarkar.webservices.jaxws.security.ejb.client.generated</packageName>
+              <wsdlDirectory>src/main/resources/wsdl</wsdlDirectory>
+              <wsdlFiles>
+                <wsdlFile>calculator-ejb.wsdl</wsdlFile>
+              </wsdlFiles>
+              <!-- This determines @WebService.wsdlLocation and @WebServiceClient.wsdlLocation 
+                value. -->
+              <wsdlLocation>http://localhost:8080/jax-ws-ejb-security/CalculatorEJB?wsdl</wsdlLocation>
+              <!-- Turn off generated source compilation; Maven will do it anyway -->
+              <xnocompile>true</xnocompile>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
+      <plugin>
+        <artifactId>maven-resources-plugin</artifactId>
+        <executions>
+          <execution>
+            <id>copy-config-files</id>
+            <phase>process-test-resources</phase>
+            <goals>
+              <goal>copy-resources</goal>
+            </goals>
+            <configuration>
+              <outputDirectory>${basedir}/target/wildfly-${wildfly.version}/standalone/configuration</outputDirectory>
+              <resources>
+                <resource>
+                  <directory>src/main/config</directory>
+                  <includes>
+                    <include>application-roles.properties</include>
+                    <include>application-users.properties</include>
+                  </includes>
+                  <filtering>false</filtering>
+                </resource>
+              </resources>
+              <overwrite>true</overwrite>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
+    </plugins>
+  </build>
+</project>

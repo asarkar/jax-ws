@@ -219,7 +219,7 @@
           <dependency>
                 <groupId>org.jboss.spec</groupId>
                 <artifactId>jboss-javaee-7.0</artifactId>
-                <version>1.0.0.Final</version>
+                <version>1.0.2.Final</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
@@ -274,9 +274,9 @@
             <executions>
               <execution>
                 <id>unpack</id>
-                <phase>process-test-classes</phase>
+                <phase>generate-test-resources</phase>
                 <goals>
-                  <goal>unpack</goal>
+                  <goal>unpack-wildfly</goal>
                 </goals>
                 <configuration>
                   <artifactItems>
@@ -346,5 +346,7 @@
     <module>jax-ws-provider</module>
     <module>ws-security-username-token</module>
     <module>ws-security-symmetric-encryption</module>
+    <module>jax-ws-ejb-security</module>
+    <module>jax-ws-ejb-security-client</module>
   </modules>
 </project>
