@@ -348,5 +348,6 @@
     <module>ws-security-symmetric-encryption</module>
     <module>jax-ws-ejb-security</module>
     <module>jax-ws-ejb-security-client</module>
+    <module>jax-ws-instrumentation</module>
   </modules>
 </project>
