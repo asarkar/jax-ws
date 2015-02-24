@@ -273,10 +273,10 @@
             <artifactId>maven-dependency-plugin</artifactId>
             <executions>
               <execution>
-                <id>unpack</id>
+                <id>unpack-wildfly</id>
                 <phase>generate-test-resources</phase>
                 <goals>
-                  <goal>unpack-wildfly</goal>
+                  <goal>unpack</goal>
                 </goals>
                 <configuration>
                   <artifactItems>
