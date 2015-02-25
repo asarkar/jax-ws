@@ -1,0 +1,170 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>name.abhijitsarkar.webservices.jaxws</groupId>
+		<artifactId>jax-ws</artifactId>
+		<version>0.0.1-SNAPSHOT</version>
+	</parent>
+	<artifactId>ws-security-symmetric-encryption-client</artifactId>
+	<name>ws-security-symmetric-encryption-client</name>
+	<packaging>war</packaging>
+
+	<description>
+    WS-Security symmetric encryption client. Tested in Wildfly 8.2.0.Final.
+    <![CDATA[
+      1) Generate client artifacts from the WSDL.
+        
+      2) Create a public/private key pair in a new keystore/truststore file. Put it under src/main/resources/META-INF.
+    
+        keytool -genkeypair -alias calcsym-client-key -keyalg RSA -dname "CN=localhost,O=home,C=us" -validity 3650 
+          -keypass password -keystore calcsym-client-store.jks -storepass password -storetype JKS
+    
+        This page provides useful information about the algorithm suites.
+        https://access.redhat.com/site/documentation/en-US/JBoss_Fuse/6.0/html/Web_Services_Security_Guide/files/MsgProtect-SOAP-SpecifyAlgorithmSuite.html
+             
+      3) Import the server's public key certificate.
+        
+        keytool -importcert -alias calcsym-service-key -file calcsym-service.cer -keypass password -keystore 
+          calcsym-client-store.jks -storepass password -noprompt -trustcacerts -storetype JKS
+          
+      4) Create a client.properties file to contain various WS-Security information. This file is referenced from the client.
+      
+      5) This project uses the @WebServiceReference annotation to inject the endpoint reference. AFAIK, it only works
+        in an EJB container or CDI container, not in JAX-WS or JAX-RS endpoint implementations.
+        
+      6) To run integration tests, run 'mvn clean integration-test -P wildfly-arq -DintegTests'. The test will first deploy the
+        service, then the client.
+        
+      7) The following entry needs to be added to the MANIFEST.MF. The maven war plugin does that for a regular build
+        but for tests, we use a pre-genearted manifest from test/resources.
+        Dependencies: org.apache.ws.security
+    ]]>
+    
+    References:
+    https://docs.jboss.org/author/display/WFLY8/WS-Security
+    http://cxf.apache.org/docs/ws-securitypolicy.html
+  </description>
+
+	<dependencies>
+		<dependency>
+			<groupId>javax.enterprise</groupId>
+			<artifactId>cdi-api</artifactId>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.jboss.resteasy</groupId>
+			<artifactId>jaxrs-api</artifactId>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.jboss.resteasy</groupId>
+			<artifactId>resteasy-jaxrs</artifactId>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.jboss.resteasy</groupId>
+			<artifactId>resteasy-client</artifactId>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.jboss.arquillian.junit</groupId>
+			<artifactId>arquillian-junit-container</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>${project.groupId}</groupId>
+			<artifactId>jax-ws-handlers</artifactId>
+			<version>${project.version}</version>
+			<scope>runtime</scope>
+		</dependency>
+		<!-- org.apache.cxf:cxf-rt-ws-security has many of the same classes and 
+			some more but causes runtime class loading issues that'll take your sleep 
+			away. You've been warned! -->
+		<dependency>
+			<groupId>org.apache.ws.security</groupId>
+			<artifactId>wss4j</artifactId>
+			<version>1.6.18</version>
+			<scope>provided</scope>
+		</dependency>
+	</dependencies>
+
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>org.wildfly.bom</groupId>
+				<artifactId>jboss-javaee-7.0-with-resteasy</artifactId>
+				<version>${wildfly.version}</version>
+				<scope>import</scope>
+				<type>pom</type>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.jvnet.jax-ws-commons</groupId>
+				<artifactId>jaxws-maven-plugin</artifactId>
+				<executions>
+					<execution>
+						<id>wsimport-symmetric-encryption-client</id>
+						<goals>
+							<goal>wsimport</goal>
+						</goals>
+						<phase>generate-sources</phase>
+						<configuration>
+							<packageName>name.abhijitsarkar.webservices.jaxws.security.sym.gen</packageName>
+							<wsdlDirectory>src/main/resources/wsdl</wsdlDirectory>
+							<wsdlFiles>
+								<wsdlFile>calculator-sym.wsdl</wsdlFile>
+							</wsdlFiles>
+							<!-- This determines @WebService.wsdlLocation and @WebServiceClient.wsdlLocation 
+								value. -->
+							<wsdlLocation>http://localhost:8080/ws-security-symmetric-encryption/CalculatorSymService?wsdl</wsdlLocation>
+							<!-- Turn off generated source compilation; Maven will do it anyway -->
+							<xnocompile>true</xnocompile>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+			<plugin>
+				<artifactId>maven-war-plugin</artifactId>
+				<configuration>
+					<archive>
+						<manifestEntries>
+							<Dependencies>org.apache.ws.security</Dependencies>
+						</manifestEntries>
+					</archive>
+				</configuration>
+			</plugin>
+			<plugin>
+				<artifactId>maven-enforcer-plugin</artifactId>
+				<dependencies>
+					<dependency>
+						<groupId>name.abhijitsarkar.maven</groupId>
+						<artifactId>maven-enforcer-rules-engine</artifactId>
+						<version>0.0.1-SNAPSHOT</version>
+					</dependency>
+				</dependencies>
+				<executions>
+					<execution>
+						<id>bannedProfiles</id>
+						<configuration>
+							<rules>
+								<bannedProfiles
+									implementation="name.abhijitsarkar.maven.enforcer.rule.BannedProfiles">
+									<profiles>
+										jetty
+									</profiles>
+								</bannedProfiles>
+							</rules>
+						</configuration>
+						<goals>
+							<goal>enforce</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+		</plugins>
+	</build>
+</project>

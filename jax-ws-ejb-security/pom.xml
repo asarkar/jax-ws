@@ -19,7 +19,7 @@
     3) The groundwork is almost complete except that application users need to be created. There's no portable  
       and automated way to do this during integration testing so I cheated by creating 2 users in a standalone 
       Wildfly instance  and then copying the 2 application-*.properties files to src/main/config. 
-      I then configured the maven resources plugin to copy those files into the downloaded Wildfly instance. 
+      I then configured the maven resources plugin to copy those files into the unpacked Wildfly instance. 
       Boom, we've 2 users!
     4) Generate client artifacts from the WSDL and we're in business!
     ]]>
@@ -51,14 +51,14 @@
       <dependency>
         <groupId>org.jboss.spec</groupId>
         <artifactId>jboss-javaee-7.0</artifactId>
-        <version>1.0.2.Final</version>
+        <version>${wildfly.plugin.version}</version>
         <type>pom</type>
         <scope>import</scope>
       </dependency>
       <dependency>
         <groupId>org.wildfly</groupId>
         <artifactId>wildfly-ejb-client-bom</artifactId>
-        <version>8.2.0.Final</version>
+        <version>${wildfly.version}</version>
         <type>pom</type>
         <scope>import</scope>
       </dependency>
@@ -130,7 +130,7 @@
               <goal>copy-resources</goal>
             </goals>
             <configuration>
-              <outputDirectory>${basedir}/target/wildfly-${wildfly.version}/standalone/configuration</outputDirectory>
+              <outputDirectory>${wildfly.home}/standalone/configuration</outputDirectory>
               <resources>
                 <resource>
                   <directory>src/main/config</directory>
