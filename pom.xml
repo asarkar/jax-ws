@@ -31,6 +31,7 @@
 		<wildfly.version>8.2.0.Final</wildfly.version>
 		<wildfly.home>${java.io.tmpdir}/wildfly-${wildfly.version}</wildfly.home>
 		<arquillan.version>1.1.7.Final</arquillan.version>
+		<integration.test.pattern>**/*IntegrationTest.java</integration.test.pattern>
 	</properties>
 
 	<dependencies>
@@ -333,7 +334,7 @@
 								<phase>test</phase>
 								<configuration>
 									<excludes>
-										<exclude>**/*IntegrationTest.java</exclude>
+										<exclude>${integration.test.pattern}</exclude>
 									</excludes>
 								</configuration>
 							</execution>
@@ -342,7 +343,7 @@
 								<phase>integration-test</phase>
 								<configuration>
 									<includes>
-										<include>**/*IntegrationTest.java</include>
+										<include>${integration.test.pattern}</include>
 									</includes>
 									<forkMode>always</forkMode>
 									<systemPropertyVariables>
@@ -371,7 +372,7 @@
 						<artifactId>maven-surefire-plugin</artifactId>
 						<configuration>
 							<excludes>
-								<exclude>**/*IntegrationTest.java</exclude>
+								<exclude>${integration.test.pattern}</exclude>
 							</excludes>
 						</configuration>
 					</plugin>
