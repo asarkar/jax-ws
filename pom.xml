@@ -127,6 +127,55 @@
     <pluginManagement>
       <plugins>
         <plugin>
+          <artifactId>maven-clean-plugin</artifactId>
+          <version>2.6.1</version>
+          <executions>
+            <!-- Delete previously unpacked wildfly - don't do for child projects. -->
+            <execution>
+              <id>delete-wildfly</id>
+              <phase>clean</phase>
+              <inherited>false</inherited>
+              <goals>
+                <goal>clean</goal>
+              </goals>
+              <configuration>
+                <excludeDefaultDirectories>true</excludeDefaultDirectories>
+                <filesets>
+                  <fileset>
+                    <directory>${wildfly.home}</directory>
+                    <followSymlinks>false</followSymlinks>
+                  </fileset>
+                </filesets>
+              </configuration>
+            </execution>
+          </executions>
+        </plugin>
+        <plugin>
+          <artifactId>maven-dependency-plugin</artifactId>
+          <version>2.10</version>
+          <executions>
+            <execution>
+              <id>unpack-wildfly</id>
+              <phase>generate-test-resources</phase>
+              <goals>
+                <goal>unpack</goal>
+              </goals>
+              <configuration>
+                <artifactItems>
+                  <artifactItem>
+                    <groupId>org.wildfly</groupId>
+                    <artifactId>wildfly-dist</artifactId>
+                    <version>${wildfly.version}</version>
+                    <type>zip</type>
+                    <overWrite>false</overWrite>
+                    <outputDirectory>${wildfly.unpackDir}</outputDirectory>
+                  </artifactItem>
+                </artifactItems>
+              </configuration>
+            </execution>
+          </executions>
+        </plugin>
+        <plugin>
           <artifactId>maven-enforcer-plugin</artifactId>
           <version>1.4</version>
         </plugin>
@@ -188,8 +237,7 @@
     <profile>
       <id>jetty</id>
       <properties>
-        <jetty.jvmArgs>-ea -Xdebug
-          -Xrunjdwp:transport=dt_socket,server=y,suspend=n,address=4000</jetty.jvmArgs>
+        <jetty.jvmArgs>-ea -Xdebug -Xrunjdwp:transport=dt_socket,server=y,suspend=n,address=4000</jetty.jvmArgs>
       </properties>
       <dependencyManagement>
 
@@ -250,6 +298,12 @@
               <name>${project.artifactId}</name>
             </configuration>
           </plugin>
+          <plugin>
+            <artifactId>maven-clean-plugin</artifactId>
+          </plugin>
+          <plugin>
+            <artifactId>maven-dependency-plugin</artifactId>
+          </plugin>
         </plugins>
       </build>
     </profile>
@@ -286,50 +340,9 @@
         <plugins>
           <plugin>
             <artifactId>maven-clean-plugin</artifactId>
-            <version>2.6.1</version>
-            <executions>
-              <!-- Delete previously unpacked wildfly - don't do for child projects. -->
-              <execution>
-                <id>delete-wildfly</id>
-                <phase>clean</phase>
-                <inherited>false</inherited>
-                <goals>
-                  <goal>clean</goal>
-                </goals>
-                <configuration>
-                  <filesets>
-                    <fileset>
-                      <directory>${wildfly.home}</directory>
-                      <followSymlinks>false</followSymlinks>
-                    </fileset>
-                  </filesets>
-                </configuration>
-              </execution>
-            </executions>
           </plugin>
           <plugin>
             <artifactId>maven-dependency-plugin</artifactId>
-            <executions>
-              <execution>
-                <id>unpack-wildfly</id>
-                <phase>generate-test-resources</phase>
-                <goals>
-                  <goal>unpack</goal>
-                </goals>
-                <configuration>
-                  <artifactItems>
-                    <artifactItem>
-                      <groupId>org.wildfly</groupId>
-                      <artifactId>wildfly-dist</artifactId>
-                      <version>${wildfly.version}</version>
-                      <type>zip</type>
-                      <overWrite>false</overWrite>
-                      <outputDirectory>${wildfly.unpackDir}</outputDirectory>
-                    </artifactItem>
-                  </artifactItems>
-                </configuration>
-              </execution>
-            </executions>
           </plugin>
           <plugin>
             <artifactId>maven-surefire-plugin</artifactId>
