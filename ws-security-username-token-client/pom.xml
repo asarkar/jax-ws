@@ -24,7 +24,7 @@
       4) This project uses the @WebServiceReference annotation to inject the endpoint reference. AFAIK, it only works
         in an EJB container or CDI container, not in JAX-WS or JAX-RS endpoint implementations.
         
-      5) To run integration tests, run 'mvn clean integration-test -P wildfly-arq -DintegTests'. The test will first deploy the
+      5) To run integration tests, run 'mvn clean install -P wildfly-arq'. The test will first deploy the
         service, then the client.
         
       6) The following entry needs to be added to the MANIFEST.MF. The maven war plugin does that for a regular build

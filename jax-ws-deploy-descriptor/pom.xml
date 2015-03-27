@@ -17,7 +17,7 @@
     
     <![CDATA[
       Run 'mvn clean package wildfly:run -P wildfly' from the basedir then run the main classes in the project.
-      To run integration tests, run 'mvn clean integration-test -P wildfly-arq -DintegTests'.     
+      To run integration tests, run 'mvn clean install -P wildfly-arq'.     
     ]]>
   </description>
 
